@@ -1,0 +1,29 @@
+{
+  "unit_integration_tests": 194,
+  "unit_integration_passed": 194,
+  "offline_evaluation_passed": 40,
+  "offline_evaluation_total": 40,
+  "javascript_syntax": "passed",
+  "browser_cases": 15,
+  "browser_assertions": {
+    "fifteen_distinct_cases": true,
+    "domain_rejections": true,
+    "explicit_language_limitation": true,
+    "dated_status_not_live": true,
+    "corrected_facts_listed": true,
+    "corrected_oil_has_medicinal_threshold": true,
+    "corrected_oil_has_cosmetic_route": true,
+    "corrected_oil_has_no_us_section": true,
+    "exact_four_column_table": true,
+    "instruction_not_product_fact": true,
+    "negative_claims_separate": true,
+    "foreign_brand_gap": true,
+    "missing_vs_promising_claims": true,
+    "source_only_new_issue_gap": true
+  },
+  "limits": [
+    "Local mode; no live model or translation validation",
+    "Not a legal accuracy benchmark",
+    "Download file delivery unverified; Copy with sources export verified"
+  ]
+}

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local config & secrets
+.env
+provider.txt
+*.key
+
+# Runtime logs (append-only audit/consent) — keep the folder, not the contents
+logs/*.jsonl
+server.log
+
+# Scratch rendering and extraction files
+tmp/
+
+# OS
+.DS_Store
+Thumbs.db

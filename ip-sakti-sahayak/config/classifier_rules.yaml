@@ -1,0 +1,182 @@
+# Preliminary India regulatory routing. Users confirm statutory eligibility.
+version: "2026-09-23"
+start: q_intended_use
+nodes:
+  q_intended_use:
+    question: "How will the product be presented to users?"
+    hint: "A disease or therapeutic claim matters even if the product is a cream, drink or supplement."
+    options:
+      medicine: q_route
+      food: q_food_claims
+      cosmetic: q_cosmetic_use
+      unsure: "review:uncertain"
+    option_labels:
+      medicine: "Medicine / therapeutic claim"
+      food: "Food / supplement"
+      cosmetic: "Cosmetic / beauty care"
+      unsure: "I'm not sure"
+    statutes: [dc_3a, dc_3h, fssai_aahar]
+
+  q_route:
+    question: "How will the medicine be administered?"
+    hint: "The proprietary ASU and phytopharmaceutical definitions exclude parenteral administration, such as injection."
+    options:
+      non_parenteral: q_classical_text
+      parenteral: "review:parenteral"
+      unsure: "review:uncertain"
+    option_labels:
+      non_parenteral: "Oral or external; not injected"
+      parenteral: "By injection / parenteral route"
+      unsure: "I'm not sure"
+    statutes: [dc_3h, phytopharma_gsr918]
+
+  q_classical_text:
+    question: "Do the complete formula AND manufacturing method follow an authoritative First-Schedule text?"
+    hint: "Naming Charaka Samhita or using traditional ingredients alone does not establish this. Check your formula and process against the text."
+    options:
+      "yes": "category:classical"
+      "no": q_purified_fraction
+      unsure: "review:books"
+    option_labels:
+      "yes": "Yes, both match the text"
+      "no": "No, the formula or method differs"
+      unsure: "I need to check the text"
+    statutes: [dc_3a, dc_rule_158b]
+
+  q_purified_fraction:
+    question: "Is it a purified, standardised plant fraction with at least FOUR defined compounds assessed both qualitatively and quantitatively?"
+    hint: "A crude extract, the word 'standardised', or fewer than four measured compounds is not enough for this test."
+    options:
+      "yes": "category:phytopharmaceutical"
+      "no": q_schedule_ingredients
+      unsure: "review:fraction"
+    option_labels:
+      "yes": "Yes, all of these conditions"
+      "no": "No, one or more conditions fail"
+      unsure: "I need assay / composition data"
+    statutes: [phytopharma_gsr918]
+
+  q_schedule_ingredients:
+    question: "Are ALL ingredients mentioned in formulae in the First-Schedule authoritative books?"
+    hint: "A different combination of listed ingredients can be proprietary ASU medicine. A new claim alone does not automatically make it a CDSCO new drug."
+    options:
+      "yes": "category:proprietary"
+      "no": q_new_drug
+      unsure: "review:books"
+    option_labels:
+      "yes": "Yes, every ingredient is listed"
+      "no": "No, some ingredients are outside"
+      unsure: "I need to check the ingredients"
+    statutes: [dc_3h, dc_rule_158b]
+
+  q_new_drug:
+    question: "Does the product require assessment under the CDSCO new-drug framework?"
+    hint: "This is a referral route for products outside the preceding definitions. A regulator must confirm the applicable definition and evidence requirements."
+    options:
+      "yes": "category:new_drug"
+      "no": "review:outside"
+      unsure: "review:outside"
+    option_labels:
+      "yes": "Yes, a new-drug assessment is needed"
+      "no": "No / another framework may apply"
+      unsure: "I need a regulatory review"
+    statutes: [dc_new_drug]
+
+  q_food_claims:
+    question: "Will the food or supplement claim to diagnose, treat, prevent or cure a disease?"
+    hint: "Confirm the intended claims before considering an Ayurveda Aahara food route."
+    options:
+      "yes": q_route
+      "no": q_food_text
+      unsure: "review:claims"
+    option_labels:
+      "yes": "Yes, it makes a disease claim"
+      "no": "No disease claims"
+      unsure: "The claims are not decided"
+    statutes: [fssai_aahar, dmr_act]
+
+  q_food_text:
+    question: "Does it meet the Ayurveda Aahara definition, including the Schedule A book requirements?"
+    hint: "Generic herbal foods and nutraceuticals are not automatically Ayurveda Aahara. Check the recipe, ingredients or process and the regulatory exclusions."
+    options:
+      "yes": "category:ayurveda_aahar"
+      "no": "review:food"
+      unsure: "review:food"
+    option_labels:
+      "yes": "Yes, the requirements have been checked"
+      "no": "No, it is a different food product"
+      unsure: "I need to check Schedule A"
+    statutes: [fssai_aahar]
+
+  q_cosmetic_use:
+    question: "Is it for external cleansing or beautifying, with no therapeutic or disease claim?"
+    hint: "A therapeutic claim needs a drug-classification review even when the product looks like a cosmetic."
+    options:
+      "yes": "category:cosmetic"
+      therapeutic: q_route
+      unsure: "review:claims"
+    option_labels:
+      "yes": "Yes, external cosmetic use only"
+      therapeutic: "It also makes a therapeutic claim"
+      unsure: "I'm not sure"
+    statutes: [dmr_act]
+
+reviews:
+  uncertain: "Confirm the intended use and product specifications with an AYUSH or drug-regulatory professional. There is not enough information to assign one of the six routes."
+  parenteral: "Parenteral products fall outside the proprietary ASU and phytopharmaceutical definitions used here. Obtain a CDSCO/regulatory assessment; this tool will not infer a category."
+  books: "Identify the book, formula, manufacturing method and ingredient references. A First-Schedule check is needed before classifying this medicine."
+  fraction: "Obtain the composition and assay data showing purification, standardisation and at least four defined, quantitatively and qualitatively assessed compounds."
+  outside: "The product does not yet fit a confirmed route. Ask a drug-regulatory professional to assess the full composition, intended use and current new-drug definition."
+  food: "A herbal food is not automatically Ayurveda Aahara. Confirm the Schedule A requirements and, if they do not apply, the appropriate FSSAI food category."
+  claims: "Review the exact label and advertising claims before choosing a food, cosmetic or medicine route."
+
+categories:
+  classical:
+    label: "Classical ASU medicine"
+    definition: "A medicine made exclusively to the confirmed First-Schedule formula and method (D&C Act s.3(a))."
+    ip_posture: "A traditional formula faces the s.3(p) traditional-knowledge exclusion. Brand, packaging and original written material may have separate IP protection; regulatory classification is not a patentability decision."
+    abs_posture: "Check s.7 exemptions against the practitioner, material and sourcing facts. For cultivated medicinal plants, obtain the prescribed certificate of origin from the Biodiversity Management Committee. A classical label does not waive every biodiversity or IP-related duty."
+    regulatory: "Discuss the classical ASU licensing route under Rule 158B and Schedule T GMP with the licensing authority. Evidence requirements depend on the actual product and claims."
+    statutes: [dc_3a, dc_rule_158b, dc_schedule_t, patents_3p, bda_s7_exemption]
+
+  proprietary:
+    label: "Patent or proprietary ASU medicine"
+    definition: "A non-parenteral formulation using only confirmed First-Schedule ingredients, but not itself a classical formula (s.3(h)(i))."
+    ip_posture: "'Patent or proprietary' is a regulatory category; it does not mean a patent has been granted. Any invention still needs novelty, inventive step and compliance with the Patents Act exclusions."
+    abs_posture: "Assess s.6 IP-related duties separately from s.7 access/intimation exemptions. Requirements depend on the applicant and sourcing facts."
+    regulatory: "Discuss Rule 158B licensing and Schedule T GMP with the ASU licensing authority. New claims or changed dosage forms need the applicable safety/effectiveness assessment."
+    statutes: [dc_3h, dc_rule_158b, dc_schedule_t, patents_3p, patents_3e, bda_s6]
+
+  new_drug:
+    label: "Potential new drug — regulatory review needed"
+    definition: "A referral for a product outside the preceding ASU routes that needs assessment against the current new-drug definition."
+    ip_posture: "A new regulatory category does not establish patentability. Check novelty, inventive step and the applicable s.3 exclusions."
+    abs_posture: "Confirm the current s.6 approval/registration pathway for the applicant and intended commercial activity."
+    regulatory: "Refer to CDSCO and a regulatory professional to establish the applicable definition and safety, efficacy and clinical-data requirements."
+    statutes: [dc_new_drug, patents_3d, patents_3e, patents_3p, bda_s6]
+    needs_review: true
+    review_reason: "This is a preliminary referral, not a finding that the product legally qualifies as a new drug."
+
+  phytopharmaceutical:
+    label: "Phytopharmaceutical drug"
+    definition: "A confirmed non-parenteral, purified and standardised plant fraction with at least four defined compounds assessed qualitatively and quantitatively (G.S.R. 918(E))."
+    ip_posture: "Characterisation may support an invention, but is not proof of novelty or inventive step. Check s.3(d), s.3(e) and s.3(p) where applicable."
+    abs_posture: "Review biological-resource sourcing and the applicant's s.6 obligations with the NBA. Wild/cultivated origin alone does not determine all duties."
+    regulatory: "The relevant authority is CDSCO. Confirm the current phytopharmaceutical development and approval requirements, including identity, safety and clinical evidence."
+    statutes: [phytopharma_gsr918, patents_3d, patents_3e, patents_3p, bda_s6]
+
+  ayurveda_aahar:
+    label: "Ayurveda Aahara (food)"
+    definition: "A food meeting the confirmed Ayurveda Aahara definition and Schedule A requirements; ordinary herbal supplements do not automatically qualify."
+    ip_posture: "Consider trade marks, packaging designs, copyright and confidential know-how. Food classification alone neither grants nor rules out a patent."
+    abs_posture: "Review biological-resource use and the facts supporting any s.7 exemption."
+    regulatory: "Follow the FSSAI/FoSCoS food route and Ayurveda Aahara requirements. Avoid disease-treatment or cure claims."
+    statutes: [fssai_aahar, tm_act, designs_act, copyright_act, bda_s7_exemption]
+
+  cosmetic:
+    label: "Cosmetic — preliminary route"
+    definition: "External cleansing or beautifying use with no therapeutic or disease claim, based on the facts supplied."
+    ip_posture: "Consider brand, packaging design, artwork and confidential formulation know-how. Assess any patent claim independently."
+    abs_posture: "Check biodiversity duties if Indian biological resources or associated knowledge are used."
+    regulatory: "Confirm the applicable cosmetic licensing requirements and labels with the competent authority. Reassess the route if therapeutic claims are added."
+    statutes: [tm_act, designs_act, copyright_act, dmr_act]

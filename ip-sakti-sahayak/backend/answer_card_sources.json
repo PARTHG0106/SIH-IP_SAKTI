@@ -1,0 +1,231 @@
+{
+  "patents_3p": [
+    "29eca0c06e28210cf3f78ad943fbc0013874b538ca18df87a02de842a9c1efa0",
+    "ecc01abeb0e634e0f20603b491bb39ecfca0ba7ebd82e853d521110686f5580e"
+  ],
+  "patents_3e": [
+    "cff0c087bf9d82404dd48a81bf0403a587e7c706c1904b521e278704fff8f0cc",
+    "a8bffbdc171f2739bbb9bb8bd13b2cdfe95b670d2ad9a6d7462485bed1864ef0"
+  ],
+  "patents_3i": [
+    "7f22ab9115b9be3c7d4871915cda21541eb46f01260ab6ba09f38373a3e721d3",
+    "29032279bd28e44eaec23973d3434c4d5daae27a09ba16d1de8c5542057e9db7"
+  ],
+  "patents_3j": [
+    "126943ae904c9850ea81fb51583dbac95027d718293f155db3ffb1483123e407",
+    "a01a26274ee12013c4681d78182744a5d88c4687d8da3682be27581cb6a1c402"
+  ],
+  "patents_3d": [
+    "d6e98ea84ad35fa2e8982f95be769cb2f456f98cd0cb6f49bdee76820c62ee69",
+    "66b6a5e3247a5c7bac383c336756b9de41a93004aaa09ab511c105055a708af8"
+  ],
+  "patents_rules_2024_rfe": [
+    "6cf9f14ebde180d357f2f743e682965cbb29c1a0b8258b538cb0ed5e8692d879"
+  ],
+  "patents_rules_2024_form27": [
+    "f5a715c2c355199b884f07f16d04e53740fd7da52b9d512017f9007a23b243bb"
+  ],
+  "dc_3a": [
+    "1a5f734426e2a9b86a713bd3c074b5a468f8cc05b64da0de6eeaf40de50a9696",
+    "dcc09b4c006b2669f6cdc6a1635edf1494f1086c31a85e3c581cc68d530d719f"
+  ],
+  "dc_3h": [
+    "1b6f175a059af705ee75b46d5d14839aa699987454a1021c931963c5f00fdbea",
+    "58ff2d085a846ecd361d972a9a55a53e70aac969f80ff0e0cd579f8576705c03"
+  ],
+  "dc_rule_158b": [
+    "9d420ece37b14c26f77da59a5832aa9c5ef490aceb5c5c6f7df213cc1206afd0",
+    "377085d80ebaca9c2ba25038904ea0eae0c5b4eefd458a19b6b34cd353831114"
+  ],
+  "dc_schedule_t": [
+    "8b21f666b62b5d61b30becbe6a088a6398fa5a35726c5026d79884d23f084193",
+    "416cbe262b8829b5085ceecbb9ed94afbf1f45e1470f00d609ece1ceda76f170"
+  ],
+  "phytopharma_gsr918": [
+    "11c939e1f8251c494a1ff9c7a0f1bbe77b411e6ee3e0cef9a8c8d360da849e3d"
+  ],
+  "fssai_aahar": [
+    "fea0487808b2183181e7dbe9080eab7c12ce62f9243f0f66e50bcb30cd3f61a3"
+  ],
+  "dmr_act": [
+    "09b0afb77055f5b224dffa717be1a878ca13cde4c6a55bd26b6bf5b63c79422e"
+  ],
+  "rule_170": [
+    "ec2f86b465c155edee1e006bf1a7bc5fe874fe6e6bb69ab6b622b34def4570c0"
+  ],
+  "bda_s6": [
+    "2142b98ffd66ffd92fe12fa29edf58b6fdb15d36fb1b328a7745ec07ef152548"
+  ],
+  "bda_s7_exemption": [
+    "25dfb81cc14548dc2f2496887064da103fbd35689cf5d610c6fe6c666d800eaf"
+  ],
+  "gi_act": [
+    "bedd3e7a9258c62398789ac93729be5f3321a83d6e3681e7ea0be99ee9c14d8b",
+    "050905c9c273d6bab70d6fb0fdd0ff131301f6666eb9b0b238d4d0d5d88f37b7"
+  ],
+  "tm_act": [
+    "7754486113413c2dca1e63cb49c532ad3ab7570b267ac1c2185efc22887ed0d8",
+    "fe5985013db873ae655c3481ff59a60f4e5ace3e8924063da4ef9a3f76e5a754"
+  ],
+  "designs_act": [
+    "6210adbbc3ca54e31fe1254ec0c3361d49be3aaed7d06e7afb59508258031f79"
+  ],
+  "copyright_act": [
+    "43de5f180feebed3c45106a936fe96af372f80b5295e5d2a01863798f9f28efa",
+    "670a4439ff6720548720e0569a7a73b54d04d9ff129dccc1ccaa366c97da3978"
+  ],
+  "ppvfr_act": [
+    "6bac68c0094771bb6be7b84e7240ac50819bbcbad97c97d081d216320e1459b5",
+    "77ce85981c85a166c0fe5b08f7788961d3eb4386284f4e715aa0902909b8f003"
+  ],
+  "tkdl": [
+    "61f2f2be8b0bd17d2763e1a1b995a4eceb543dcb86e0b18c0b01e50ec8be5d02"
+  ],
+  "case_turmeric": [
+    "08bf02e1fd0faf1650145012f7ae063afa6dadec66000084c0dbc1d46b6efc67"
+  ],
+  "case_basmati": [
+    "49219bf6d0f25d44472aa4445123863288b72fd06ad56c49a1ed0516afb9957e"
+  ],
+  "trips_27_3b": [
+    "7cabe576f9005c20f4f09ff616f7434a4d77023a17b659b88e8fbedbb5473c9a"
+  ],
+  "cbd_nagoya": [
+    "30f212ee40bcfbc6846598b9ee7f9c6a310a715ecebe2cc8ee3d79395c522215"
+  ],
+  "wipo_gratk": [
+    "40ad56deb4e97bf91291f2f14c50c296f22bf6df9908f0c8511792431ad22f28"
+  ],
+  "pct": [
+    "1ddfab42d818ce1298fb35eef50da8d2e5849d486a09eaaaa8595b26a6f1f289"
+  ],
+  "madrid": [
+    "ac1c9a77f2ca33e477e6b0b59886ee9b27d1f2b88ec4fdf64f23af734d537737"
+  ],
+  "hague": [
+    "2d9de0dc47f5236833b97ec02f7b15c6aa178dbbe68f92e158b2324fd98e90f4"
+  ],
+  "budapest": [
+    "fb2be3ce4ae7de21692b7ec118c47d63e676ae8fcfd45075226d8d80ba7add08"
+  ],
+  "eu_thmpd": [
+    "17e614bf11e77e14d6e0dd1444ce4707dd7d7460c25f629b3f1b8de3d1329818"
+  ],
+  "authorities/phytopharma_gsr918": [
+    "11c939e1f8251c494a1ff9c7a0f1bbe77b411e6ee3e0cef9a8c8d360da849e3d"
+  ],
+  "authorities/bda_s6": [
+    "2142b98ffd66ffd92fe12fa29edf58b6fdb15d36fb1b328a7745ec07ef152548"
+  ],
+  "authorities/bda_s7_exemption": [
+    "25dfb81cc14548dc2f2496887064da103fbd35689cf5d610c6fe6c666d800eaf"
+  ],
+  "sourcing/bda_s7_exemption": [
+    "25dfb81cc14548dc2f2496887064da103fbd35689cf5d610c6fe6c666d800eaf"
+  ],
+  "authorities/gi_act": [
+    "050905c9c273d6bab70d6fb0fdd0ff131301f6666eb9b0b238d4d0d5d88f37b7"
+  ],
+  "authorities/tm_act": [
+    "fe5985013db873ae655c3481ff59a60f4e5ace3e8924063da4ef9a3f76e5a754"
+  ],
+  "authorities/ppvfr_act": [
+    "77ce85981c85a166c0fe5b08f7788961d3eb4386284f4e715aa0902909b8f003"
+  ],
+  "patents_3c": [
+    "160b071076d28f98f500ad96e069b3b70c521b4f7661afda5ec2deed8051e884"
+  ],
+  "patents_invention": [
+    "05e717e754cc3f3694ae503c1c1cb1a9c339e3b6245182d48c7bd3570fe11fdc"
+  ],
+  "patents_specification": [
+    "d059b9ae08301018de6d69e17767cf2305f4587abd33e669be7d3aba115999c2"
+  ],
+  "sourcing/patents_specification": [
+    "d059b9ae08301018de6d69e17767cf2305f4587abd33e669be7d3aba115999c2"
+  ],
+  "patents_disclosure": [
+    "c7d9646f74e33ce12c8022025885420ddcf179b20e4fba5f9cde10bd2f08be32"
+  ],
+  "patents_rights": [
+    "757bd962eef0ff9aaec4ec1dae686fdaea145c38c65a9d8f364f8ab1ca5a7e50"
+  ],
+  "authorities/patents_rights": [
+    "757bd962eef0ff9aaec4ec1dae686fdaea145c38c65a9d8f364f8ab1ca5a7e50"
+  ],
+  "dc_licensing": [
+    "24174a1285887e2b357d74dca8a539d6d02816743700c606250ee0e6df647f54"
+  ],
+  "authorities/dc_licensing": [
+    "24174a1285887e2b357d74dca8a539d6d02816743700c606250ee0e6df647f54"
+  ],
+  "dc_label_disclosure": [
+    "47371044c25fd9410407ed84c24deea088e35404f289a53c028602f05e7a8c26"
+  ],
+  "dc_sourcing_records": [
+    "2b689b78ff957bf41a5c6e84626f02b6e99cdaf3370f7b3da73aeed5a488bdbb"
+  ],
+  "sourcing/dc_sourcing_records": [
+    "2b689b78ff957bf41a5c6e84626f02b6e99cdaf3370f7b3da73aeed5a488bdbb"
+  ],
+  "trade_secret": [
+    "4e655f39fa9d9e82f465e63f7f76fcc528e494a9a29d8e92896c7b96c57f14b5"
+  ],
+  "bda_scope": [
+    "47ff86af7d4e821cc21a3a9cd209f6ff7183607033d2eb4255f605de99e29135"
+  ],
+  "sourcing/bda_scope": [
+    "47ff86af7d4e821cc21a3a9cd209f6ff7183607033d2eb4255f605de99e29135"
+  ],
+  "bda_s3": [
+    "dff5c53f9e91363a02b90ca464483d55f1d8106e7b1ee85d46f42bf9d39fcad8"
+  ],
+  "authorities/bda_s3": [
+    "dff5c53f9e91363a02b90ca464483d55f1d8106e7b1ee85d46f42bf9d39fcad8"
+  ],
+  "bda_abs": [
+    "56f094c89a15fd043a2f0598c3a006bc512d87bf6495fa98504587193c1009d0"
+  ],
+  "bda_abs_2025": [
+    "d0725287ca6951e788d2969da1a6d966a45b78d58bad02b5f500a8cc3c44ab90"
+  ],
+  "bda_sourcing": [
+    "7354775819e3fbafba53244084e2cf5bf9205f772e47ed57b58ea761bd8137b3"
+  ],
+  "sourcing/bda_sourcing": [
+    "7354775819e3fbafba53244084e2cf5bf9205f772e47ed57b58ea761bd8137b3"
+  ],
+  "bda_origin_2025": [
+    "676637bc95ec91594953d42d8d27c09bfda58fcaa70ee129f8a6324f7dc9c12b"
+  ],
+  "sourcing/bda_origin_2025": [
+    "676637bc95ec91594953d42d8d27c09bfda58fcaa70ee129f8a6324f7dc9c12b"
+  ],
+  "bda_ipr_forms": [
+    "68840d2ff18b5844305535b3d4b6cfd79dacee8b14cd62725d3297d0ed72775e"
+  ],
+  "sourcing/bda_ipr_forms": [
+    "68840d2ff18b5844305535b3d4b6cfd79dacee8b14cd62725d3297d0ed72775e"
+  ],
+  "bda_ppv_exception": [
+    "bd68cb24936b531cff282d4e16470def657312b0a9610a2fe801c42b8c1f4e5d"
+  ],
+  "copyright_scope": [
+    "0723290e78dfd660bb3b2a543e5884b25e5da755f0a58e2e45324560d7f7e962"
+  ],
+  "patents_ownership": [
+    "4741315bd8fa2748b477146e03aa9ef0f5b99808cdb1297432b4ce3f752ea194"
+  ],
+  "patents_assignments": [
+    "d1e28be4a4bd509871523a9f4cd5eaa99ee43a1f58bffd0acd7f089f71fa68df"
+  ],
+  "dc_cosmetic": [
+    "e73a0b5be2badb0f4cfb52c70ad1606d0810acc0a81060a67306f226046c21bf"
+  ],
+  "dc_cosmetic_licensing": [
+    "17966acae87006dbb2c8833aea9dcf41d8b41790e7307ec6b6ce967a03004f3d"
+  ],
+  "authorities/dc_cosmetic_licensing": [
+    "17966acae87006dbb2c8833aea9dcf41d8b41790e7307ec6b6ce967a03004f3d"
+  ]
+}

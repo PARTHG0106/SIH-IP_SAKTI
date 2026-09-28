@@ -1,0 +1,151 @@
+# ============================================================
+# IP-SAKTI Sahayak — Registry / form router
+# Turns advice into action: deep links to the correct official
+# registry or form, keyed by regime and jurisdiction.
+# Free official databases are `access: free`. `access: paid`
+# resources require explicit, logged consent before routing.
+# ============================================================
+version: "2026-09-22"
+
+registries:
+  # ---------------- India: IP registries ----------------
+  - id: inpass
+    regime: patent
+    jurisdiction: India
+    name: "IP India — InPASS patent search (Indian Patent Advanced Search System)"
+    url: "https://iprsearch.ipindia.gov.in/publicsearch"
+    access: free
+    note: "Search granted/published Indian patents & applications. Web UI only (no bulk API)."
+
+  - id: ipindia_forms
+    regime: patent
+    jurisdiction: India
+    name: "IP India — patent e-filing & forms (Form 1, 3, 27, RFE)"
+    url: "https://ipindiaonline.gov.in/epatentfiling/"
+    access: free
+
+  - id: gi_registry
+    regime: gi
+    jurisdiction: India
+    name: "Geographical Indications Registry (India)"
+    url: "https://ipindia.gov.in/gi.htm"
+    access: free
+    note: "GI journal, register and application forms (e.g. for a regional Ayurvedic product)."
+
+  - id: tm_search
+    regime: trademark
+    jurisdiction: India
+    name: "IP India — Trade Marks public search & e-filing"
+    url: "https://ipindiaonline.gov.in/tmrpublicsearch/"
+    access: free
+
+  - id: designs
+    regime: design
+    jurisdiction: India
+    name: "IP India — Designs registration"
+    url: "https://ipindia.gov.in/designs.htm"
+    access: free
+
+  - id: copyright
+    regime: copyright
+    jurisdiction: India
+    name: "Copyright Office (India)"
+    url: "https://copyright.gov.in/"
+    access: free
+
+  - id: ppvfr
+    regime: plant_variety
+    jurisdiction: India
+    name: "PPV&FR Authority (plant variety & farmers' rights)"
+    url: "https://plantauthority.gov.in/"
+    access: free
+
+  # ---------------- India: biodiversity / ABS ----------------
+  - id: nba
+    regime: biodiversity
+    jurisdiction: India
+    name: "National Biodiversity Authority — IP approvals, registration & ABS"
+    url: "https://www.nbaindia.nic.in/"
+    access: free
+    note: "Section 6 approval or registration depends on the applicant category and activity. State Biodiversity Boards handle s.7 intimation; cultivated-plant exemptions require the prescribed certificate of origin."
+
+  # ---------------- India: drug / food / advertising ----------------
+  - id: e_aushadhi
+    categories: [classical, proprietary]
+    regime: drug
+    jurisdiction: India
+    name: "e-AUSHADHI — ASU drug manufacturing licensing portal"
+    url: "https://e-aushadhi.gov.in/"
+    access: free
+    note: "Classical & patent/proprietary ASU licensing (Rule 158B, Schedule T GMP)."
+
+  - id: cdsco
+    categories: [new_drug, phytopharmaceutical]
+    regime: drug
+    jurisdiction: India
+    name: "CDSCO — new drug / phytopharmaceutical approvals"
+    url: "https://cdsco.gov.in/opencms/opencms/en/Home/"
+    access: free
+    note: "Phytopharmaceutical (Appendix IB, Schedule Y) and new-drug approvals; NOT the Ministry of AYUSH."
+
+  - id: fssai
+    categories: [ayurveda_aahar]
+    regime: food
+    jurisdiction: India
+    name: "FSSAI — food/Ayurveda Aahar licensing (FoSCoS)"
+    url: "https://foscos.fssai.gov.in/"
+    access: free
+    note: "FSS (Ayurveda Aahara) Regulations, 2022 licensing."
+
+  - id: tkdl_referral
+    regime: patent
+    jurisdiction: India
+    name: "TKDL — public information and restricted-access referral"
+    url: "https://www.tkdl.res.in/"
+    access: gated
+    note: "Full database access is restricted under TKDL access agreements. This opens public information only; it does not create an account, submit a request or grant database access."
+
+  # ---------------- International ----------------
+  - id: wipo_pct
+    regime: patent
+    jurisdiction: International
+    name: "WIPO — PCT (Patent Cooperation Treaty) e-filing & PATENTSCOPE"
+    url: "https://patentscope.wipo.int/"
+    access: free
+
+  - id: madrid
+    regime: trademark
+    jurisdiction: International
+    name: "WIPO — Madrid System (international trade marks)"
+    url: "https://www.wipo.int/madrid/en/"
+    access: free
+
+  - id: hague
+    regime: design
+    jurisdiction: International
+    name: "WIPO — Hague System (international designs)"
+    url: "https://www.wipo.int/hague/en/"
+    access: free
+
+  - id: budapest
+    regime: patent
+    jurisdiction: International
+    name: "WIPO — Budapest Treaty (micro-organism deposit, IDAs)"
+    url: "https://www.wipo.int/budapest/en/"
+    access: free
+    note: "For patenting inventions involving a micro-organism (deposit at an International Depositary Authority)."
+
+  - id: wipo_lex
+    regime: any
+    jurisdiction: International
+    name: "WIPO Lex — laws, treaties & GRATK resources"
+    url: "https://www.wipo.int/wipolex/en/"
+    access: free
+
+  - id: ema_hmpc
+    regime: drug
+    jurisdiction: International
+    name: "EMA — herbal medicinal products (THMPD traditional-use registration)"
+    url: "https://www.ema.europa.eu/en/human-regulatory-overview/herbal-medicinal-products"
+    access: free
+    note: "EU market access via Directive 2004/24/EC; note the 30-years-total / 15-years-in-EU use requirement."

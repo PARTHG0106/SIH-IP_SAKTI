@@ -1,0 +1,249 @@
+{
+  "started_at": "2026-09-28T11:53:10.949745+00:00",
+  "provider_protocol": "anthropic",
+  "model": "claude-opus-4-8",
+  "corpus_version": "55845421eeb6f26a",
+  "credential_recorded": false,
+  "method": "FastAPI TestClient requests; real remote planning/synthesis/audit/translation calls; synthetic cases",
+  "cases": [
+    {
+      "id": 6,
+      "title": "Claim-specific patent evidence",
+      "prompt": "For an Ayurvedic medicine in India, we have two potential patent claims. Claim A is a new salt of a known active; our tests show no enhancement of known efficacy. Claim B combines two known herbs; preliminary data only show the sum of their known effects, not an interaction beyond that sum. We also have a separate extraction process that might be new, but no prior-art search is complete. Compare the distinct questions under sections 3(d), 3(e) and 3(p), and the basic novelty and inventive-step tests. Explain what the stated evidence does and does not establish. Do not guarantee patentability, do not equate a proprietary-drug label with a patent, and give a short evidence-gathering strategy with section citations.",
+      "http_status": 200,
+      "seconds": 100.651,
+      "response": {
+        "answer": "**Facts needed before a definitive conclusion**\n\n- Not established by retrieved sources: What are the results of a completed prior-art/anticipation search for the extraction process, including publications or uses in India or elsewhere before any intended filing?\n- Not established by retrieved sources: Does the salt show any significant difference in properties with regard to efficacy versus the known active, beyond the tested no-enhancement result?\n- Not established by retrieved sources: Is the two-herb combination, or its combined effect, documented as traditional knowledge or a known property of traditionally known components?\n- Not established by retrieved sources: Is there comparative evidence of an effect beyond mere aggregation for the herbal combination?\n- Not established by retrieved sources: What is the intended nature of the extraction-process claim (new product, or new reactant/process step) to test it against s.3(d) and s.2(1)(ja)?\n\n**Patent eligibility for the formulation and process**\n\nEstablished by source: Under s.2(1)(j) (India), an invention must be a new product or process involving an inventive step and capable of industrial application. (India; ss.2(1)(j), 2(1)(ja), 2(1)(l)) [patents_invention] Under s.2(1)(ja) (India), inventive step requires technical advance over existing knowledge or economic significance or both, and non-obviousness to a skilled person. (India; ss.2(1)(j), 2(1)(ja), 2(1)(l)) [patents_invention] Under s.2(1)(l) (India), novelty is tested against anticipation by documents or use in India or elsewhere before filing a complete specification. (India; ss.2(1)(j), 2(1)(ja), 2(1)(l)) [patents_invention] Under ss.2(1)(j)-(l) (India), being developed in-house or absent from classical texts does not establish these conditions or avoid section 3 exclusions. (India; ss.2(1)(j), 2(1)(ja), 2(1)(l)) [patents_invention] Under s.48 (India), a patent grant does not by itself establish that sale is lawful under drug regulation or that the product avoids another person's patent; separate regulatory and freedom-to-operate assessments follow. (India; ss.48, 73-74) [patents_rights]\n\nInference/application: The extraction process may be a candidate under s.2(1)(j), but with the prior-art search incomplete, novelty and anticipation under s.2(1)(l) are unresolved. [patents_invention] For the herbal combination, additive-only preliminary data does not by itself demonstrate technical advance or non-obviousness under s.2(1)(ja). [patents_invention] For the salt, meeting eligibility conditions under s.2(1)(j)/(ja) is separate from clearing section 3; the stated absence of efficacy enhancement is relevant to the exclusion analysis rather than to novelty alone. [patents_invention] A proprietary Ayurvedic drug licence/label operates under drug regulation and is distinct from a patent grant; under s.48 a patent neither confirms lawful marketing nor freedom to operate. [patents_rights]\n\nNot established by retrieved sources: Prior-art/anticipation search for the extraction process is not complete, so novelty under s.2(1)(l) cannot be assessed. No evidence of technical advance or non-obviousness has been supplied for the salt or the combination.\n\n**Patent exclusions**\n\nEstablished by source: Under s.3(d) (India), a mere new form of a known substance without enhancement of its known efficacy is excluded, and derivatives are treated as the same substance unless they differ significantly in efficacy. (India; s.3(d)) [patents_3d] Under the s.3(d) explanation (India), listed derivatives of a known substance are the same substance unless they differ significantly in properties with regard to efficacy. (India; s.3(d)) [patents_3d] Under s.3(e) (India), a substance obtained by a mere admixture resulting only in aggregation of the properties of its components, and a process for producing it, are excluded. (India; s.3(e)) [patents_3e] Under s.3(e) (India), comparative evidence of an effect beyond mere aggregation can help address the exclusion, but the statute does not guarantee patentability merely because a formulation is described as synergistic. (India; s.3(e)) [patents_3e] Under s.3(p) (India), an invention which in effect is traditional knowledge or is an aggregation or duplication of known properties of traditionally known components is excluded, and this remains a claim-specific question. (India; s.3(p)) [patents_3p]\n\nInference/application: For the salt, the stated absence of efficacy enhancement is the core fact s.3(d) targets; on this evidence the salt tends toward the exclusion unless a significant efficacy difference is shown, but this is claim-specific and not resolved by classical-text absence. [patents_3d] For the combination, data showing only the sum of known effects is precisely the mere-aggregation scenario s.3(e) excludes; an effect beyond aggregation has not been shown. [patents_3e] For an Ayurvedic combination, s.3(p) raises the distinct question of whether it is in effect traditional knowledge or a duplication of known properties of traditionally known components; the supplied facts do not resolve this. [patents_3p]\n\nNot established by retrieved sources: Whether the salt differs significantly in properties with regard to efficacy is not established by the current tests. Whether the two known herbs and their combined effect are codified/known traditional knowledge or a duplication of known properties has not been supplied. No comparative data showing an effect beyond aggregation is available for the combination.\n\n**Step-by-step strategy**\n\n1. Inference/application: Complete a prior-art and anticipation search for the extraction process, covering documents and use in India or elsewhere, before deciding what to file. [patents_invention]\n\n2. Inference/application: Assemble claim-specific comparative efficacy data for the salt to test whether it differs significantly in efficacy under s.3(d). [patents_3d]\n\n3. Inference/application: Design and run comparative studies aimed at any effect beyond mere aggregation for the herbal combination to address s.3(e). [patents_3e]\n\n4. Inference/application: Assess whether the combination is in effect traditional knowledge or a duplication of known properties of traditionally known components under s.3(p). [patents_3p]\n\n5. Inference/application: Conduct separate freedom-to-operate and drug-regulatory assessments distinct from any patent question, since a patent under s.48 does not establish lawful sale. [patents_rights]",
+        "abstained": false,
+        "confidence": 0.998,
+        "confidence_label": "High",
+        "jurisdiction": "India",
+        "lang": "en",
+        "requested_lang": "en",
+        "category": null,
+        "citations": [
+          {
+            "id": "patents_3d",
+            "statute": "The Patents Act, 1970",
+            "section": "s.3(d)",
+            "title": "New form of a known substance not patentable without enhanced efficacy",
+            "source_url": "https://www.wipo.int/wipolex/en/legislation/details/22960",
+            "as_of": "2005-01-01",
+            "jurisdiction": "India",
+            "regime": "patent",
+            "snippet": "Section 3(d) excludes a mere new form of a known substance without enhancement of its known efficacy; mere discovery of a new property or new use for a known substance; and mere use of a known process, machine or apparatus unless that known process results in a new product or employs at least one new reactant. Its explanation treats listed derivatives of known substances as the same substance unless they differ significantly in properties with regard to efficacy. Assessment of a particular extract, dose, derivative or process requires claim-specific evidence and relevant case law; absence from classical texts alone does not resolve this exclusion.",
+            "score": 0.11318,
+            "source_type": "primary_document",
+            "review_status": "primary_checked",
+            "review_note": "Checked against the Indian statutory text hosted by WIPO Lex, archived as corpus/primary/patents-act.pdf. This verifies the cited provisions, not an exhaustive search for later amendments or case law.",
+            "reviewed_on": "2026-09-27",
+            "time_sensitive": false,
+            "text_kind": "curated_summary"
+          },
+          {
+            "id": "patents_3p",
+            "statute": "The Patents Act, 1970",
+            "section": "s.3(p)",
+            "title": "Traditional knowledge not patentable",
+            "source_url": "https://www.wipo.int/wipolex/en/legislation/details/22960",
+            "as_of": "2005-01-01",
+            "jurisdiction": "India",
+            "regime": "patent",
+            "snippet": "Section 3(p) excludes an invention which in effect is traditional knowledge or is an aggregation or duplication of known properties of traditionally known components. A company-developed combination is not exempt merely because that exact recipe is absent from classical books; whether its substance is traditional knowledge remains a claim-specific question.",
+            "score": 0.11215,
+            "source_type": "primary_document",
+            "review_status": "primary_checked",
+            "review_note": "Checked against the Indian statutory text hosted by WIPO Lex, archived as corpus/primary/patents-act.pdf. This verifies the cited provisions, not an exhaustive search for later amendments or case law.",
+            "reviewed_on": "2026-09-27",
+            "time_sensitive": false,
+            "text_kind": "curated_summary"
+          },
+          {
+            "id": "patents_3e",
+            "statute": "The Patents Act, 1970",
+            "section": "s.3(e)",
+            "title": "Mere admixture (aggregation of properties) not patentable",
+            "source_url": "https://www.wipo.int/wipolex/en/legislation/details/22960",
+            "as_of": "2005-01-01",
+            "jurisdiction": "India",
+            "regime": "patent",
+            "snippet": "Section 3(e) excludes a substance obtained by a mere admixture resulting only in aggregation of the properties of its components, and a process for producing such a substance. A multi-herb combination must be assessed against this exclusion. Comparative evidence of an effect beyond a mere aggregation can help address the exclusion; the statute does not guarantee patentability merely because a formulation is described as synergistic.",
+            "score": 0.08144,
+            "source_type": "primary_document",
+            "review_status": "primary_checked",
+            "review_note": "Checked against the Indian statutory text hosted by WIPO Lex, archived as corpus/primary/patents-act.pdf. This verifies the cited provisions, not an exhaustive search for later amendments or case law.",
+            "reviewed_on": "2026-09-27",
+            "time_sensitive": false,
+            "text_kind": "curated_summary"
+          },
+          {
+            "id": "patents_invention",
+            "statute": "The Patents Act, 1970",
+            "section": "ss.2(1)(j), 2(1)(ja), 2(1)(l)",
+            "title": "Patent eligibility for technical products and processes",
+            "source_url": "https://www.wipo.int/wipolex/en/legislation/details/22960",
+            "as_of": "2005-01-01",
+            "jurisdiction": "India",
+            "regime": "patent",
+            "snippet": "Section 2(1)(j) defines invention as a new product or process involving an inventive step and capable of industrial application. Section 2(1)(ja) requires technical advance over existing knowledge or economic significance or both, and non-obviousness to a skilled person. Section 2(1)(l) addresses anticipation by documents or use in India or elsewhere before filing with a complete specification. A formulation or extraction/manufacturing process may be a candidate, but being developed in-house or absent from classical Ayurvedic texts does not establish these conditions or avoid section 3 exclusions.",
+            "score": 0.08043,
+            "source_type": "primary_document",
+            "review_status": "primary_checked",
+            "review_note": "Checked against the Indian statutory text hosted by WIPO Lex, archived as corpus/primary/patents-act.pdf. This verifies the cited provisions, not an exhaustive search for later amendments or case law.",
+            "reviewed_on": "2026-09-27",
+            "time_sensitive": false,
+            "text_kind": "curated_summary"
+          },
+          {
+            "id": "patents_rights",
+            "statute": "The Patents Act, 1970",
+            "section": "ss.48, 73-74",
+            "title": "Patent rights and the Indian Patent Office",
+            "source_url": "https://www.wipo.int/wipolex/en/legislation/details/22960",
+            "as_of": "2005-01-01",
+            "jurisdiction": "India",
+            "regime": "patent",
+            "snippet": "Section 48 gives a patentee, subject to the Act, rights to prevent specified unauthorised acts concerning a patented product or patented process and products directly obtained by that process in India. Sections 73-74 identify the Controller of Patents and Patent Office. Patent rights do not by themselves establish that sale is lawful under drug regulation or that the product avoids another person's patent; separate regulatory and freedom-to-operate assessments follow from these distinct legal questions.",
+            "score": 0.06208,
+            "source_type": "primary_document",
+            "review_status": "primary_checked",
+            "review_note": "Checked against the Indian statutory text hosted by WIPO Lex, archived as corpus/primary/patents-act.pdf. This verifies the cited provisions, not an exhaustive search for later amendments or case law.",
+            "reviewed_on": "2026-09-27",
+            "time_sensitive": false,
+            "text_kind": "curated_summary"
+          }
+        ],
+        "registry_links": [
+          {
+            "id": "inpass",
+            "name": "IP India — InPASS patent search (Indian Patent Advanced Search System)",
+            "url": "https://iprsearch.ipindia.gov.in/publicsearch",
+            "regime": "patent",
+            "jurisdiction": "India",
+            "access": "free",
+            "note": "Search granted/published Indian patents & applications. Web UI only (no bulk API)."
+          },
+          {
+            "id": "ipindia_forms",
+            "name": "IP India — patent e-filing & forms (Form 1, 3, 27, RFE)",
+            "url": "https://ipindiaonline.gov.in/epatentfiling/",
+            "regime": "patent",
+            "jurisdiction": "India",
+            "access": "free",
+            "note": null
+          },
+          {
+            "id": "tkdl_referral",
+            "name": "TKDL — public information and restricted-access referral",
+            "url": null,
+            "regime": "patent",
+            "jurisdiction": "India",
+            "access": "gated",
+            "note": "Full database access is restricted under TKDL access agreements. This opens public information only; it does not create an account, submit a request or grant database access."
+          }
+        ],
+        "escalate": false,
+        "as_of": "2005-01-01",
+        "source_date_range": {
+          "oldest": "2005-01-01",
+          "newest": "2005-01-01"
+        },
+        "disclaimer": "IP-SAKTI Sahayak provides information, not legal advice. Verify every citation against the primary source and consult a qualified IP/regulatory professional before acting.",
+        "answer_source": "rag_synthesis",
+        "original_answer_en": null,
+        "translation_status": "not_requested",
+        "notices": [
+          "Records needing review or a live status check were withheld: dc_new_drug. The remaining sources do not establish completeness of current law.",
+          "Question-specific AI synthesis was checked against the retrieved sources. These checks do not certify legal accuracy or current law.",
+          "The answer separates sourced rules from application and evidence gaps. Source cards contain curated summaries, not statutory quotations."
+        ],
+        "reason": null,
+        "corpus_version": "55845421eeb6f26a",
+        "request_id": "41d65cd0-4141-41c9-b52a-59b84b0b1567",
+        "conversation_id": "EGZ4gjr4vbJWA19Xb_P8EYb_o_LxsFfMK-nDGaLcCok",
+        "memory_used": false,
+        "evidence_scope": "corpus",
+        "context_question": null
+      },
+      "provider_events": [
+        {
+          "stage": "planner",
+          "max_tokens": 2400,
+          "output": "{\n  \"subquestions\": [\n    {\"question\": \"What distinct question does section 3(d) raise for a new salt of a known active substance where tests show no enhancement of known efficacy?\", \"search_query\": \"India Patents Act section 3(d) new salt known substance enhancement efficacy derivative\"},\n    {\"question\": \"What distinct question does section 3(e) raise for a combination of two known herbs whose data show only the sum of their known effects, not an interaction beyond that sum?\", \"search_query\": \"India Patents Act section 3(e) admixture combination synergy aggregation known properties\"},\n    {\"question\": \"What distinct question does section 3(p) raise for an Ayurvedic medicine based on traditional knowledge?\", \"search_query\": \"India Patents Act section 3(p) traditional knowledge aggregation duplication known properties\"},\n    {\"question\": \"What are the basic novelty and inventive-step tests under the Indian Patents Act as they might apply to the salt claim, the herbal combination claim, and the extraction process?\", \"search_query\": \"India Patents Act novelty prior art inventive step obviousness person skilled definitions\"},\n    {\"question\": \"What does the stated evidence (no efficacy enhancement; only additive effect; incomplete prior-art search) establish or fail to establish for each patentability question?\", \"search_query\": \"India patent efficacy enhancement evidence synergy data prior art search burden\"},\n    {\"question\": \"How does a proprietary Ayurvedic drug label or license under drug regulation differ from a patent grant?\", \"search_query\": \"India proprietary Ayurvedic medicine license Drugs Cosmetics Act versus patent grant distinction\"},\n    {\"question\": \"What evidence-gathering strategy, with section citations, supports assessment of the salt, combination and extraction-process claims?\", \"search_query\": \"India patent evidence comparative efficacy synergy prior art search documentation sections 3(d) 3(e) 3(p)\"}\n  ],\n  \"facts\": [\n    \"For an Ayurvedic medicine in India\",\n    \"Claim A is a new salt of a known active\",\n    \"our tests show no enhancement of known efficacy\",\n    \"Claim B combines two known herbs\",\n    \"preliminary data only show the sum of their known effects, not an interaction beyond that sum\",\n    \"We also have a separate extraction process that might be new\",\n    \"no prior-art search is complete\"\n  ],\n  \"missing_facts\": [\n    \"Is there comparative test data showing the new salt's efficacy relative to the known active beyond absence of enhancement?\",\n    \"What specific properties of each of the two known herbs are documented, and is there any data suggesting effects beyond simple addition?\",\n    \"What are the distinguishing technical features of the extraction process compared to known extraction methods?\",\n    \"Is the herbal combination or extraction process derived from or disclosed in traditional knowledge or classical Ayurvedic texts?\"\n  ],\n  \"output_format\": {\"table\": null, \"steps\": false, \"concise\": false, \"columns\": []}\n}",
+          "output_characters": 3005,
+          "ok": true,
+          "seconds": 15.786
+        },
+        {
+          "stage": "planner_validation",
+          "ok": true,
+          "required_issues": [
+            "Patent eligibility for the formulation and process",
+            "Patent exclusions"
+          ]
+        },
+        {
+          "stage": "synthesis",
+          "max_tokens": 7000,
+          "output": "{\"sections\":[{\"issue\":\"Patent eligibility for the formulation and process\",\"established\":[{\"text\":\"Under s.2(1)(j) (India), an invention must be a new product or process involving an inventive step and capable of industrial application.\",\"source_id\":\"patents_invention\",\"quote\":\"Section 2(1)(j) defines invention as a new product or process involving an inventive step and capable of industrial application.\"},{\"text\":\"Under s.2(1)(ja) (India), inventive step requires technical advance over existing knowledge or economic significance or both, and non-obviousness to a skilled person.\",\"source_id\":\"patents_invention\",\"quote\":\"Section 2(1)(ja) requires technical advance over existing knowledge or economic significance or both, and non-obviousness to a skilled person.\"},{\"text\":\"Under s.2(1)(l) (India), novelty is tested against anticipation by documents or use in India or elsewhere before filing a complete specification.\",\"source_id\":\"patents_invention\",\"quote\":\"Section 2(1)(l) addresses anticipation by documents or use in India or elsewhere before filing with a complete specification.\"},{\"text\":\"Under ss.2(1)(j)-(l) (India), being developed in-house or absent from classical texts does not establish these conditions or avoid section 3 exclusions.\",\"source_id\":\"patents_invention\",\"quote\":\"being developed in-house or absent from classical Ayurvedic texts does not establish these conditions or avoid section 3 exclusions\"},{\"text\":\"Under s.48 (India), a patent grant does not by itself establish that sale is lawful under drug regulation or that the product avoids another person's patent; separate regulatory and freedom-to-operate assessments follow.\",\"source_id\":\"patents_rights\",\"quote\":\"Patent rights do not by themselves establish that sale is lawful under drug regulation or that the product avoids another person's patent; separate regulatory and freedom-to-operate assessments follow from these distinct legal questions.\"}],\"application\":[{\"text\":\"The extraction process may be a candidate under s.2(1)(j), but with the prior-art search incomplete, novelty and anticipation under s.2(1)(l) are unresolved.\",\"source_ids\":[\"patents_invention\"],\"fact_quotes\":[\"We also have a separate extraction process that might be new, but no prior-art search is complete.\"]},{\"text\":\"For the herbal combination, additive-only preliminary data does not by itself demonstrate technical advance or non-obviousness under s.2(1)(ja).\",\"source_ids\":[\"patents_invention\"],\"fact_quotes\":[\"preliminary data only show the sum of their known effects, not an interaction beyond that sum\"]},{\"text\":\"For the salt, meeting eligibility conditions under s.2(1)(j)/(ja) is separate from clearing section 3; the stated absence of efficacy enhancement is relevant to the exclusion analysis rather than to novelty alone.\",\"source_ids\":[\"patents_invention\"],\"fact_quotes\":[\"Claim A is a new salt of a known active; our tests show no enhancement of known efficacy.\"]},{\"text\":\"A proprietary Ayurvedic drug licence/label operates under drug regulation and is distinct from a patent grant; under s.48 a patent neither confirms lawful marketing nor freedom to operate.\",\"source_ids\":[\"patents_rights\"],\"fact_quotes\":[\"For an Ayurvedic medicine in India, we have two potential patent claims.\"]}],\"unanswered\":[\"Prior-art/anticipation search for the extraction process is not complete, so novelty under s.2(1)(l) cannot be assessed.\",\"No evidence of technical advance or non-obviousness has been supplied for the salt or the combination.\"]},{\"issue\":\"Patent exclusions\",\"established\":[{\"text\":\"Under s.3(d) (India), a mere new form of a known substance without enhancement of its known efficacy is excluded, and derivatives are treated as the same substance unless they differ significantly in efficacy.\",\"source_id\":\"patents_3d\",\"quote\":\"Section 3(d) excludes a mere new form of a known substance without enhancement of its known efficacy\"},{\"text\":\"Under the s.3(d) explanation (India), listed derivatives of a known substance are the same substance unless they differ significantly in properties with regard to efficacy.\",\"source_id\":\"patents_3d\",\"quote\":\"Its explanation treats listed derivatives of known substances as the same substance unless they differ significantly in properties with regard to efficacy.\"},{\"text\":\"Under s.3(e) (India), a substance obtained by a mere admixture resulting only in aggregation of the properties of its components, and a process for producing it, are excluded.\",\"source_id\":\"patents_3e\",\"quote\":\"Section 3(e) excludes a substance obtained by a mere admixture resulting only in aggregation of the properties of its components, and a process for producing such a substance.\"},{\"text\":\"Under s.3(e) (India), comparative evidence of an effect beyond mere aggregation can help address the exclusion, but the statute does not guarantee patentability merely because a formulation is described as synergistic.\",\"source_id\":\"patents_3e\",\"quote\":\"Comparative evidence of an effect beyond a mere aggregation can help address the exclusion; the statute does not guarantee patentability merely because a formulation is described as synergistic.\"},{\"text\":\"Under s.3(p) (India), an invention which in effect is traditional knowledge or is an aggregation or duplication of known properties of traditionally known components is excluded, and this remains a claim-specific question.\",\"source_id\":\"patents_3p\",\"quote\":\"Section 3(p) excludes an invention which in effect is traditional knowledge or is an aggregation or duplication of known properties of traditionally known components.\"}],\"application\":[{\"text\":\"For the salt, the stated absence of efficacy enhancement is the core fact s.3(d) targets; on this evidence the salt tends toward the exclusion unless a significant efficacy difference is shown, but this is claim-specific and not resolved by classical-text absence.\",\"source_ids\":[\"patents_3d\"],\"fact_quotes\":[\"Claim A is a new salt of a known active; our tests show no enhancement of known efficacy.\"]},{\"text\":\"For the combination, data showing only the sum of known effects is precisely the mere-aggregation scenario s.3(e) excludes; an effect beyond aggregation has not been shown.\",\"source_ids\":[\"patents_3e\"],\"fact_quotes\":[\"preliminary data only show the sum of their known effects, not an interaction beyond that sum\"]},{\"text\":\"For an Ayurvedic combination, s.3(p) raises the distinct question of whether it is in effect traditional knowledge or a duplication of known properties of traditionally known components; the supplied facts do not resolve this.\",\"source_ids\":[\"patents_3p\"],\"fact_quotes\":[\"For an Ayurvedic medicine in India, we have two potential patent claims.\"]}],\"unanswered\":[\"Whether the salt differs significantly in properties with regard to efficacy is not established by the current tests.\",\"Whether the two known herbs and their combined effect are codified/known traditional knowledge or a duplication of known properties has not been supplied.\",\"No comparative data showing an effect beyond aggregation is available for the combination.\"]}],\"questions\":[\"What are the results of a completed prior-art/anticipation search for the extraction process, including publications or uses in India or elsewhere before any intended filing?\",\"Does the salt show any significant difference in properties with regard to efficacy versus the known active, beyond the tested no-enhancement result?\",\"Is the two-herb combination, or its combined effect, documented as traditional knowledge or a known property of traditionally known components?\",\"Is there comparative evidence of an effect beyond mere aggregation for the herbal combination?\",\"What is the intended nature of the extraction-process claim (new product, or new reactant/process step) to test it against s.3(d) and s.2(1)(ja)?\"],\"steps\":[{\"text\":\"Complete a prior-art and anticipation search for the extraction process, covering documents and use in India or elsewhere, before deciding what to file.\",\"source_ids\":[\"patents_invention\"]},{\"text\":\"Assemble claim-specific comparative efficacy data for the salt to test whether it differs significantly in efficacy under s.3(d).\",\"source_ids\":[\"patents_3d\"]},{\"text\":\"Design and run comparative studies aimed at any effect beyond mere aggregation for the herbal combination to address s.3(e).\",\"source_ids\":[\"patents_3e\"]},{\"text\":\"Assess whether the combination is in effect traditional knowledge or a duplication of known properties of traditionally known components under s.3(p).\",\"source_ids\":[\"patents_3p\"]},{\"text\":\"Conduct separate freedom-to-operate and drug-regulatory assessments distinct from any patent question, since a patent under s.48 does not establish lawful sale.\",\"source_ids\":[\"patents_rights\"]}]}",
+          "output_characters": 8758,
+          "ok": true,
+          "seconds": 62.579
+        },
+        {
+          "stage": "audit",
+          "max_tokens": 80,
+          "output": "{\"supported\":true}",
+          "output_characters": 18,
+          "ok": true,
+          "seconds": 22.236
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Hindi question with offline language setting",
+      "prompt": "हम भारत में एक आयुर्वेदिक हेयर ऑयल बनाना चाहते हैं। इसमें भृंगराज और तिल का तेल है। सभी पौधे अपने खेत में उगाए गए हैं और कंपनी पूरी तरह भारतीय स्वामित्व में है। उत्पाद केवल बालों की देखभाल के लिए है, किसी बीमारी के इलाज का दावा नहीं करेंगे। क्या यह औषधि या कॉस्मेटिक हो सकता है? लाइसेंस, पेटेंट, ट्रेडमार्क और जैव विविधता संबंधी दायित्व अलग-अलग समझाइए। यदि हमारे तथ्य पर्याप्त नहीं हैं तो जरूरी प्रश्न पूछिए और प्रत्येक कानूनी बात का स्रोत दीजिए। उत्तर हिंदी में दीजिए।",
+      "http_status": 200,
+      "seconds": 54.698,
+      "response": {
+        "answer": "Translation is unavailable in this local configuration, so I cannot reliably interpret this question in the selected language. Please ask in English, or configure a translation provider.",
+        "abstained": true,
+        "confidence": 0.0,
+        "confidence_label": "Low",
+        "jurisdiction": "India",
+        "lang": "en",
+        "requested_lang": "hi",
+        "category": null,
+        "citations": [],
+        "registry_links": [],
+        "escalate": false,
+        "as_of": null,
+        "source_date_range": null,
+        "disclaimer": "IP-SAKTI Sahayak provides information, not legal advice. Verify every citation against the primary source and consult a qualified IP/regulatory professional before acting.",
+        "answer_source": "abstain",
+        "original_answer_en": null,
+        "translation_status": "unavailable",
+        "notices": [],
+        "reason": "translation_unavailable",
+        "corpus_version": "55845421eeb6f26a",
+        "request_id": "45255e3a-f56f-4aef-b684-bf42590720bc",
+        "conversation_id": "9OQEHAos0pk3yc2suBYusrWWCUMC5WfYkR6_GqJRw_A",
+        "memory_used": false,
+        "evidence_scope": "corpus",
+        "context_question": null
+      },
+      "provider_events": [
+        {
+          "stage": "translation",
+          "max_tokens": 2200,
+          "output": "आपके प्रश्न का उत्तर नीचे विषयवार दिया है। ध्यान दें: यह सामान्य नियामक जानकारी है, कानूनी सलाह नहीं। अंतिम निर्णय से पहले किसी योग्य वकील/नियामक सलाहकार से पुष्टि अवश्य करें।\n\n## 1. औषधि (Drug) या कॉस्मेटिक — वर्गीकरण\n\nआपके उत्पाद (भृंगराज + तिल का तेल, केवल बालों की देखभाल, कोई रोग-निदान/उपचार का दावा नहीं) पर दो रास्ते संभव हैं:\n\n- यदि आप उत्पाद को केवल सौंदर्य/सफाई/आकर्षण के लिए बेचते हैं और कोई चिकित्सीय दावा (जैसे \"गंजापन ठीक करे\", \"डैंड्रफ रोग का इलाज\") नहीं करते — तो यह कॉस्मेटिक माना जा सकता है।\n- परन्तु \"भृंगराज\" जैसे शास्त्रीय आयुर्वेदिक घटक और यदि पैकिंग/प्रचार में आयुर्वेदिक गुण या उपचारात्मक लाभ बताए जाते हैं, तो नियामक इसे आयुर्वेदिक औषधि (ASU drug) मान सकते हैं।\n\nमहत्वपूर्ण बिंदु: वर्गीकरण दावे (claim) और प्रस्तुतिकरण (presentation) पर निर्भर करता है, केवल घटकों पर नहीं। यही अंतर तय करता है कि कौन-सा लाइसेंस लगेगा।\n\nस्रोत: Drugs and Cosmetics Act, 1940 — धारा 3(a) [औषधि की परिभाषा], धारा 3(aaa) [कॉस्मेटिक की परिभाषा], धारा 3(h) [पेटेंट व प्रोप्रायटरी आयुर्वेदिक औषधि]।\n\n## 2. लाइसेंस\n\nक. यदि कॉस्मेटिक:\n- Cosmetics Rules, 2020 के अंतर्गत विनिर्माण लाइसेंस।\n- फॉर्म COS-8 पर आवेदन → राज्य लाइसेंसिंग प्राधिकरण से फॉर्म COS-9 पर लाइसेंस।\n- स्रोत: Cosmetics Rules, 2020 (Drugs and Cosmetics Act, 1940 के तहत)।\n\nख. यदि आयुर्वेदिक औषधि:\n- Drugs and Cosmetics Rules, 1945 के अंतर्गत ASU औषधि विनिर्माण लाइसेंस।\n- आवेदन फॉर्म 24-D → लाइसेंस फॉर्म 25-D (राज्य आयुष/ड्रग लाइसेंसिंग प्राधिकरण से)।\n- GMP का पालन आवश्यक — Schedule T (Good Manufacturing Practices for ASU drugs)।\n- स्रोत: Drugs and Cosmetics Rules, 1945 — Rule 151, 153; Schedule T।\n\n## 3. पेटेंट\n\n- केवल तिल-भृंगराज मिलाना, जो पारंपरिक आयुर्वेदिक ज्ञान है, संभवतः पेटेंट योग्य नहीं क्योंकि यह पारंपरिक ज्ञान (traditional knowledge) माना जाएगा।\n- स्रोत: Patents Act, 1970 — धारा 3(p) [पारंपरिक ज्ञान या ज्ञात गुणों का समुच्चय पेटेंट योग्य आविष्कार नहीं]।\n- यदि आपने कोई नई, अनूठी और अ-स्पष्ट (novel, inventive) प्रक्रिया/फॉर्मूलेशन विकसित की है, तभी पेटेंट पर विचार करें।\n- स्रोत: Patents Act, 1970 — धारा 2(1)(j) [आविष्कार], धारा 3।\n\n## 4. ट्रेडमार्क\n\n- ब्रांड नाम/लोगो को Trade Marks Act, 1999 के अंतर्गत रजिस्टर कराया जा सकता है।\n- वर्ग (Class): हेयर ऑयल कॉस्मेटिक के रूप में सामान्यतः Class 3 में, और औषधीय हेयर ऑयल Class 5 में आता है — अतः वर्गीकरण आपके उत्पाद-प्रकार पर निर्भर करेगा।\n- स्रोत: Trade Marks Act, 1999; NICE Classification (भारत में अपनाया गया)।\n\n## 5. जैव विविधता संबंधी दायित्व\n\nचूँकि आप जैविक संसाधन (भृंगराज, तिल) से व्यावसायिक उत्पाद बना रहे हैं:\n\n- कंपनी पूर्णतः भारतीय स्वामित्व वाली है, इसलिए विदेशी संस्था वाली धारा 3 की पूर्व-अनुमति (NBA) लागू नहीं होती।\n- परन्तु भारतीय कंपनी को व्यावसायिक उपयोग हेतु संबंधित राज्य जैव विविधता बोर्ड (State Biodiversity Board) को पूर्व सूचना देनी होती है।\n- स्रोत: Biological Diversity Act, 2002 — धारा 7 [भारतीय संस्थाओं द्वारा राज्य बोर्ड को पूर्व सूचना], धारा 3 व 4 [विदेशी संस्थाओं हेतु NBA अनुमति], धारा 6 [जैविक संसाधन आधारित IPR हेतु NBA अनुमति], धारा 21 [लाभ-साझाकरण / benefit sharing]।\n- यदि आप पेटेंट के लिए आवेदन करते हैं तो धारा 6 के तहत NBA की मंजूरी आवश्यक होगी।\n\nमहत्वपूर्ण: यदि पौधे पूरी तरह आपके अपने खेत में उगाए (cultivated) हैं, तो कुछ मामलों में \"cultivated medicinal plants\" को छूट प्राप्त होती है।\n- स्रोत: Biological Diversity Act, 2002 — धारा 40 [केंद्र सरकार द्वारा अधिसूचित सामान्य रूप से व्यापारित वस्तुओं/खेती किए गए औषधीय पौधों को छूट]; MoEF अधिसूचना (normally traded commodities पर)।\n\n## आवश्यक प्रश्न (तथ्य अपूर्ण हैं)\n\nसटीक मार्गदर्शन के लिए कृपया बताएँ:\n\n1. आप पैकेजिंग/विज्ञापन में क्या दावा करेंगे? (केवल \"बालों को पोषण/चमक\" या \"बाल झड़ना/डैंड्रफ रोकना\" जैसी बातें?) — यही कॉस्मेटिक बनाम औषधि तय करेगा।\n2. क्या फॉर्मूला किसी शास्त्रीय ग्रंथ (जैसे भावप्रकाश, चरक संहिता) पर आधारित है, या यह प्रोप्रायटरी (नया) फॉर्मूलेशन है?\n3. आप किस राज्य में विनिर्माण करेंगे? (लाइसेंसिंग प्राधिकरण राज्य-अनुसार भिन्न है।)\n4. क्या तिल/भृंगराज 100% स्व-कृषित हैं, या कुछ बाहर से खरीदा जाएगा? (जैव विविधता छूट पर असर।)\n5. क्या आप केवल भारत में बेचेंगे या निर्यात भी करेंगे? (निर्यात पर अतिरिक्त नियम व लेबलिंग लागू होते हैं।)\n\nइन उत्तरों के बाद मैं सही लाइसेंस-मार्ग और आवश्यक फॉर्म अधिक निश्चित रूप से बता सकूँगा।",
+          "output_characters": 4081,
+          "ok": true,
+          "seconds": 54.687
+        }
+      ]
+    }
+  ],
+  "completed_at": "2026-09-28T11:55:46.328814+00:00"
+}

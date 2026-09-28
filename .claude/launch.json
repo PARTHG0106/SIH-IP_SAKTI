@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ip-sakti",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "uvicorn", "backend.main:app", "--app-dir", "ip-sakti-sahayak", "--host", "127.0.0.1", "--port", "8077"],
+      "port": 8077,
+      "env": {
+        "LLM_PROVIDER": "anthropic",
+        "LLM_MODEL": "claude-opus-4-8",
+        "ALLOW_PROVIDER_FILE": "true",
+        "TRANSLATE_PROVIDER": "llm"
+      }
+    }
+  ]
+}

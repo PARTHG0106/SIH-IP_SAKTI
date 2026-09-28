@@ -1,0 +1,977 @@
+ 
+A HAND BOOK OF COPYRIGHT LAW 
+ 
+Government of India 
+Ministry of Human Resource Development 
+Department of Secondary Education and Higher Education 
+This book is not a substitute for the Copyright Act and Rules. It is intended to serve as an 
+information booklet for enforcement agencies as well as the general public. Government 
+officers and general public are requested to refer to the Copyright Act, 1957 (as amended from 
+time to time) and the Copyright Rules, 1958 (as amended from time to time) before taking any 
+action with reference to copyright registration and infringement. Copies of the Act and Rules 
+may be obtained from the Controller of Publications, Government of India, Civil Lines, Delhi- 
+110 054. 
+ 
+I N T R O D U C T I O N 
+There is an acute lack of awareness on various issues relating to copyright and related rights 
+amongst stakeholders, enforcement agencies, professional users like the scientific and 
+academic communities and members of the public. The questions put forth by the 
+representatives of these sections of society vary from those relating to the very fundamentals 
+of intellectual property rights to those which relate to practical applications. The Ministry of 
+Human Resource Development has for some time been contemplating a publication to answer 
+such queries. In this booklet, an attempt has been made to provide clarifications on most of 
+the issues relating to copyright law and its enforcement in a question – answer format. The 
+language used is jargon free and user friendly.  
+2. I deeply appreciate the efforts put forth by Smt. P.V. Valsala G. Kutty, Deputy Secretary and 
+Shri T.C. James, Under Secretary in bringing out this publication. 
+3. I hope that this handbook will prove useful to enforcement agencies and the general public. 
+Maharaj Krishen Kaw
+Secretary to Government of India,
+Department of Secondary Education and Higher Education
+  
+New Delhi  
+24th July, 1999 
+ 
+
+  
+RATIONALE OF COPYRIGHT PROTECTION 
+What is copyright? 
+Copyright is a right given by the law to creators of literary, dramatic, musical and artistic works and 
+producers of cinematograph films and sound recordings. In fact, it is a bundle of rights including, inter 
+alia, rights of reproduction, communication to the public, adaptation and translation of the work. There 
+could be slight variations in the composition of the rights depending on the work.  
+Why should copyright be protected? 
+Copyright ensures certain minimum safeguards of the rights of authors over their creations, thereby 
+protecting and rewarding creativity. Creativity being the keystone of progress, no civilized society can 
+afford to ignore the basic requirement of encouraging the same. Economic and social development of 
+a society is dependent on creativity. The protection provided by copyright to the efforts of writers, 
+artists, designers, dramatists, musicians, architects and producers of sound recordings, 
+cinematograph films and computer software, creates an atmosphere conducive to creativity, which 
+induces them to create more and motivates others to create.  
+Is it not true that strict application of the principle of protection of copyright hampers 
+economic and cultural development of the society?  
+Yes. If copyright protection is applied rigidly, it can hamper progress of the society. However, 
+copyright laws are enacted with necessary exceptions and limitations to ensure that a balance is 
+maintained between the interests of the creators and of the community.  
+To strike an appropriate and viable balance between the rights of the copyright owners and the 
+interests of the society as a whole, there are exceptions in the law. Many types of exploitation of work 
+which are for social purposes such as education, religious ceremonies, and so on are exempted from 
+the operation of the rights granted in the Act. Copyright in a work is considered as infringed only if a 
+substantial part is made use of unauthorizedly. What is ‘substantial’ varies from case to case. More 
+often than not, it is a matter of quality rather than quantity. For example, if a lyricist copy a very 
+catching phrase from another lyricist’s song, there is likely to be infringement even if that phrase is 
+very short.  
+Does the law allow any use of a work without permission of the owner of the copyright, and, if 
+so, which are they?  
+Subject to certain conditions, a fair deal for research, study, criticism, review and news reporting, as 
+well as use of works in library and schools and in the legislatures, is permitted without specific 
+permission of the copyright owners. In order to protect the interests of users, some exemptions have 
+been prescribed in respect of specific uses of works enjoying copyright. Some of the exemptions are 
+the uses of the work  
+i. 
+for the purpose of research or private study,  
+ii. 
+for criticism or review,  
+
+iii. 
+for reporting current events,  
+iv. 
+in connection with judicial proceeding,  
+v. 
+performance by an amateur club or society if the performance is 
+given to a non-paying audience, and  
+vi. 
+the making of sound recordings of literary, dramatic or musical works
+under certain conditions.  
+What is the scope of protection in the Copyright Act,1957 ?  
+The Copyright Act, 1957 protects original literary, dramatic, musical and artistic works and 
+cinematograph films and sound recordings from unauthorized uses. Unlike the case with patents, 
+copyright protects the expressions and not the ideas. There is no copyright in an idea.  
+Does copyright apply to titles and names ?  
+Copyright does not ordinarily protect titles by themselves or names, short word combinations, 
+slogans, short phrases, methods, plots or factual information. Copyright does not protect ideas or 
+concepts. To get the protection of copyright a work must be original.  
+WORK 
+What is a work?  
+A work means any of the following , namely, a literary, dramatic, musical or artistic work, a 
+cinematograph film, or a sound recording.  
+What is a work of joint authorship?  
+"Work of joint authorship" means a work produced by the collaboration of two or more authors in 
+which the contribution of one author is not distinct from the contribution of the other author or authors. 
+What are the classes of works for which copyrights protection is available in India?  
+Copyright subsists throughout India in the following classes of works:  
+o 
+Original literary, dramatic, musical and artistic works;  
+o 
+Cinematograph films; and  
+o 
+Sound recordings.  
+What is an artistic work?  
+An artistic work means-  
+o 
+a painting, a sculpture, a drawing (including a diagram, map, chart or plan), an 
+engraving or a photograph, whether or not any such work possesses artistic quality;  
+o 
+a work of architecture; and  
+o 
+any other work of artistic craftsmanship.  
+
+What is a musical work?  
+"Musical work" means a work consisting of music and includes any graphical notation of such work 
+but does not include any words or any action intended to be sung, spoken or performed with the 
+music. A musical work need not be written down to enjoy copyright protection.  
+What is a sound recording?  
+"Sound recording" means a recording of sounds from which sounds may be produced regardless of 
+the medium on which such recording is made or the method by which the sounds are produced. A 
+phonogram and a CD-ROM are sound recordings.  
+What is a cinematograph film?  
+"Cinematograph film" means any work of visual recording on any medium produced through a 
+process from which a moving image may be produced by any means and includes a sound recording 
+accompanying such visual recording and "cinematograph" shall be construed as including any work 
+produced by any process analogous to cinematography including video films.  
+What is a government work?  
+"Government work" means a work which is made or published by or under the direction or control of 
+o 
+the government or any department of the government  
+o 
+any legislature in India, and  
+o 
+any court, tribunal or other judicial authority in India.  
+What is an Indian work?  
+"Indian work" means a literary, dramatic or musical work,  
+o 
+the author of which is a citizen of India; or  
+o 
+which is first published in India; or  
+o 
+the author of which, in the case of an unpublished work is, at the time of the making 
+of the work, a citizen of India.  
+AUTHORSHIP AND OWNERSHIP 
+Whose rights are protected by copyright?  
+Copyright protects the rights of authors, i.e., creators of intellectual property in the form of literary, 
+musical, dramatic and artistic works and cinematograph films and sound recordings.  
+Who is the first owner of copyright in a work?  
+Ordinarily the author is the first owner of copyright in a work.  
+Who is an author?  
+ 
+In the case of a literary or dramatic work the author, i.e., the person who creates the work.  
+
+ 
+In the case of a musical work, the composer.  
+ 
+In the case of a cinematograph film, the producer.  
+ 
+In the case of a sound recording, the producer.  
+ 
+In the case of a photograph, the photographer.  
+ 
+In the case of a computer generated work, the person who causes the work to be created.  
+Who all have rights in a musical sound recording?  
+There are many right holders in a musical sound recording. For example, the lyricist who wrote the 
+lyrics, the composer who set the music, the singer who sang the song, the musician (s) who 
+performed the background music, and the person or company who produced the sound recording.  
+Is it necessary to obtain any licence or permission to use a musical sound recording for 
+public performance?  
+A sound recording generally comprises various rights. It is necessary to obtain the licences from each 
+and every right owner in the sound recording. This would ,inter alia, include the producer of the sound 
+recording, the lyricist who wrote the lyrics, and the musician who composed the music.  
+Who is the owner of copyright in a government work?  
+In the case of a government work, government shall, in the absence of any agreement to the 
+contrary, be the first owner of the copyright therein.  
+Who is the owner of copyright in the work of a public undertaking?  
+In the case of a work made or first published by or under the direction or control of any public 
+undertaking, such public undertaking shall, in the absence of any agreement to the contrary, be the 
+first owner of the copyright therein.  
+Who is the owner of copyright in works by journalists during the course of their employment? 
+In the case of a literary, dramatic or artistic work made by the author in the course of his employment 
+by the proprietor of a newspaper, magazine or similar periodical under a contract of service or 
+apprenticeship, for the purpose of publication in a newspaper, magazine or similar periodical, the said 
+proprietor shall, in the absence of any agreement to the contrary, be the first owner of the copyright in 
+the work in so far as the copyright relates to the publication of the work in any newspaper, magazine 
+or similar periodical, or to the reproduction of the work for the purpose of its being so published, but in 
+all other respects the author shall be the first owner of the copyright in the work.  
+Who is the owner of a work produced during the course of the author’s employment?  
+In the case of a work made in the course of the author’s employment under a contract of service or 
+apprenticeship, the employer shall, in the absence of any agreement to the contrary, be the first 
+owner of the copyright therein.  
+Who is the owner of the copyright in the case of a work produced for valuable consideration at 
+the instance of another person?  
+
+In the case of a photograph taken, or a painting or portrait drawn, or an engraving or a cinematograph 
+film made, for valuable consideration at the instance of any person, such person shall, in the absence 
+of any agreement to the contrary, be the first owner of the copyright therein.  
+Is copyright assignable?  
+Yes. The owner of the copyright in an existing work or the prospective owner of the copyright in a 
+future work may assign to any person the copyright either wholly or partially and either generally or 
+subject to limitations and either for the whole term of the copyright or any part thereof.  
+What is the mode of assigning copyright?  
+It shall be in writing signed by the assignor or by his duly authorised agent. It shall identify the specific 
+works and specify the rights assigned and the duration and territorial extent of such assignment. It 
+shall also specify the amount of royalty payable, if any, to the author or his legal heirs during the 
+currency of the assignment and the assignment shall be subject to revision, extension or termination 
+on terms mutually agreed upon by the parties.  
+Does an assignment lapse automatically?  
+Where the assignee does not exercise the rights assigned to him within a period of one year from the 
+date of assignment, the assignment in respect of such rights shall be deemed to have lapsed after the 
+expiry of the said period unless otherwise specified in the assignment.  
+What will be the period of assignment if not specifically stated in the assignments?  
+If the period of assignment is not stated, it shall be deemed to be five years from the date of 
+assignment.  
+What will be the territorial extent of the assignment if not specified in the assignment?  
+If the territorial extent of assignment of the rights is not specified, it shall be presumed to extend 
+within the whole of India.  
+Can an author relinquish copyright and, if so, how?  
+The author of a work may relinquish all or any of the rights comprising the copyright in the work by 
+giving notice in the prescribed form to the Registrar of Copyrights.  
+DIFFERENT RIGHTS 
+Are copyrights same for all classes of works? 
+No. The rights vary according to the class of work.  
+What are the rights in the case of a literary work?  
+In the case of a literary work (except computer programme), copyright means the exclusive right  
+ 
+To reproduce the work  
+ 
+To issue copies of the work to the public  
+
+ 
+To perform the work in public  
+ 
+To communicate the work to the public.  
+ 
+To make cinematograph film or sound recording in respect of the work  
+ 
+To make any translation of the work  
+ 
+To make any adaptation of the work.  
+Is translation of an original work also protected by copyright?  
+Yes. All the rights of the original work apply to a translation also.  
+Are computer programmes protected under Copyright Act?  
+Yes. Computer programmes are protected under the Copyright Act. They are treated as literary 
+works.  
+Are there any special rights in computer programmes? 
+Yes. In addition to all the rights applicable to a literary work, owner of the copyright in a computer 
+programme enjoys the rights to sell or give on hire or offer for sale or hire, regardless of whether such 
+a copy has been sold or given on hire on earlier occasion.  
+What are the rights in a dramatic work?  
+In the case of a dramatic work, copyright means the exclusive right  
+o 
+To reproduce the work  
+o 
+To communicate the work to the public or perform the work in public  
+o 
+To issue copies of the work to the public  
+o 
+To include the work in any cinematograph film  
+o 
+To make any adaptation of the work  
+o 
+To make translation of the work.  
+What are the rights in an artistic work?  
+In the case of an artistic work, copyright means the exclusive right  
+o 
+To reproduce the work  
+o 
+To communicate the work to the public  
+o 
+To issue copies of the work to the public  
+o 
+To include the work in any cinematograph film  
+o 
+To make any adaptation of the work.  
+
+What are the rights in a musical work?  
+In the case of a musical work, copyright means the exclusive right  
+o 
+To reproduce the work  
+o 
+To issue copies of the work to the public  
+o 
+To perform the work in public  
+o 
+To communicate the work to the public  
+o 
+To make cinematograph film or sound recording in respect of the work  
+o 
+To make any translation of the work  
+o 
+To make any adaptation of the work.  
+What are the rights in a cinematograph film?  
+In the case of a cinematograph film, copyright means the exclusive right  
+o 
+To make a copy of the film including a photograph of any image forming part thereof 
+o 
+To sell or give on hire or offer for sale or hire a copy of the film  
+o 
+To communicate the cinematograph film to the public.  
+What are the rights in a sound recording?  
+o 
+To make any other sound recording embodying it  
+o 
+To sell or give on hire, or offer for sale or hire, any copy of the sound recording  
+o 
+To communicate the sound recording to the public.  
+What is the right of reproduction?  
+The right of reproduction commonly means that no person shall make one or more copies of a work 
+or of a substantial part of it in any material form including sound and film recording without the 
+permission of the copyright owner. The most common kind of reproduction is printing an edition of a 
+work. Reproduction occurs in storing of a work in the computer memory.  
+What is the right of communication to the public?  
+Communication to the public means making any work available for being seen or heard or otherwise 
+enjoyed by the public directly or by any means of display or diffusion. It is not necessary that any 
+member of the public actually sees, hears or otherwise enjoys the work so made available. For 
+example, a cable operator may transmit a cinematograph film, which no member of the public may 
+see. Still it is a communication to the public. The fact that the work in question is accessible to the 
+public is enough to say that the work is communicated to the public.  
+What is an adaptation?  
+
+Adaptation involves the preparation of a new work in the same or different form based upon an 
+already existing work. The Copyright Act defines the following acts as adaptations:  
+a. Conversion of a dramatic work into a non dramatic work  
+b. Conversion of a literary or artistic work into a dramatic work  
+c. Re-arrangement of a literary or dramatic work  
+d. Depiction in a comic form or through pictures of a literary or dramatic 
+work  
+e. Transcription of a musical work or any act involving re-arrangement 
+or alteration of an existing work.  
+The making of a cinematograph film of a literary or dramatic or musical work is also an adaptation.  
+Can any person translate a work without the permission of the owner of the copyright in the 
+work?  
+No. A person cannot translate a work enjoying copyright without the permission of the copyright 
+owner.  
+Is there any copyright over news?  
+No. There is no copyright over news. However, there is copyright over the way in which a news item 
+is reported.  
+REGISTRATION OF COPYRIGHT 
+Is it necessary to register a work to claim copyright?  
+No. Acquisition of copyright is automatic and it does not require any formality. However, certificate of 
+registration of copyright and the entries made therein serve as prima facie evidence in a court of law 
+with reference to dispute relating to ownership of copyright.  
+What is the procedure for registration of a work under the Copyright Act,1957?  
+Copyright comes into existence as soon as a work is created and no formality is required to be 
+completed for acquiring copyright. However, facilities exist for having the work registered in the 
+Register of Copyrights maintained in the Copyright Office of the Department of Education. The entries 
+made in the Register of Copyrights serve as prima-facie evidence in the court of law. The Copyright 
+Office has been set up to provide registration facilities to all types of works and is headed by a 
+Registrar of Copyrights and is located at B.2/W.3, C.R. Barracks, Kasturba Gandhi Marg, New Delhi- 
+110 003, Tel: 338 4387  
+What are the guidelines regarding registration of a work under the Copyright Act?  
+Chapter VI of the Copyright Rules, 1956, as amended, sets out the procedure for the registration of a 
+work. Copies of the Act and Rules can be obtained from the Manager of Publications, Publication 
+Branch, Civil Lines, Delhi or his authorised dealers on payment. The procedure for registration is as 
+follows:  
+
+a. Application for registration is to be made on Form IV ( Including Statement of Particulars and 
+Statement of Further Particulars) as prescribed in the first schedule to the Rules ;  
+b. Separate applications should be made for registration of each work;  
+c. Each application should be accompanied by the requisite fee prescribed in the second 
+schedule to the Rules ; and  
+d. The applications should be signed by the applicant or the advocate in whose favour a 
+Vakalatnama or Power of Attorney has been executed. The Power of Attorney signed by the 
+party and accepted by the advocate should also be enclosed.  
+Each and every column of the Statement of Particulars and Statement of Further Particulars should 
+be replied specifically.  
+Both published and unpublished works can be registered. Copyright in works published before 21st 
+January, 1958, i.e., before the Copyright Act, 1957 came in force, can also be registered, provided 
+the works still enjoy copyright. Three copies of published work may be sent along with the application. 
+If the work to be registered is unpublished, a copy of the manuscript has to be sent along with the 
+application for affixing the stamp of the Copyright Office in proof of the work having been registered. 
+In case two copies of the manuscript are sent, one copy of the same duly stamped will be returned, 
+while the other will be retained, as far as possible, in the Copyright Office for record and will be kept 
+confidential. It would also be open to the applicant to send only extracts from the unpublished work 
+instead of the whole manuscript and ask for the return of the extracts after being stamped with the 
+seal of the Copyright Office.  
+When a work has been registered as unpublished and subsequently it is published, the applicant may 
+apply for changes in particulars entered in the Register of Copyright in Form V with prescribed fee.  
+Application for registration of copyright alongwith statement of particulars and instructions for filling up 
+the statement of particulars are at Appendix - I.  
+TERM OF COPYRIGHT 
+Is copyright protected in perpetuity?  
+No. It is protected for a limited period of time.  
+What is the term of protection of copyright?  
+The general rule is that copyright lasts for 60 years. In the case of original literary, dramatic, musical 
+and artistic works the 60-year period is counted from the year following the death of the author. In the 
+case of cinematograph films, sound recordings, photographs, posthumous publications, anonymous 
+and pseudonymous publications, works of government and works of international organisations, the 
+60-year period is counted from the date of publication.  
+ADMINISTRATION OF COPYRIGHT LAW 
+Is there any advisory body on copyright matters?  
+Yes. The government has set up a Copyright Enforcement Advisory Council (CEAC). The present 
+composition of the CEAC is at Appendix- II.  
+
+Are there special courts for copyright?  
+No. There are no special courts for copyright cases. The regular courts try these cases. There is a 
+Copyright Board to adjudicate certain cases pertaining to copyright.  
+What are the powers of Copyright Board?  
+The Copyright Act provides for a quasi-judicial body called the Copyright Board consisting of a 
+Chairman and two or more, but not exceeding fourteen, other members for adjudicating certain kinds 
+of copyright cases. The Chairman of the Board is of the level of a judge of a High Court. The Board 
+has the power to:  
+i. 
+hear appeals against the orders of the Registrar of 
+Copyright;  
+ii. 
+hear applications for rectification of entries in the Register 
+of Copyrights;  
+iii. 
+adjudicate upon disputes on assignment of copyright;  
+iv. 
+grant compulsory licences to publish or republish works (in 
+certain circumstances);  
+v. 
+grant compulsory licence to produce and publish a 
+translation of a literary or dramatic work in any language 
+after a period of seven years from the first publication of 
+the work;  
+vi. 
+hear and decide disputes as to whether a work has been 
+published or about the date of publication or about the term 
+of copyright of a work in another country;  
+vii. 
+fix rates of royalties in respect of sound recordings under 
+the cover-version provision; and  
+viii. 
+fix the resale share right in original copies of a painting, a 
+sculpture or a drawing and of original manuscripts of a 
+literary or dramatic or musical work.  
+The present composition of the Board is at Appendix - III.  
+Has the Registrar of Copyrights any judicial powers?  
+Yes. The Registrar of Copyrights has the powers of a civil court when trying a suit under the Code of 
+Civil Procedure in respect of the following matters, namely,  
+a. summoning and enforcing the attendance of any person and examining him on oath;  
+b. requiring the discovery and production of any document;  
+c. receiving evidence on affidavit;  
+
+d. issuing commissions for the examination of witnesses or documents;  
+e. requisitioning any public record or copy thereof from any court or office;  
+f. any other matters which may be prescribed.  
+PERFORMER’S RIGHTS 
+Who is a performer?  
+As per the Indian Copyright Act, a "Performer" includes an actor, singer, musician, dancer, acrobat, 
+juggler, conjurer, snake charmer, a person delivering a lecture or any other person who makes a 
+performance.  
+What is a performance?  
+"Performance" in relation to performer’s right, means any visual or acoustic presentation made live by 
+one or more performers.  
+What are the rights of a performer?  
+A performer has the following rights in his/her performance:  
+ 
+Right to make a sound recording or visual recording of the performance;  
+ 
+Right to reproduce the sound recording or visual recording of the performance;  
+ 
+Right to broadcast the performance;  
+ 
+Right to communicate the performance to the public otherwise than by broadcast.  
+What is the term of protection of performer’s rights?  
+Performer’s rights subsist for 25 years.  
+What are the rights of a performer in a cinematograph film?  
+Once a performer has consented for incorporation of his performance in a cinematograph film, he 
+shall have no more performer’s rights to that performance.  
+BROADCASTER’S RIGHTS 
+What is a broadcast?  
+"Broadcast" means communication to the public:  
+ 
+by any means of wireless diffusion, whether in any one or more of the forms of signs, sounds 
+or visual images; or  
+ 
+by wire.  
+What are the rights of a broadcasting organization?  
+The rights of a broadcasting organization with reference to a broadcast are :  
+
+ 
+right to re-broadcast the broadcast;  
+ 
+right to cause the broadcast to be heard or seen by the public on payment of any charges;  
+ 
+right to make any sound recording or visual recording of the broadcast;  
+ 
+right to make any reproduction of such sound recording or visual recording where such initial 
+recording was done without licence or, where it was licensed, for any purpose not envisaged 
+by such licence; and  
+ 
+right to sell or hire to the public, or offer for such sale or hire, any sound recording or visual 
+recording of the broadcast.  
+What is the term of protection of broadcaster’s rights?  
+The term of protection for broadcaster’s rights is 25 years.  
+FOREIGN WORKS 
+Is copyright of foreign works protected in India?  
+Yes. Copyrights of works of the countries mentioned in the International Copyright Order are 
+protected in India, as if such works are Indian works.  
+Does copyright subsist in a foreign work?  
+Copyright of nationals of countries who are members of the Berne Convention for the Protection of 
+Literary and Artistic Works, Universal Copyright Convention and the TRIPS Agreement are protected 
+in India through the International Copyright Order. A list of such countries is at Appendix- IV.  
+Which are the international copyright conventions of which India is a member?  
+Copyright as provided by the Indian Copyright Act is valid only within the borders of the country. To 
+secure protection to Indian works in foreign countries, India has become a member of the following 
+international conventions on copyright and neighbouring (related) rights:  
+i. 
+Berne Convention for the Protection of Literary and Artistic works.  
+ii. 
+Universal Copyright Convention.  
+iii. 
+Convention for the Protection of Producers of Phonograms against 
+Unauthorised Duplication of their Phonograms.  
+iv. 
+Multilateral Convention for the Avoidance of Double Taxation of 
+Copyright Royalties.  
+v. 
+Trade Related Aspects of Intellectual Property Rights (TRIPS) 
+Agreement.  
+COLLECTIVE ADMINISTRATION OF COPYRIGHTS 
+What is collective administration of copyright?  
+Collective administration of copyright is a concept where management and protection of copyright in 
+
+works are undertook by a society of owners of such works. Obviously no owner of copyright in any 
+work can keep track of all the uses others make of his work. When he becomes a member of a 
+national copyright society, that society, because of its organisational facilities and strength, is able to 
+keep a better vigil over the uses made of that work throughout the country and collect due royalties 
+from the users of those works. Because of the country’s membership in international conventions, the 
+copyright societies are able to have reciprocal agreements with similar societies in other countries for 
+collecting royalties for the uses of Indian works in those countries. From this it can automatically be 
+inferred that it will be in the interests of copyright owners to join a collective administration 
+organisation to ensure better protection to the copyright in their works and for reaping optimum 
+economic benefits from their creations. Users of different types of works also find it easy to obtain 
+licences for legal exploitation of the works in question, though the collective administrative society.  
+What is a copyright society?  
+A copyright society is a registered collective administration society. Such a society is formed by 
+copyright owners. The minimum membership required for registration of a society is seven. Ordinarily, 
+only one society is registered to do business in respect of the same class of work. A copyright society 
+can issue or grant licences in respect of any work in which copyright subsists or in respect of any 
+other right given by the Copyright Act.  
+What are the functions of a copyright society?  
+A copyright society may:  
+i. 
+Issue licences in respect of the rights administered by the society.  
+ii. 
+Collect fees in pursuance of such licences.  
+iii. 
+Distribute such fees among owners of copyright after making 
+deductions for the administrative expenses.  
+Are there any registered copyright societies in India?  
+Yes. The following are the registered copyright societies in India:  
+i. 
+Society for Copyright Regulation of Indian Producers for Film and Television 
+(SCRIPT) 135 Continental Building, Dr. A.B. Road, Worli, Mumbai 400 018, (for 
+cinematograph and television films).  
+ii. 
+The Indian Performing Right Society Limited (IPRS), 208, Golden Chambers, 2nd 
+Floor, New Andheri Link Road, Andheri (W), Mumbai- 400 058 (for musical works).  
+iii. 
+Phonographic Performance Limited (PPL) Flame Proof Equipment Building, B.39, Off 
+New Link Road, Andheri (West), Mumbai 400 053 (for sound recordings).  
+Is it necessary to obtain licences from more than one society for exploitation of a work?  
+In many cases, it is necessary to obtain licences from more than one society. For example, playing of 
+the sound recording of music may involve obtaining a licence from the IPRS for the public 
+performance of the music as well as a licence from the PPL for playing the records, if these societies 
+have the particular work in their repertoire.  
+
+MORAL RIGHTS 
+What are the moral rights of an author?  
+The author of a work has the right to claim authorship of the work and to restrain or claim damages in 
+respect of any distortion, mutilation, modification or other acts in relation to the said work which is 
+done before the expiration of the term of copyright if such distortion, mutilation, modification or other 
+act would be prejudicial to his honour or reputation. Moral rights are available to the authors even 
+after the economic rights are assigned.  
+Do the author’s moral rights remain after assignment of copyright?  
+Yes. The moral rights are independent of the author’s copyright and remains with him even after 
+assignment of the copyright.  
+Will failure to display a work infringe the moral rights of an author?  
+No. Failure to display a work or to display it to the satisfaction of the author shall not be deemed to be 
+an infringement of the moral rights of the author.  
+COPYRIGHT INFRINGEMENTS 
+Which are the common copyright infringements?  
+The following are some of the commonly known acts involving infringement of copyright:  
+i. 
+Making infringing copies for sale or hire or selling or letting them for 
+hire;  
+ii. 
+Permitting any place for the performance of works in public where 
+such performance constitutes infringement of copyright;  
+iii. 
+Distributing infringing copies for the purpose of trade or to such an 
+extent so as to affect prejudicially the interest of the owner of 
+copyright ;  
+iv. 
+Public exhibition of infringing copies by way of trade; and  
+v. 
+Importation of infringing copies into India.  
+Has the owner of an auditorium or a hall any liability while renting out the place for 
+communication to the public of a copyrighted work?  
+Yes. If a person permits for profit any place to be used for the communication of a work to the public, 
+where such communication constitutes an infringement of the copyright in the work, unless he was 
+not aware and had no reasonable ground for believing that such communication to the public would 
+be an infringement of copyright, he will be deemed to have committed an offence under the Copyright 
+Act.  
+What are the civil remedies for copyright infringement?  
+A copyright owner can take legal action against any person who infringes the copyright in the work. 
+The copyright owner is entitled to remedies by way of injunctions, damages and accounts.  
+
+Which is the court having jurisdiction over civil remedies in copyright cases?  
+The District Court concerned has the jurisdiction in civil suits regarding copyright infringement.  
+What is the proof of the authorship of a work?  
+Where, in the case of a literary, dramatic, musical or artistic work, a name purporting to be that of the 
+author or the publisher appears on copies of the work as published, or, in the case of an artistic work 
+appeared on the work where it was made, the person whose name so appears or appeared shall, in 
+any proceeding in respect of copyright in such work, be presumed, unless the contrary is proved, to 
+be the author or the publisher of the work, as the case may be.  
+What are the rights of owner over infringing copies and equipments used for making 
+infringing copies?  
+All infringing copies of any work in which copyright subsists and all plates used or intended to be used 
+for the production of such infringing copies shall be deemed to be the property of the owner of the 
+copyright.  
+What are the remedies in the case of groundless threat to legal proceedings?  
+Where any person claiming to be the owner of copyright in any work, by circulars, advertisements or 
+otherwise, threatens any other person with any legal proceedings or liability in respect of an alleged 
+infringement of copyright, any person aggrieved thereby may institute a declaratory suit that the 
+alleged infringement to which the threats related was not in fact an infringement of any legal rights of 
+the person making such threats and may in any such suit –  
+a. obtain an injunction against the continuance of such threats; and  
+b. recover such damages, if any, as he has sustained by reason of such threats.  
+Is copyright infringement a criminal offence?  
+Yes. Any person who knowingly infringes or abets the infringement of the copyright in any work 
+commits criminal offence under Section 63 of the Copyright Act. 
+ 
+What are the punishments for a criminal offence under the copyright law?  
+The minimum punishment for infringement of copyright is imprisonment for six months with the 
+minimum fine of Rs. 50,000/-. In the case of a second and subsequent conviction the minimum 
+punishment is imprisonment for one year and fine of Rs. one lakh.  
+Is copyright infringement a cognizable offence?  
+Any police officer, not below the rank of a sub inspector, may, if he is satisfied that an offence in 
+respect of the infringement of copyright in any work has been, is being, or is likely to be committed, 
+seize without warrant, all copies of the work and all plates used for the purpose of making infringing 
+copies of the work, wherever found, and all copies and plates so seized shall, as soon as practicable 
+be produced before a magistrate.  
+How are the seized infringing copies or plates disposed off?  
+
+The Court may order delivery to the owner of the copyright all such copies or plates.  
+Who is responsible for copyright offence committed by a company?  
+Every person who at the time the offence was committed was in charge of, and was responsible to 
+the company for, the conduct of the business of the company, as well as the company shall be 
+deemed to be guilty of such offence and shall be liable to be proceeded against.  
+Which court can try copyright offence cases?  
+No court inferior to that of a Metropolitan Magistrate or a Judicial Magistrate of the first class shall try 
+any offence under the Copyright Act.  
+Can a police officer seize infringing goods without warrant?  
+Yes. A police officer not below the rank of sub inspector can seize without warrant all infringing copies 
+of the work.  
+ 
+APPENDICES 
+Appendix-I 
+Form IV - Application for Registration of Copyright  
+To  
+The Registrar of Copyrights 
+Copyright Office  
+New Delhi- 110 001. 
+Sir,  
+In accordance with Section 45 of the Copyright Act, 1957 (14 of 1957), I hereby apply for registration 
+of Copyright and request you that entries may be made in the Register of Copyrights in the enclosed 
+Statement of Particulars sent herewith in triplicate.  
+I also send herewith completed the Statement of Further Particulars relating to the work.  
+(For Literary, Dramatic, Musical and Artistic works only) 
+2. In accordance with Rule 16 of the Copyright Rules, 1958, I have sent by prepaid registered post 
+copies of this letter and of the enclosed Statement(s) to other parties concerned, as shown below:  
+Name and addresses of the parties Date of dispatch 
+See columns 7, 11, 12 and 13 of the Statement of Particulars and the party referred in Col. 2 (e) of 
+the Statement of Further Particulars.)  
+3. The prescribed fee has been paid, as per details below:- 
+
+4. Communications on this subject may be addressed to: -  
+5. I hereby declare that to the best of my knowledge and belief, no person, other than to whom a 
+notice has been sent to as per paragraph 2 above has any claim or interest or dispute to my copyright 
+of this work or to its use by me.  
+6. I hereby verify that the particulars given in this Form and in the Statement of Particulars and 
+Statement of Further Particulars are true to the best of my knowledge, belief and information and 
+nothing has been concealed therefrom.  
+Yours faithfully,
+Signature by the applicant 
+List of enclosures:  
+Place:  
+Date:  
+Statement of Particulars  
+(to be sent in triplicate) 
+1. Registration No. (to be filled in by the Copyright Office)  
+2. Name, address & nationality of the Applicant 
+3. Nature of the Applicant’s interest in the Copyright of the work  
+4. Class and description of the work 
+5. Title of the work  
+6. Language of the work 
+7. Name, address & Nationality of the Author and if the author is deceased, the date of decease  
+8. Whether the work is published or unpublished 
+9. Year and Country of first publication (Name, address and nationality of the publisher)  
+10. Years and countries of subsequent publications if any, and name, addresses and nationalities of 
+the publishers 
+11. Names, address and nationalities of the owners of various rights comprising the copyright in the 
+workand the extent of rights held by each, together with the particulars of assignments and licence, if 
+any 
+12. Names, addresses and nationalities of other persons if any, authorised to assign or licence the 
+rights comprising the copyrights 
+13. If the work is ‘Artistic’ the location of the original work, including name and address and nationality 
+of the person in            possession of the work, (in case of an architectural work, the year of 
+
+completion of the work should also be shown). 
+13A. If the work is an Artistic work which is used or is capable of being used in relation to any goods, 
+the application should           include a certification from the Registrar of Trade Marks in terms of the 
+proviso to Sub-Section (i) of Section 45 of the           Copyright Act, 1957. 
+14. Remarks, if any 
+Signature of the Applicant
+Place:  
+Date:  
+ 
+Statement of Further Particulars 
+(To be sent in triplicate)  
+(For Literary, Dramatic, Musical and Artistic works only)  
+1. Is the work to be registered  
+a. an original work?  
+b. a translation of a work in the public domain?  
+c. A translation of a work in which Copyright subsists?  
+d. an adaptation of a work in the public domain?  
+e. an adaptation of a work in which Copyright subsists?  
+2. If the work is a translation or adaptation of a work in which Copyright subsists:  
+a. Title of the original work  
+b. Language of the original work  
+c. Name, address and nationality of the author of the original  
+work and if the author is deceased, the date of decease  
+d. Name, address and nationality of the publisher, if any,  
+of the original work  
+e. Particulars of the authorization for a translation or adaptation  
+including the name, address and nationality of the party authorizing: 
+3. Remarks, if any 
+ 
+Signature  
+Place: 
+
+Date:                                                                                                                                         
+Instructions for filling up the Statement of Particulars annexed to Form IV for the Registration of 
+Copyrights 
+ 
+Col.3:- State whether the applicant is the author or publisher of the work or whether he/she is the 
+owner assignee or licencee of any right comprising the copyright in the work or whether he has any 
+other interest in the work.  
+ 
+Col.4:- State whether the work is "Literary work" or "Dramatic Work" or "Musical work" or "Computer 
+Software work" or "Artistic Work" or "Cinematograph Film" or "Sound Recording", [see sub- section (i) 
+of Section 13]. Describe in brief the nature of the work (i.e. Drama, Novel, Biography, Poems, 
+Lecturers Opera, Painting, Engraving, Photograph, Disco tapes, etc.)  
+ 
+Col. 5  In regard to a work, a title must be given. 
+ 
+Col. 6  If the work is in more than one language, all the languages should be shown. 
+Col. 7  For the definition of Author see clause ‘d’ of Section 2. Moreover, irrespective of the 
+personwho gave the ideas or suggestions, the author is the person who has actually drawn or 
+executed the work in question. 
+ 
+Col. 8  For definition of Publication see Section 3 of the Act, and if the work is posthumous work, see 
+sub-section (2) of Section 24.  
+ 
+Col. 9  If a work is published simultaneously in more than one country, state particulars of countries in 
+which it is published and the exact date of publication (and not merely the year of publication) in each 
+country. For meaning of simultaneous publication see section 5.  
+ 
+Col. 10 In case of subsequent publication, state briefly the changes, if any, made in the first 
+publication.  
+ 
+Col.11  For the rights comprising the Copyright, see Section 14. If the rights are owned separately by 
+different persons the rights of each person should be stated separately, including the extent of rights 
+held by each person. In the case of a ‘Cinematograph Film’ or ‘Sound Recording’ also state in full 
+particulars (viz. full names, addresses and nationalities) of the owners of Copyright of the work 
+recorded in the Sound Recording like the composers, lyricists, story writers, etc.  
+ 
+Col. 2 State the Particulars of the persons other than those mentioned in Col. 11, authorized to assign 
+or licence the rights comprising the copyrights, if any.  
+ 
+Col.13 State where and with whom the original work is located. This information is required to be 
+supplied in case of artistic work as defined in Section 2 (c). 
+ 
+Col.13A In case an artistic work is used or is capable of being used in relation to any goods, a 
+Search Certificate from the Trade Marks Registry u/s 45 (1) of the Copyright Act, 1957 as amended 
+from time to time, has to be procured, and enclosed in original with the application for registration of 
+Copyright.  
+THE APPLICANTS/THEIR LEGAL REPRESENTATIVES MAY VISIT COPYRIGHT OFFICE 
+
+BETWEEN 2.30 PM AND 4.00 PM ON ANY WORKING DAY.  
+Second schedule to the Copyright Rules, 1958 (As amended from time to time) enlisting 
+various fee payable under the Copyright Act, 1957. 
+For a licence to republish a Literary, Dramatic, Musical or Artistic work (Section 31, 31-A and 32-A)
+ 
+Rs. 400/- per 
+work 
+For licence to republish a Cinematograph Film (Section 31)  
+Rs. 600/- per 
+work 
+For a licence to republish a sound recording (Section 31) 
+Rs. 400/- per 
+work 
+For a licence to perform an Indian work in public or to communicate the work to the public by 
+Broadcast (Section 31) 
+Rs. 200/- per 
+work 
+For an application for a licence to produce and publish a translation of a Literary or Dramatic work in 
+any Language ) (Section 32 & 32-A 
+Rs. 200/- per 
+work 
+For an application for registration or copyright in a: 
+  
+  Literary, Dramatic, Musical or Artistic work  
+Rs. 50/- per 
+work 
+  Provided that in respect of a Literary or Artistic work which is used or is capable of being used in 
+relation to any goods (Section 45) 
+Rs. 400/- per 
+work 
+For an application for change in particulars of copyright entered in the Register of Copyrights in 
+respect of a:- 
+  
+  Literary, Dramatic, Musical or Artistic work  
+Rs. 50/- per 
+work 
+  Provided that in respect of a literary or Artistic work which is used or is capable of being used in 
+relation to any goods (Section 45)     
+Rs. 200/- per 
+work 
+For an application for registration of Copyright in a Cinematograph Film (Section 45)      Rs. 600/- 
+per work 
+For an application for registration of change in particulars of copyright entered in the Register of 
+Copyrights in respect of Cinematograph film (Section 45)        
+Rs. 400/- per 
+work 
+For an application for registration of copyright in a Sound Recording (Section 45)         Rs. 400/- per 
+work 
+For an application for registration of changes in particulars of copyright entered in the Register of 
+Copyrights in respect of Sound Recording (Section 45)                
+Rs. 200/- per 
+work 
+For taking extracts from the indexes (Section 47)  
+Rs. 20/- per 
+work 
+For taking extracts from the Register of Copyrights (Section 47).        
+ Rs. 20/- per 
+work 
+ For a certified copy of an extract from the Register of Copyrights of the indexes (Section 47)             
+ 
+Rs. 20/- per 
+work 
+For a certified copy of any other public document in the custody of the Register of Copyright or the 
+Copyright Board   
+ Rs. 20/- per 
+
+work 
+For an application for prevention of importation of infringing copies (Section 53) per place of entry
+ 
+Rs. 400/- per 
+work 
+Appendix -II 
+Composition of Copyright Enforcement Advisory Council 
+Chairman  
+ 
+Additional Secretary, Department of Education, Ministry of Human Resource Development (Ex-officio)
+Vice-Chairman 
+ 
+Joint Secretary in-charge of Book Promotion and Copyright Division, Department of Education (Ex-
+officio) 
+Members 
+ 
+Joint Secretary (Films), Ministry of Information & Broadcasting (Ex-officio) 
+Joint Secretary, Department of Electronics (Ex-officio) 
+Director General of Police, Government of Uttar Pradesh 
+Director General of Police, Government of Andhra Pradesh 
+Director General of Police, Government of Gujarat 
+Director General of Police, Government of Punjab 
+Director General of Police, Administration of Chandigarh 
+Representative of the Federation of Indian Publishers, New Delhi. 
+Representative of Authors’ Guild of India, New Delhi. 
+Representative of the Federation of Publishers’ and Booksellers’ Associations in India, New Delhi. 
+Representative of Film Federation of India, Mumbai 
+Representative of National Association of Software Service Companies, New Delhi 
+Representative of Phonographic Performance Limited, Mumbai. 
+Representative of Indian Performing Right Society Ltd., Mumbai 
+Representative of Cine Artistes Association, Mumbai 
+Appendix -III
+Composition of Copyright Board 
+Chairman 
+ 
+Mr.S. Ramaiah  
+(Former Law Secretary to the Government of India) 
+Member  
+Joint Secretary-in-charge of Copyrights Ministry of Human Resource Development Department of 
+Secondary Education and Higher Education, Government of India  
+
+Joint Secretary and Legal Adviser in the Ministry of Law, Justice and Company Affairs) dealing with 
+Department of Secondary Education and Higher Education, Government of India  
+Law Secretary, Government of Kerala  
+Law Secretary, Government of Karnataka  
+Law Secretary, Government of Rajasthan  
+Law Secretary, Government of West Bengal  
+Law Secretary, Government of Meghalaya  
+Law Secretary, Government of Maharashtra  
+Law Secretary, Government of Uttar Pradesh  
+Law Secretary, Government of Madhya Pradesh  
+ 
+Appendix-IV
+List of Countries included in the International Copyright Order, 1999 
+I. Berne Convention Countries which have ratified/accepted/acceded to the 1971 Text of the 
+Convention  
+ 
+Albania, Argentina,  Australia, Austria, Bahamas, Bahrain, Barbados, Belarus, Benin, Bolivia, Bosnia 
+& Herzogovina, Botswana, Brazil, Bulgaria, Burkina Faso, Cameroon, Cape Verde, Central African 
+Republic, Chile, China, Colombia, Congo, Costa Rica , Cote d’Ivoire, Croatia , Cuba, Cyprus, Czech 
+Republic, Democratic Republic of the Congo, Denmark, Dominican Republic, Ecuador, Egypt, El 
+Salvador, Equatorial Guinea, Estonia, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, 
+Greece, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Holy See, Honduras ,Hungary, Iceland, 
+Indonesia, Italy, Jamaica, Japan, Kenya, Latvia, Lesotho, Liberia, Libya, Lithuania , Luxembourg, 
+Malawi, Malaysia, Mali, Malta, Mauritania, Mauritius, Mexico, Monaco, Mongolia, Morocco, Namibia, 
+Netherlands, Niger, Nigeria, Norway, Panama, Paraguay, Peru, Philippines, Poland, Portugal, 
+Republic of Korea, Republic of Moldova, Russian Federation, Rwanda, Saint Kitts & Nevis, Saint 
+Lucia, Saint Vincent and the Grenadines, Senegal, Slovakia, Slovenia, South Africa, Spain, Sri 
+Lanka, Suriname ,Sweden, Switzerland, Thailand, The Former Yugoslavia Republic of Macedonia, 
+Togo, Trinidad and Tobago, Tunisia, Turkey, Ukraine, United Kingdom, United Republic of Tanzania, 
+United States of America, Uruguay, Venezuela, Yugoslavia, Zambia, Zimbabwe (Total - 116 
+Countries) 
+II. Berne Convention Countries which are yet to ratify/accept/accede to the 1971 Text of 
+Convention   
+Belgium,Canada,Chad,Fiji,Ireland,Israel,Lebanon,Liechtenstein,Madagascar,New 
+Zealand,Pakistan,Romania 
+ 
+III. Universal Copyright Convention Countries which have Ratified/Accepted/Acceded to the 
+1971 Text of the  Convention Convention               
+
+Algeria, Australia, Austria, Bahamas, Bangladesh, Barbados, Bolivia, Bosnia &Herzegovina, Brazil, 
+Bulgaria, Cameroon, China, Colombia, Costa Rica, Croatia, Cyprus, Czech Republic, Denmark, 
+Dominican Republic, Ecuador, El Salvador, Finland, France, Germany, Guinea, Holy see , Hungary, 
+Italy, Japan, Kenya, Mexico, Monaco, Morocco, Netherlands, Niger, Norway, Panama, Peru, Poland, 
+Portugal, Republic of Korea, Russian Federation, Rwanda, Saint Vincent and the Grenadines, Saudi 
+Arabia, Senegal, Slovakia, Slovenia, Spain, Sri Lanka, Sweden, Switzerland, Trinidad and Tobago, 
+Tunisia, United Kingdom, United States of America, Uruguay, Yugoslavia,  
+IV. Universal Copyright Convention Countries which are yet to Ratify/Accept/Accede to the 
+1971 Text of the Convention 
+Andorra, Argentina, Belarus, Belgium, Belize, Cambodia, Canada, Chile, Cuba, Fiji, Ghana, Greece, 
+Guatemala, Haiti, Iceland, Ireland, Israel, Kazakhistan, Lao People’s, Lebanon, Liberia, Liechtenstein, 
+Luxembourg, Malawi, Malta, Mauritius, New Zealand, Nicaragua, Nigeria, Pakistan, Paraguay, 
+Philippines, Tajikistan, Ukraine, Venezuela, Zambia Democratic Republic  
+V. Phonograms Convention Countries 
+Argentina, Australia, Austria, Barbados, Brazil, Bulgaria, Burkina Faso, Chile, China, Colombia, Costa 
+Rica, Cyprus, Czech Republic, Democratic Republic of Congo, Denmark, Ecuado, Egypt, El 
+Salvador, Fiji, Finland, France, Germany, Greece, Guatemala, Holy See , Honduras, Hungary, Israel, 
+Italy, Jamaica, Japan, Kenya, Latvia, Luxembourg, Mexico, Monaco, Netherlands, New Zealand, 
+Norway, Panama, Paraguay, Peru, Republic of Korea, Russian Federation, Slovakia, Slovenia, 
+Spain, Sweden, Switzerland, The former Yugoslav Republic of Macedonia, Trinidad and Tobago, 
+United Kingdom,  
+United States of America, Uruguay, Venezuela, 
+VI. Countries Members of the World Trade Organization 
+Angola, Antigua and Barbuda, Argentina, Australia, Austria, Bahrain,Bangladesh, Barbados,Belgium, 
+Belize,Benin,Bolivia, Botswana, Brazil, Brunei, Darussalam, Bulgaria, Burkina Faso, Burundi, 
+Cameroon, Canada, Central African Republic, Chad, Chile, Colombia, Congo, Costa Rica, Cote 
+d’Ivoire, Cuba, Cyprus, Czech Republic, Democratic Republic of the Congo, Denmark, Djibouti, 
+Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, European Community, Fiji, Finland, 
+France, Gabon, Gambia, Germany, Ghana, Greece, Grenada, Guatemala , Guinea, Guinea-Bissau, 
+Guyana, Haiti, Honduras, Hong Kong, Hungary, Iceland, Indonesia, Ireland, Israel, Italy, Jamaica, 
+Japan, Kenya, Korea, Kuwait, Lesotho, Liechtenstein, Luxembourg, Macau, Madagascar, Malawi, 
+Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Mongolia, Morocco, Mozambique, 
+Myanmar, Namibia,   Netherlands, New Zealand, Nicaragua, Niger, Nigeria, Norway, Pakistan, Papua 
+New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Romania, Rwanda, Saint Kitts & 
+Nevis, Saint Lucia, Saint Vincent and the Grenadines, Senegal, Sierra Leone, Singapore, Slovak 
+Republic, Slovenia, Solomon Islands, South Africa, Spain, Sri Lanka, Suriname, Swaziland, Sweden, 
+Switzerland, Tanzania, Thailand, Togo, Trinidad and Tobago, Tunisia, Turkey, Uganda, United Arab 
+Emirates, United Kingdom, United States of America, Uruguay, Venezuela, Zambia, Zimbabwe  
+  
+ 

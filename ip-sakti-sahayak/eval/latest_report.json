@@ -1,0 +1,693 @@
+{
+  "mode": "offline; BM25; no audit writes",
+  "corpus_version": "5075e2e0290a52dc",
+  "n": 40,
+  "passed": 40,
+  "abstain_ok": 40,
+  "cite_ok": 27,
+  "recall_ok": 27,
+  "n_answerable": 27,
+  "n_abstain": 13,
+  "all_scopes_correct": true,
+  "rows": [
+    {
+      "id": "e01",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "patents_3d",
+        "patents_3e",
+        "patents_3i",
+        "patents_3j",
+        "patents_3p",
+        "patents_invention",
+        "patents_rights"
+      ],
+      "confidence": 0.956
+    },
+    {
+      "id": "e02",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "patents_rules_2024_rfe"
+      ],
+      "confidence": 0.829
+    },
+    {
+      "id": "e03",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "patents_rules_2024_form27"
+      ],
+      "confidence": 0.983
+    },
+    {
+      "id": "e04",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "phytopharma_gsr918"
+      ],
+      "confidence": 0.996
+    },
+    {
+      "id": "e05",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "fssai_aahar"
+      ],
+      "confidence": 0.846
+    },
+    {
+      "id": "e06",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "bda_origin_2025",
+        "bda_s7_exemption"
+      ],
+      "confidence": 0.993
+    },
+    {
+      "id": "e07",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "bda_ipr_forms",
+        "bda_s6"
+      ],
+      "confidence": 0.984
+    },
+    {
+      "id": "e08",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "dmr_act",
+        "rule_170"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "e09",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "current_status_unverified",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "rule_170"
+      ],
+      "confidence": 0.969
+    },
+    {
+      "id": "e10",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "gi_act"
+      ],
+      "confidence": 0.981
+    },
+    {
+      "id": "e11",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "tm_act"
+      ],
+      "confidence": 0.802
+    },
+    {
+      "id": "e12",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "case_turmeric"
+      ],
+      "confidence": 0.991
+    },
+    {
+      "id": "e13",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "current_status_unverified",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "wipo_gratk"
+      ],
+      "confidence": 0.999
+    },
+    {
+      "id": "e14",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "pct"
+      ],
+      "confidence": 0.994
+    },
+    {
+      "id": "e15",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "eu_thmpd"
+      ],
+      "confidence": 0.995
+    },
+    {
+      "id": "e16",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "budapest"
+      ],
+      "confidence": 0.996
+    },
+    {
+      "id": "e17",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "trips_27_3b"
+      ],
+      "confidence": 0.849
+    },
+    {
+      "id": "e18",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "translation_unavailable",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "e19",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "patents_3d"
+      ],
+      "confidence": 0.995
+    },
+    {
+      "id": "e20",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "bda_ppv_exception",
+        "patents_3j",
+        "ppvfr_act"
+      ],
+      "confidence": 0.982
+    },
+    {
+      "id": "e21",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "out_of_scope",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "e22",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "individual_legal_advice",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "e23",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "out_of_scope",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "e24",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "dc_3a"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "e25",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "dmr_act",
+        "rule_170"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "e26",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "jurisdiction_mismatch",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "e27",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "jurisdiction_mismatch",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "e28",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "pct"
+      ],
+      "confidence": 0.994
+    },
+    {
+      "id": "e29",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "designs_act"
+      ],
+      "confidence": 0.956
+    },
+    {
+      "id": "e30",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "copyright_act",
+        "copyright_scope"
+      ],
+      "confidence": 0.969
+    },
+    {
+      "id": "e31",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "madrid"
+      ],
+      "confidence": 0.982
+    },
+    {
+      "id": "e32",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "hague"
+      ],
+      "confidence": 0.996
+    },
+    {
+      "id": "e33",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "bda_origin_2025",
+        "bda_s7_exemption"
+      ],
+      "confidence": 0.993
+    },
+    {
+      "id": "e34",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "source_review_required",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "case_neem"
+      ],
+      "confidence": 0.977
+    },
+    {
+      "id": "e35",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "source_review_required",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "dc_new_drug"
+      ],
+      "confidence": 0.975
+    },
+    {
+      "id": "e36",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "current_status_unverified",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "tkdl"
+      ],
+      "confidence": 0.994
+    },
+    {
+      "id": "e37",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "medical_advice",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.219
+    },
+    {
+      "id": "e38",
+      "passed": true,
+      "expected_abstention": true,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": "insufficient_evidence",
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "e39",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "patents_3p"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "e40",
+      "passed": true,
+      "expected_abstention": false,
+      "abstention_ok": true,
+      "reason_ok": true,
+      "reason": null,
+      "citation_match": true,
+      "retrieval_recall": true,
+      "scope_ok": true,
+      "missing_terms": [],
+      "unexpected_terms": [],
+      "citations": [
+        "phytopharma_gsr918"
+      ],
+      "confidence": 0.996
+    }
+  ],
+  "limitation": "A small seeded behavioural regression set, not a legal-accuracy benchmark."
+}

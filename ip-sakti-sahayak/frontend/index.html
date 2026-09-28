@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e35">
+  <title>IP-SAKTI Sahayak · Ayurveda IP & regulatory guidance</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the advisor</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="IP-SAKTI Sahayak home">
+        <span class="brand-mark" aria-hidden="true">आ</span>
+        <span><strong>IP-SAKTI <em>Sahayak</em></strong><small>Knowledge into protection.</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="nav-button active" id="advisorTab" aria-current="page">Advisor</button>
+        <button class="nav-button" id="sourcesTab">Source library <span id="navCount">36</span></button>
+      </nav>
+      <span class="project-tag">AYURVEDA · IP · REGULATION</span>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="intro" aria-labelledby="introTitle">
+      <div>
+        <p class="eyebrow">FOR PRACTITIONERS, RESEARCHERS & INNOVATORS</p>
+        <h1 id="introTitle">A clearer path from<br>formulation to protection.</h1>
+        <p class="intro-copy">Explore intellectual property and regulatory guidance for Ayurveda,<br class="desktop-break"> across India and international regimes, with sources you can inspect.</p>
+      </div>
+      <aside class="intro-note">
+        <span class="note-line"></span>
+        <p>Start with the product.<br>Confirm the facts.<br><strong>Follow the evidence.</strong></p>
+        <small>Built for the Ayurveda community</small>
+      </aside>
+    </section>
+
+    <div class="trust-bar" role="note">
+      <span class="trust-icon" aria-hidden="true">i</span>
+      <p><strong>Information, not legal advice.</strong> Answers use dated sources and identify evidence gaps. Verify current law and consult a qualified professional before acting.</p>
+      <span class="mode-pill" id="modeflag">Connecting…</span>
+    </div>
+
+    <div id="advisorView">
+      <div class="workspace">
+        <section class="panel classifier-panel" aria-labelledby="classifierTitle">
+          <div class="panel-heading">
+            <span class="step-number">01</span>
+            <div><p class="eyebrow">START HERE</p><h2 id="classifierTitle">Know your formulation</h2></div>
+            <button class="text-button" id="resetCls" title="Clear product details and start again">Reset</button>
+          </div>
+          <p class="section-intro">A few confirmed facts about your Ayurveda product help identify a preliminary <strong>India</strong> regulatory route.</p>
+
+          <details class="description-box">
+            <summary>Start with a product description <span>Optional</span></summary>
+            <label for="desc">What are you making, and how will it be used?</label>
+            <textarea id="desc" rows="3" maxlength="4000" placeholder="For example: an Ayurvedic herbal cream intended to treat eczema."></textarea>
+            <p class="field-help">We’ll identify the intended use, then ask you to confirm the legal criteria. Keep confidential formula details out.</p>
+            <button class="button secondary small" id="descBtn">Use description <span aria-hidden="true">→</span></button>
+          </details>
+
+          <div id="clsFlow" aria-live="polite" aria-busy="false"><p class="empty-note">Loading the classification questions…</p></div>
+          <div id="clsError" class="error-note" role="alert" hidden></div>
+          <div class="classifier-footer">
+            <span aria-hidden="true">◇</span> Classification supports research. It does not establish patentability or grant a licence.
+          </div>
+        </section>
+
+        <section class="panel answer-panel" aria-labelledby="askTitle">
+          <div class="panel-heading">
+            <span class="step-number">02</span>
+            <div><p class="eyebrow">EXPLORE YOUR OPTIONS</p><h2 id="askTitle">Ask. Check. Take the next step.</h2></div>
+          </div>
+
+          <div class="scope-controls">
+            <div>
+              <span class="control-label" id="jurisdictionLabel">Legal jurisdiction</span>
+              <div class="segmented" id="jseg" role="group" aria-labelledby="jurisdictionLabel">
+                <button data-j="India" class="active" aria-pressed="true">India</button>
+                <button data-j="International" aria-pressed="false">International</button>
+                <button data-j="Both" aria-pressed="false">India + international</button>
+              </div>
+            </div>
+            <div class="language-control">
+              <label class="control-label" for="lang">Answer language</label>
+              <select id="lang"><option value="en">English</option></select>
+            </div>
+          </div>
+          <p class="scope-note" id="askScope"><span class="scope-dot"></span><span id="scopeText">India · Ayurveda IP &amp; regulation</span></p>
+          <p class="field-help">Ask about Ayurveda patents, brands, traditional knowledge, biodiversity or product regulation. Name your target countries for a comparison; coverage gaps will stay explicit.</p>
+          <p class="field-help" id="languageNote">English source notes are always available.</p>
+
+          <div class="chat-controls">
+            <p class="field-help" id="memoryNote" role="status">Temporary chat: recent turns and product context; expires after 30 minutes of inactivity. Reloading starts a new chat.</p>
+            <button class="button secondary small" id="newChat" type="button">New chat</button>
+          </div>
+
+          <label class="question-label" for="q">What would you like to understand?</label>
+          <textarea id="q" rows="3" maxlength="4000" placeholder="For example: How can I protect an improved Ayurvedic formulation in India, and what evidence would I need?"></textarea>
+          <div class="ask-actions">
+            <p class="field-help" id="privacyNote">Question text is not saved in the audit log.</p>
+            <button class="button primary" id="askBtn" aria-keyshortcuts="Control+Enter Meta+Enter">Get a sourced answer <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="examples" id="examples" aria-label="Example questions"></div>
+
+          <div class="chat-history" id="chatHistory" aria-label="Earlier questions and answers" hidden></div>
+
+          <div class="result-container" id="answer" aria-live="polite" aria-busy="false">
+            <div class="empty-state">
+              <span class="empty-symbol" aria-hidden="true">§</span>
+              <h3>Evidence before answers.</h3>
+              <p>Ask for an explanation, comparison or next steps for your Ayurveda IP or regulatory question.<br>Follow up with product context or start a new question in this chat.</p>
+              <div class="empty-tags"><span>Source-linked</span><span>Jurisdiction-specific</span><span>Honest about gaps</span></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="method-strip" aria-label="How the advisor works">
+        <div><span>01 / CLASSIFY</span><p>Rules follow confirmed product facts.</p></div>
+        <div><span>02 / ANSWER</span><p>Sources support answers, with gaps made explicit.</p></div>
+        <div><span>03 / VERIFY</span><p>Dates and review gaps stay visible.</p></div>
+      </div>
+    </div>
+
+    <section id="sourcesView" hidden aria-labelledby="sourcesTitle">
+      <div class="library-heading">
+        <div><p class="eyebrow">THE EVIDENCE BEHIND THE ADVISOR</p><h2 id="sourcesTitle">A transparent source library.</h2>
+          <p>Curated sources for Ayurveda IP and regulatory research. Source dates are not live verification dates; this library is not an exhaustive legal database.</p></div>
+        <span class="library-version" id="corpusVersion"></span>
+      </div>
+      <div class="library-filters">
+        <div><label for="sourceSearch">Search sources</label><input type="search" id="sourceSearch" placeholder="Statute, section, topic…" maxlength="160"></div>
+        <div><label for="sourceScope">Jurisdiction</label><select id="sourceScope"><option value="">All jurisdictions</option><option>India</option><option>International</option></select></div>
+        <div><label for="sourceReview">Review status</label><select id="sourceReview"><option value="">All sources</option><option value="needs_review">Needs primary review</option><option value="time_sensitive">Time-sensitive</option></select></div>
+      </div>
+      <p class="library-count" id="sourceCount" aria-live="polite"></p>
+      <div id="sourceList" class="source-grid"></div>
+    </section>
+
+    <footer class="site-footer">
+      <span><strong>IP-SAKTI Sahayak</strong> <span class="footer-separator">/</span> SIH 2026 · Team Victor Bytes</span>
+      <p>TKDL is referenced for public information; its restricted database is not ingested.</p>
+    </footer>
+  </main>
+
+  <dialog id="consentDialog" aria-labelledby="consentTitle">
+    <div class="dialog-heading"><p class="eyebrow">EXTERNAL RESOURCE</p><button class="icon-button" id="closeConsent" aria-label="Close consent dialog">×</button></div>
+    <h2 id="consentTitle">Open a restricted-resource referral</h2>
+    <p id="consentText"></p>
+    <p class="field-help">We record your decision with an anonymous session identifier. Opening the public referral page does not unlock TKDL, purchase access or send an access request.</p>
+    <p id="consentError" class="error-note" role="alert" hidden></p>
+    <div class="dialog-actions" id="consentActions">
+      <button class="button secondary" id="mNo">Decline</button>
+      <button class="button primary" id="mYes">Agree & record</button>
+    </div>
+    <div id="consentSuccess" hidden><p class="success-note">Your consent was recorded.</p><a class="button primary" id="consentLink" target="_blank" rel="noopener noreferrer">Open official referral ↗</a></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

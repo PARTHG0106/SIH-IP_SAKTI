@@ -1,0 +1,40 @@
+# ===== Secrets & local config (NEVER commit) =====
+provider.txt
+.env
+.env.*
+!env.sample
+*.key
+*.pem
+
+# ===== Local tooling / editor scratch =====
+.claude/settings.local.json
+.playwright-mcp/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.venv/
+venv/
+env/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Node (frontend tooling, if added) =====
+node_modules/
+dist/
+build/
+.next/
+
+# ===== Runtime logs & scratch (may contain user data) =====
+**/logs/*.log
+**/logs/*.jsonl
+server.log
+**/tmp/
+tmp/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+-r requirements.txt
+# Unit/API regressions use the standard-library unittest runner.
+# Only the browser smoke script needs this extra dependency.
+playwright>=1.45
