@@ -1,0 +1,39 @@
+name: keep-alive
+
+# Keeps the free Render instance from sleeping by pinging its cheap, no-LLM
+# health endpoint. GitHub's scheduler floor is every 5 minutes, so each run
+# pings twice (~2.5 min apart) to approximate a ~3-minute cadence.
+# This is a backup to the external monitor (cron-job.org) — GitHub cron can run
+# late and auto-pauses after 60 days of repo inactivity.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: keep-alive
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping /api/health twice (~2.5 min apart)
+        env:
+          URL: https://sih-ip-sakti.onrender.com/api/health
+        run: |
+          ping() {
+            for i in 1 2 3; do
+              code=$(curl -fsS -o /dev/null -w '%{http_code}' --max-time 90 "$URL") \
+                && { echo "$(date -u +%H:%M:%S) ok HTTP $code"; return 0; }
+              echo "$(date -u +%H:%M:%S) attempt $i failed, retry in 15s"; sleep 15
+            done
+            return 1
+          }
+          ping || exit 1
+          sleep 150
+          ping || exit 1
