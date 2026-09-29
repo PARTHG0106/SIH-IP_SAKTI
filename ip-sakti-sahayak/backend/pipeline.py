@@ -54,6 +54,9 @@ class Assistant:
                 "translation_unavailable",
                 ("This question contains substantial text in an Indic script, while English is selected. "
                  "Select the intended language so it can be translated." if language_selection and i18n.available() else
+                 "The configured translation provider could not produce a usable translation of this question. "
+                 "Please try again or ask in English; no legal answer was generated from the failed translation."
+                 if i18n.available() else
                  "Translation is unavailable in this local configuration, so I cannot reliably interpret this question in the "
                  "selected language. Please ask in English, or configure a translation provider."))
             gen["escalate"] = False

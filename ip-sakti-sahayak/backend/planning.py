@@ -608,6 +608,19 @@ def _strings(value, *, limit: int, max_length: int) -> tuple[str, ...]:
     return tuple(dict.fromkeys(item.strip() for item in value))
 
 
+def _verbatim_fact(fact: str, supplied: str) -> str:
+    """Recover a unique capitalization-only match as the original user span."""
+    if fact in supplied:
+        return fact
+    # Models sometimes lowercase the first word of an otherwise exact span.
+    # Keep spacing, punctuation, numbers and negation strict, and return the
+    # original source text. A lookahead also detects overlapping alternatives.
+    matches = list(re.finditer(f"(?=({re.escape(fact)}))", supplied, re.I))
+    if len(matches) != 1:
+        raise ValueError("Ungrounded planner fact")
+    return matches[0].group(1)
+
+
 def _model_plan(output: str, fallback: QueryPlan, current: str, context: str | None) -> QueryPlan:
     value = json.loads(output)
     if not isinstance(value, dict) or set(value) != {"subquestions", "facts", "missing_facts", "output_format"}:
@@ -620,15 +633,17 @@ def _model_plan(output: str, fallback: QueryPlan, current: str, context: str | N
     for entry in entries:
         if not isinstance(entry, dict) or set(entry) != {"question", "search_query"}:
             raise ValueError("Invalid subquestion")
-        question, search = _strings([entry["question"], entry["search_query"]], limit=2, max_length=800)
+        # Validate each field separately: equal question/search wording is
+        # valid, whereas _strings deduplicates entries within a single list.
+        question = _strings([entry["question"]], limit=1, max_length=800)[0]
+        search = _strings([entry["search_query"]], limit=1, max_length=800)[0]
         questions.append(question)
         searches.append(search)
     facts = _strings(value["facts"], limit=24, max_length=1200)
     # A paraphrase might silently change a quantity or negate an uncertainty.
     # Require exact user wording; retain raw input separately in every case.
     supplied = "\n".join(filter(None, (current, context)))
-    if any(fact not in supplied for fact in facts):
-        raise ValueError("Ungrounded planner fact")
+    facts = tuple(dict.fromkeys(_verbatim_fact(fact, supplied) for fact in facts))
     missing = _strings(value["missing_facts"], limit=8, max_length=500)
     fmt = value["output_format"]
     if not isinstance(fmt, dict) or set(fmt) != {"table", "steps", "concise", "columns"}:

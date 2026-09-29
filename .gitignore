@@ -35,6 +35,10 @@ server.log
 **/tmp/
 tmp/
 
+# ===== Live-provider eval run artifacts (raw responses embed the private proxy endpoint) =====
+ip-sakti-sahayak/docs/qa/live-provider/**/*.json
+ip-sakti-sahayak/docs/qa/live-provider/**/*.png
+
 # ===== OS =====
 .DS_Store
 Thumbs.db

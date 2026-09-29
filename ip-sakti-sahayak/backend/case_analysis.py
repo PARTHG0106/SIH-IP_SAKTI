@@ -520,18 +520,24 @@ def _cite(available: dict, source_id: str, conclusion: str, *, full: bool = True
 
 
 def _family(question: str) -> str:
+    """Route complete concept words, not substrings inside unrelated words.
+
+    Jurisdictions and specific legal tests precede generic formulation terms.
+    This prevents a question about an original formulation or outsourced
+    manufacture from becoming a biological-resource sourcing question.
+    """
     patterns = (
-        ("applicant", r"citizen|residen|incorporat|control|ownership.*compan"),
-        ("ownership", r"inventorship|ownership|\bcontribut(?:ors?|ed|es|ing)\b|employment|university|funding|assignment|who owns"),
-        ("disclosure", r"disclos|publicat|published|publicly|confidential"),
-        ("commercialisation", r"commerciali[sz]|licensing receipts|turnover|royalt|patent.*(?:grant|licen[cs])"),
-        ("us", r"united states|(?-i:\bUS\b|\bUSA\b)|\bu\.s\.(?:a\.)?|\bfda\b"),
-        ("export", r"export|european|\beu\b|germany|france|destination|market.entry"),
-        ("sourcing", r"sourc|wild|cultivat|origin|supplier|access date|geograph|bmc|biological material"),
-        ("patent", r"prior.art|technical|experimental|invent|efficacy|synerg|would be claimed|patent claims"),
-        ("classification", r"formula|ingredient|classical|first.schedule|authoritative|parenteral|route of administration"),
-        ("brand", r"brand|trade.?mark|logo|artwork|copyright|packag|design"),
-        ("licensing", r"licen[cs]|premis|manufactur|facility|safety|therapeutic|intended use"),
+        ("applicant", r"\b(?:citizen\w*|residen\w*|incorporat\w*|control\w*|ownership\b.*\bcompan\w*)\b"),
+        ("ownership", r"\b(?:inventorship|ownership|contribut(?:ors?|ed|es|ing)|employment|university|funding|assignments?|who owns)\b"),
+        ("disclosure", r"\b(?:disclos\w*|publications?|published|publicly|confidential\w*)\b"),
+        ("commercialisation", r"\b(?:commerciali[sz]\w*|licensing receipts|turnover|royalt\w*|patent\w*\b.*\b(?:grant\w*|licen[cs]\w*))\b"),
+        ("us", r"\bunited states\b|(?-i:\bUS\b|\bUSA\b)|\bu\.s\.(?:a\.)?|\bfda\b"),
+        ("export", r"\b(?:export\w*|europe(?:an)?|eu|german(?:y)?|france|french|destinations?|market.entry)\b"),
+        ("sourcing", r"\b(?:sourc(?:e[sd]?|ing)|wild|cultivat\w*|origins?|suppliers?|access dates?|geograph\w*|bmc|biological materials?)\b"),
+        ("patent", r"\b(?:prior.art|technical|experimental|invent\w*|efficacy|synerg\w*|would be claimed|patent claims?)\b"),
+        ("classification", r"\b(?:formula\w*|ingredients?|classical|first.schedule|authoritative|parenteral|route of administration)\b"),
+        ("brand", r"\b(?:brands?|trade.?marks?|logos?|artwork|copyright\w*|packag\w*|design(?:s|ers?|ing)?)\b"),
+        ("licensing", r"\b(?:licen[cs]\w*|premis\w*|manufactur\w*|facilit(?:y|ies)|safety|therapeutic|intended use|outsourc\w*)\b"),
     )
     return next((key for key, pattern in patterns if re.search(pattern, question, re.I)), "other")
 
@@ -615,14 +621,9 @@ def _branches(family: str, available: dict, facts_query: str) -> str:
             cite("pct", "An international patent application does not grant a global patent; identify the national/regional markets and relevant filing dates"),
             cite("madrid", "An international brand strategy depends on the designated markets, applicant/basic-mark requirements and examination there"),
         ]
-    result = " ".join(part for part in parts if part)
-    if not result:
-        prefixes = {"patent": ("patents_",), "licensing": ("dc_",),
-                    "sourcing": ("bda_",), "brand": ("tm_", "copyright_", "designs_")}.get(family, ())
-        for source_id, (doc, card) in available.items():
-            if source_id.startswith(prefixes):
-                return cite(source_id, application(doc, card, facts_query), full=False)
-    return result
+    # A shared statute/prefix does not make another provision evidence for this
+    # question. If the relevant reviewed cards are absent, preserve the gap.
+    return " ".join(part for part in parts if part)
 
 
 _DEFAULT_QUESTIONS = (
