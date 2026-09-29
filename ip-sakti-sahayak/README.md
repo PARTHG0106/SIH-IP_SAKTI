@@ -18,6 +18,24 @@ python -m uvicorn backend.main:app --host 127.0.0.1 --port 8077
 
 Open [the advisor](http://127.0.0.1:8077). No model, API key, JavaScript build or network connection is required for English source-based answers. Choose a different port if 8077 is already occupied.
 
+## Deploy
+
+The service is one stateful FastAPI process that also serves the frontend, keeps chat memory in process, and must run as a **single worker**. Deploy it on a persistent host (Render, Railway, Fly.io, Cloud Run) — not on serverless functions. A [`Dockerfile`](Dockerfile) and a Render [`render.yaml`](../render.yaml) blueprint are included; the Dockerfile binds to the platform's `$PORT`.
+
+**Render (blueprint):** New + → Blueprint → select the repository. Render builds the image and prompts for the live-model variables below. Then add the custom domain (e.g. `ipsakti.parthg0106.dev`) and create the CNAME record Render shows at your DNS provider — `.dev` requires HTTPS, and Render provisions the certificate automatically.
+
+Offline reviewed-guidance mode needs no configuration. To enable question-specific RAG synthesis, set these as host environment variables (never commit them):
+
+| Variable | Value |
+| --- | --- |
+| `LLM_PROVIDER` | `anthropic` (uses the `/v1/messages` shape) or `openai` |
+| `LLM_BASE_URL` | your provider/proxy endpoint |
+| `LLM_API_KEY` | your provider key |
+| `LLM_MODEL` | e.g. `claude-opus-4-8` |
+| `TRANSLATE_PROVIDER` | optional: `llm` to enable Indic translation |
+
+Free Render instances sleep when idle and cold-start on the next request; use a paid instance for always-on. Audit/consent logs are ephemeral unless `IP_SAKTI_LOG_DIR` points at a mounted disk. Do not run more than one worker or instance without a shared TTL store.
+
 ## What works
 
 - **Six preliminary product routes:** classical ASU, proprietary ASU, potential new drug, phytopharmaceutical, Ayurveda Aahara and cosmetic. The questionnaire explicitly checks administration route, therapeutic claims, book eligibility and ingredient/assay conditions. Uncertain or out-of-scope products go to review. Descriptions can identify intended use; they cannot establish statutory eligibility.

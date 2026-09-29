@@ -1,0 +1,29 @@
+# Keep secrets, scratch, and non-runtime files out of the build context / image.
+.git
+.gitignore
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets / local config (never bake into an image)
+.env
+.env.*
+provider.txt
+*.key
+*.pem
+
+# Not needed at runtime
+tests/
+docs/
+scripts/
+eval/
+tmp/
+logs/*
+!logs/.gitkeep
+requirements-dev.txt
+env.sample
+README.md

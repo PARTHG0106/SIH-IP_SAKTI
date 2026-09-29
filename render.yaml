@@ -1,0 +1,27 @@
+# Render Blueprint — deploy IP-SAKTI Sahayak as a single persistent web service.
+# Docs: https://render.com/docs/blueprint-spec
+#
+# In the Render dashboard: New +  ->  Blueprint  ->  pick the PARTHG0106/SIH-IP_SAKTI
+# repo. Render reads this file, then prompts for the values marked `sync: false`.
+# Those secret values (API key, proxy endpoint) are stored in Render only, never in git.
+services:
+  - type: web
+    name: ipsakti-sahayak
+    runtime: docker
+    rootDir: ip-sakti-sahayak
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free            # free instances sleep when idle; use "starter" for always-on
+    region: singapore     # closest Render region to India
+    healthCheckPath: /api/health
+    autoDeploy: true      # redeploy on every push to the default branch
+    envVars:
+      # ---- Live model (values entered in the Render dashboard, kept out of git) ----
+      - key: LLM_PROVIDER   # "anthropic" for the /v1/messages proxy, else "openai"
+        sync: false
+      - key: LLM_BASE_URL   # your provider endpoint, e.g. https://api.your-proxy.example
+        sync: false
+      - key: LLM_API_KEY    # your provider key (sk-...)
+        sync: false
+      - key: LLM_MODEL      # the model id your provider serves
+        sync: false
