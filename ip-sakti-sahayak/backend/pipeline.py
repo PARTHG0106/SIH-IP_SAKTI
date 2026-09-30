@@ -99,11 +99,19 @@ class Assistant:
             scoped_regimes = {c.regime for c in citations if c.jurisdiction == scope}
             links.extend(self.router.route(scope, scoped_regimes, req.category))
         answer_out, translated = gen["answer"], False
+        summary_out = gen.get("summary", "")
         notices = list(gen.get("notices", []))
         if previous and not limited:
             notices.append("Used earlier question context from this temporary chat.")
         if input_translated:
             answer_out, translated = i18n.from_english(gen["answer"], req.lang, use_llm=use_llm)
+            if translated and summary_out:
+                summary_out, summary_translated = i18n.from_english(summary_out, req.lang, use_llm=use_llm)
+                translated = summary_translated
+            # The answer and its summary form one response: a partial
+            # translation must not leave mismatched languages or conclusions.
+            if not translated:
+                answer_out, summary_out = gen["answer"], gen.get("summary", "")
             translation_status = "translated" if translated else "output_failed"
             if not translated:
                 notices.append("Answer translation failed or changed citation markers. The English answer is shown.")
@@ -113,7 +121,10 @@ class Assistant:
             notices.append("The answer separates sourced rules from application and evidence gaps. Source cards contain curated summaries, not statutory quotations.")
         dates = [c.as_of for c in citations]
         response = AskResponse(
-            answer=answer_out, abstained=gen["abstained"], confidence=gen["confidence"],
+            answer=answer_out, summary=summary_out,
+            details_expanded=bool(plan.table or plan.steps or plan.discarded_facts
+                                  or re.search(r"\b(?:detailed|in.depth|comprehensive)\b", query_en, re.I)),
+            abstained=gen["abstained"], confidence=gen["confidence"],
             confidence_label=gen["confidence_label"], jurisdiction=req.jurisdiction,
             lang=req.lang if translated else "en", requested_lang=req.lang, category=req.category,
             citations=citations, registry_links=[RegistryLink(**link) for link in links],
@@ -121,6 +132,7 @@ class Assistant:
             source_date_range={"oldest": min(dates), "newest": max(dates)} if dates else None,
             disclaimer=DISCLAIMER, answer_source=gen["answer_source"],
             original_answer_en=gen["answer"] if translated else None,
+            original_summary_en=gen.get("summary") if translated else None,
             translation_status=translation_status, notices=list(dict.fromkeys(notices)),
             reason=gen.get("reason"), corpus_version=version,
             request_id=str(uuid4()), conversation_id=req.conversation_id,

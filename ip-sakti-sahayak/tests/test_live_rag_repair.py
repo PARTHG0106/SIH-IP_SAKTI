@@ -37,7 +37,9 @@ class LiveRagRepairTests(unittest.TestCase):
                            if issue.key == "classification" else [])
             sections.append({"issue": issue.title, "established": established,
                              "application": [], "unanswered": [] if established else ["Insufficient evidence in retrieved sources."]})
-        return {"sections": sections, "questions": [], "steps": []}
+        return {"summary": [{"text": "A medicine must meet the stated authoritative-formula test.",
+                             "source_ids": [self.doc["id"]], "fact_quotes": []}],
+                "sections": sections, "questions": [], "steps": []}
 
     def synthesize(self, query, context, plan, response):
         with patch("backend.rag.llm.available", return_value=True), patch("backend.rag.llm.chat", side_effect=[json.dumps(response), '{"supported":true}']) as chat:

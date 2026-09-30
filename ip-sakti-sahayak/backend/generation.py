@@ -16,6 +16,7 @@ from .config import settings
 from .planning import plan_query
 from .case_analysis import application as _case_application, render_fact_analysis, unanswered
 from . import rag, answer_format
+from .answer_summary import summarize_local
 
 _ADVICE_GUARD = re.compile(r"\b(should i (?:sue|litigate|file a case)|will i win|my chances|predict (?:my|the) (?:case|outcome)|guarantee (?:me|my)|what damages will i|how much (?:can|will) i (?:win|get|claim|recover))\b", re.I)
 _MEDICAL_GUARD = re.compile(r"\b(what dose|dosage should|diagnose me|treat my|how much .{0,60}(?:should i take|give my child))\b", re.I)
@@ -169,7 +170,10 @@ def generate(query, results, confidence, jurisdiction, category=None, *, use_llm
         checked = [r for r in eligible if r["doc"]["id"] not in CARDS or _card(r["doc"])]
         synthesis = rag.synthesize(query, context_query, plan, checked)
         if synthesis:
-            rendered_ids = set(re.findall(r"\[([a-z0-9_]+)\]", synthesis["answer"]))
+            # Custom table columns can omit a source shown in the short answer.
+            # Both visible parts of the response must retain their citations.
+            rendered_ids = set(re.findall(r"\[([a-z0-9_]+)\]",
+                                          synthesis["answer"] + "\n" + synthesis["summary"]))
             used = [r for r in checked if r["doc"]["id"] in rendered_ids]
             if len(used) >= minimum:
                 dates = [r["doc"]["as_of"] for r in used]
@@ -178,7 +182,7 @@ def generate(query, results, confidence, jurisdiction, category=None, *, use_llm
                     model_notices.append("Only the previous answer's source snapshot was used; no new retrieval occurred.")
                 if synthesis["missing"]:
                     model_notices.append("Evidence gaps remain for: " + "; ".join(synthesis["missing"]) + ".")
-                return {"answer": synthesis["answer"], "abstained": False,
+                return {"answer": synthesis["answer"], "summary": synthesis["summary"], "abstained": False,
                         "escalate": bool(synthesis["missing"]), "confidence": confidence,
                         "confidence_label": _label(confidence), "citations_used": used,
                         "answer_source": "rag_synthesis", "as_of": min(dates), "reason": None,
@@ -261,8 +265,13 @@ def generate(query, results, confidence, jurisdiction, category=None, *, use_llm
     if len(used) < minimum and not (evidence_limited and not used and minimum == 1):
         return abstain("insufficient_citations", "Insufficient evidence in retrieved sources. The rendered answer does not meet the configured minimum source count.", confidence)
     dates = [r["doc"]["as_of"] for r in used]
+    # Only summarize sources actually present in the detailed answer, including
+    # short/source-only follow-ups that intentionally narrow the evidence set.
+    summary_rows = [(issue, [(d, c) for d, c in points if d["id"] in rendered_ids])
+                    for issue, points in rows]
+    summary = summarize_local(query, plan, summary_rows, evidence_limited=evidence_limited)
     notices += list(dict.fromkeys(r["doc"]["review_note"] for r in used if r["doc"].get("review_note")))
-    return {"answer": answer, "abstained": False, "escalate": bool(missing),
+    return {"answer": answer, "summary": summary, "abstained": False, "escalate": bool(missing),
             "confidence": confidence, "confidence_label": _label(confidence),
             "citations_used": used, "answer_source": answer_source,
             "as_of": min(dates) if dates else None, "reason": None, "notices": notices}

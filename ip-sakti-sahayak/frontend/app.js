@@ -206,7 +206,7 @@ function sourceCard(source, number, prefix = "answer") {
     research: "Research paper", patent_record: "Patent record"
   })[source.source_type] || "Source reference";
   const url = safeUrl(source.source_url || source.url);
-  return '<article class="source-card" id="' + esc(prefix + "-" + source.id) + '">' +
+  return '<article class="source-card" tabindex="-1" id="' + esc(prefix + "-" + source.id) + '">' +
     '<div class="source-card-top"><span class="source-number">' + number + '</span>' +
     '<span class="jurisdiction-badge ' + esc(source.jurisdiction) + '">' + esc(source.jurisdiction) + '</span>' +
     '<span class="status-badge' + (needsReview || source.time_sensitive ? " review" : "") + '">' +
@@ -426,6 +426,7 @@ function answerHtml(turn) {
   const dates = result.source_date_range;
   const outsideScope = result.reason === "out_of_scope";
   const languageUnavailable = result.reason === "translation_unavailable";
+  const summary = !result.abstained && String(result.summary || "").trim();
   let html = '<article class="chat-answer" data-turn="' + id + '"><p class="answered-question"><strong>Your question</strong> ' + esc(question) + '</p>' +
     '<div class="result-meta"><span class="jurisdiction-badge ' + esc(result.jurisdiction) + '">' +
     esc(jurisdictionLabel(result.jurisdiction)) + '</span>' +
@@ -444,17 +445,25 @@ function answerHtml(turn) {
       : outsideScope ? "" : handoffHtml();
     html += '<div class="review-box"><h3>' + heading + '</h3><div class="answer-text">' +
       markdownHtml(result.answer, citations, prefix) + "</div>" + nextStep + "</div>";
+  } else if (summary) {
+    html += '<section class="answer-summary" aria-labelledby="' + prefix + '-summary-title">' +
+      '<h3 id="' + prefix + '-summary-title">Short answer</h3>' +
+      '<div class="summary-text">' + markdownHtml(summary, citations, prefix) + '</div></section>' +
+      '<details class="answer-details"' + (result.details_expanded ? " open" : "") + '><summary>Detailed explanation</summary>' +
+      '<div class="answer-text">' + markdownHtml(result.answer, citations, prefix) + '</div></details>';
   } else {
     html += '<div class="answer-text">' + markdownHtml(result.answer, citations, prefix) + "</div>";
   }
-  if (result.original_answer_en) html += '<details class="english-original"><summary>Read the original English answer</summary>' +
-    '<div class="answer-text">' + markdownHtml(result.original_answer_en, citations, prefix) + "</div></details>";
+  if (result.original_answer_en || result.original_summary_en) html += '<details class="english-original"><summary>Read the original English answer</summary>' +
+    '<div lang="en" dir="ltr">' +
+    (result.original_summary_en ? '<h3 class="subheading">Short answer</h3><div class="summary-text">' + markdownHtml(result.original_summary_en, citations, prefix) + '</div>' : "") +
+    (result.original_answer_en ? '<h3 class="subheading">Detailed explanation</h3><div class="answer-text">' + markdownHtml(result.original_answer_en, citations, prefix) + '</div>' : "") + '</div></details>';
   if (result.notices?.length) html += '<div class="result-notices">' +
     result.notices.map(note => "<p>" + esc(note) + "</p>").join("") + "</div>";
   html += '<div class="result-actions"><button class="button secondary small" data-copy>Copy with sources</button>' +
     '<button class="button secondary small" data-download>Download research brief ↓</button></div>';
-  if (citations.length) html += '<h3 class="subheading">Sources you can inspect · ' + citations.length + "</h3>" +
-    citations.map((source, index) => sourceCard(source, index + 1, prefix)).join("");
+  if (citations.length) html += '<details class="answer-sources"><summary>Sources you can inspect · ' + citations.length + '</summary>' +
+    citations.map((source, index) => sourceCard(source, index + 1, prefix)).join("") + '</details>';
   html += resourcesHtml(result.registry_links);
   return html + '<p class="disclaimer-text">' + esc(result.disclaimer) + "</p></article>";
 }
@@ -567,7 +576,10 @@ function researchBrief(turn) {
     "\nOutcome: " + answerOutcomeLabel(result) +
     "\nEvidence scope: " + (result.evidence_scope === "previous_turn" ? "Only sources retrieved for the previous answer" : "Curated source corpus") +
     (contextQuestions?.length ? "\n\nEarlier questions used as chat context:\n" + contextQuestions.map((text, index) => (index + 1) + ". " + text).join("\n") : "") + "\n\n" +
-    result.answer + (result.original_answer_en ? "\n\nOriginal English:\n" + result.original_answer_en : "") +
+    (result.summary && !result.abstained ? "## Short answer\n\n" + result.summary + "\n\n## Detailed explanation\n\n" : "") + result.answer +
+    (result.original_summary_en || result.original_answer_en ? "\n\n## Original English\n\n" +
+      (result.original_summary_en ? "### Short answer\n\n" + result.original_summary_en + "\n\n" : "") +
+      (result.original_answer_en ? "### Detailed explanation\n\n" + result.original_answer_en : "") : "") +
     "\n\n## Sources\n\n" + result.citations.map(source =>
       "[" + source.id + "] " + source.statute + " — " + source.section +
       "\nSource date: " + source.as_of + "; review status: " + source.review_status +
@@ -581,9 +593,13 @@ $("#advisorView").addEventListener("click", async event => {
   const citation = event.target.closest(".citation-link");
   if (citation) {
     const target = document.getElementById(citation.getAttribute("href").slice(1));
+    if (!target || !answer.contains(target)) return;
+    event.preventDefault();
     for (let parent = target?.parentElement; parent; parent = parent.parentElement) {
       if (parent instanceof HTMLDetailsElement) parent.open = true;
     }
+    target.focus({preventScroll:true});
+    target.scrollIntoView({block:"center"});
   }
   if (event.target.closest("[data-copy]")) {
     try { await navigator.clipboard.writeText(researchBrief(turn)); toast("Answer and source links copied."); }

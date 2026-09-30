@@ -1,6 +1,6 @@
 {
   "mode": "offline; BM25; no audit writes",
-  "corpus_version": "5075e2e0290a52dc",
+  "corpus_version": "55845421eeb6f26a",
   "n": 40,
   "passed": 40,
   "abstain_ok": 40,
@@ -31,7 +31,7 @@
         "patents_invention",
         "patents_rights"
       ],
-      "confidence": 0.956
+      "confidence": 0.955
     },
     {
       "id": "e02",
@@ -48,7 +48,7 @@
       "citations": [
         "patents_rules_2024_rfe"
       ],
-      "confidence": 0.829
+      "confidence": 0.831
     },
     {
       "id": "e03",
@@ -65,7 +65,7 @@
       "citations": [
         "patents_rules_2024_form27"
       ],
-      "confidence": 0.983
+      "confidence": 0.984
     },
     {
       "id": "e04",
@@ -82,7 +82,7 @@
       "citations": [
         "phytopharma_gsr918"
       ],
-      "confidence": 0.996
+      "confidence": 0.997
     },
     {
       "id": "e05",
@@ -117,7 +117,7 @@
         "bda_origin_2025",
         "bda_s7_exemption"
       ],
-      "confidence": 0.993
+      "confidence": 0.994
     },
     {
       "id": "e07",
@@ -135,7 +135,7 @@
         "bda_ipr_forms",
         "bda_s6"
       ],
-      "confidence": 0.984
+      "confidence": 0.987
     },
     {
       "id": "e08",
@@ -153,7 +153,7 @@
         "dmr_act",
         "rule_170"
       ],
-      "confidence": 0.96
+      "confidence": 0.962
     },
     {
       "id": "e09",
@@ -170,7 +170,7 @@
       "citations": [
         "rule_170"
       ],
-      "confidence": 0.969
+      "confidence": 0.971
     },
     {
       "id": "e10",
@@ -187,7 +187,7 @@
       "citations": [
         "gi_act"
       ],
-      "confidence": 0.981
+      "confidence": 0.984
     },
     {
       "id": "e11",
@@ -202,9 +202,11 @@
       "missing_terms": [],
       "unexpected_terms": [],
       "citations": [
+        "dc_cosmetic",
+        "dc_cosmetic_licensing",
         "tm_act"
       ],
-      "confidence": 0.802
+      "confidence": 0.847
     },
     {
       "id": "e12",
@@ -221,7 +223,7 @@
       "citations": [
         "case_turmeric"
       ],
-      "confidence": 0.991
+      "confidence": 0.992
     },
     {
       "id": "e13",
@@ -272,7 +274,7 @@
       "citations": [
         "eu_thmpd"
       ],
-      "confidence": 0.995
+      "confidence": 0.996
     },
     {
       "id": "e16",
@@ -289,7 +291,7 @@
       "citations": [
         "budapest"
       ],
-      "confidence": 0.996
+      "confidence": 0.997
     },
     {
       "id": "e17",
@@ -338,7 +340,7 @@
       "citations": [
         "patents_3d"
       ],
-      "confidence": 0.995
+      "confidence": 0.967
     },
     {
       "id": "e20",
@@ -419,7 +421,7 @@
       "citations": [
         "dc_3a"
       ],
-      "confidence": 0.95
+      "confidence": 0.951
     },
     {
       "id": "e25",
@@ -437,7 +439,7 @@
         "dmr_act",
         "rule_170"
       ],
-      "confidence": 0.96
+      "confidence": 0.962
     },
     {
       "id": "e26",
@@ -501,7 +503,7 @@
       "citations": [
         "designs_act"
       ],
-      "confidence": 0.956
+      "confidence": 0.96
     },
     {
       "id": "e30",
@@ -519,7 +521,7 @@
         "copyright_act",
         "copyright_scope"
       ],
-      "confidence": 0.969
+      "confidence": 0.972
     },
     {
       "id": "e31",
@@ -536,7 +538,7 @@
       "citations": [
         "madrid"
       ],
-      "confidence": 0.982
+      "confidence": 0.984
     },
     {
       "id": "e32",
@@ -553,7 +555,7 @@
       "citations": [
         "hague"
       ],
-      "confidence": 0.996
+      "confidence": 0.997
     },
     {
       "id": "e33",
@@ -571,7 +573,7 @@
         "bda_origin_2025",
         "bda_s7_exemption"
       ],
-      "confidence": 0.993
+      "confidence": 0.994
     },
     {
       "id": "e34",
@@ -588,7 +590,7 @@
       "citations": [
         "case_neem"
       ],
-      "confidence": 0.977
+      "confidence": 0.979
     },
     {
       "id": "e35",
@@ -605,7 +607,7 @@
       "citations": [
         "dc_new_drug"
       ],
-      "confidence": 0.975
+      "confidence": 0.976
     },
     {
       "id": "e36",
@@ -622,7 +624,7 @@
       "citations": [
         "tkdl"
       ],
-      "confidence": 0.994
+      "confidence": 0.995
     },
     {
       "id": "e37",
@@ -669,7 +671,7 @@
       "citations": [
         "patents_3p"
       ],
-      "confidence": 0.95
+      "confidence": 0.868
     },
     {
       "id": "e40",
@@ -686,7 +688,7 @@
       "citations": [
         "phytopharma_gsr918"
       ],
-      "confidence": 0.996
+      "confidence": 0.997
     }
   ],
   "limitation": "A small seeded behavioural regression set, not a legal-accuracy benchmark."

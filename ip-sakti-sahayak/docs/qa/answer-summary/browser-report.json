@@ -1,0 +1,13 @@
+{
+  "passed": 7,
+  "checks": [
+    "Classical formula answer explains first; detail and evidence are collapsed with mode visible",
+    "Summary citation reveals and focuses its source without requiring the detailed explanation",
+    "Copy and download include the short answer before detail, followed by matching sources",
+    "Requested tables are immediately visible; historical citations remain isolated to their turn",
+    "Mobile tables scroll to the final column; summaries and tables have no page overflow or toast obstruction",
+    "Translated short and detailed answers retain English originals; summary Markdown escapes HTML and unsafe links",
+    "Responses without summaries and abstentions retain the full visible answer"
+  ],
+  "note": "Isolated offline server; temporary logs. Translation and unsafe Markdown responses are browser fixtures."
+}

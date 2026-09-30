@@ -1,0 +1,25 @@
+{
+  "passed": 18,
+  "checks": [
+    "Desktop boot, offline capabilities, layout and source loading",
+    "Therapeutic description, continuation, proprietary route and edit-back",
+    "Food eligibility uncertainty stays unclassified",
+    "Full RFE exception, linked citation and downloadable research brief",
+    "Same-chat source-only follow-up, Markdown table, stable citations and context export",
+    "New chat deletes server memory and reload starts a fresh ephemeral conversation",
+    "Jurisdiction changes clear answers and international examples stay in scope",
+    "India + international research retains jurisdictions and US gaps; unrelated technology stays outside Ayurveda scope",
+    "Obsolete responses cannot overwrite a changed jurisdiction",
+    "HTTP failures are explained and controls recover",
+    "Expired or cleared source-only follow-ups cannot silently retrieve a new evidence set",
+    "Markdown tables, headings and lists escape HTML and reject unsafe links",
+    "Full Ayurvedic strategy and prior-source-only follow-up preserve every requested issue and table format",
+    "Consent failure, decline and acceptance do not open third-party pages",
+    "Dated status abstention provides professional-review preparation",
+    "Library filters expose quarantined notes and checked primary evidence",
+    "Mobile answers and scrollable tables do not overflow the page",
+    "No uncaught browser errors or question text in test audit logs"
+  ],
+  "corpus_version": "55845421eeb6f26a",
+  "note": "Isolated offline server; temporary logs; no third-party referral pages opened."
+}

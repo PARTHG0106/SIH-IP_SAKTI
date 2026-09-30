@@ -38,6 +38,7 @@ Free Render instances sleep when idle and cold-start on the next request; use a 
 
 ## What works
 
+- **Short explanations before evidence:** supported answers start with a cited, plain-language summary of the main conclusion. Detailed reasoning and source cards are expandable; requested tables, steps and fact corrections keep their detail visible. Copy and download include both the summary and full explanation. Model summaries are checked alongside the detailed answer, and reviewed local summaries remain available if synthesis fails. Local summaries use source-bound topic guidance, so complex case-specific conclusions remain in the details.
 - **Six preliminary product routes:** classical ASU, proprietary ASU, potential new drug, phytopharmaceutical, Ayurveda Aahara and cosmetic. The questionnaire explicitly checks administration route, therapeutic claims, book eligibility and ingredient/assay conditions. Uncertain or out-of-scope products go to review. Descriptions can identify intended use; they cannot establish statutory eligibility.
 - **Ayurveda scope:** the assistant handles Ayurveda IP and regulatory questions, including legal-reference questions useful to that research without completing the product questionnaire. A concrete unrelated software, electronics or other technology case is redirected to explain its Ayurveda connection. A previous Ayurveda question or a selected product category does not make an unrelated new case in scope.
 - **India and international research:** choose India, International or India + international. An explicit question naming India and an international framework can retrieve both scopes even while India is selected. Source jurisdiction labels stay visible, and the product questionnaire always describes an Indian regulatory route. The corpus has an EU herbal-medicine note but no US market-access source; a US request produces an evidence gap rather than an invented FDA route.
@@ -99,6 +100,7 @@ For browser checks:
 python -m pip install -r requirements-dev.txt
 python -m playwright install chromium
 python -m scripts.browser_smoke
+python -m scripts.browser_answer_summary
 ~~~
 
 The browser suite starts an isolated local server with temporary logs, tests normal/error/consent/race flows and writes desktop/mobile screenshots to docs/qa. It does not open external referral pages.
@@ -122,6 +124,8 @@ Interactive schema: [Swagger UI](http://127.0.0.1:8077/docs).
 Requests reject unknown scopes, empty/oversized input and unsupported language codes. Clients should send back the classifier's returned answers object on the next step. Do not display a previous answer under a newly selected scope.
 
 The `jurisdiction` request field accepts `India`, `International` or `Both`. The response preserves the requested value; an explicitly mixed question can use both sets of evidence under an `India` response, with a notice and individual citation labels explaining the actual evidence scope. `answer_source=rag_synthesis` identifies validated model synthesis; the existing `grounded_synthesis` value identifies reviewed local guidance. Clients should use `reason=out_of_scope` for an Ayurveda-domain redirect, not a request for professional review.
+
+The response's `summary` is the short explanation; `answer` retains the full reasoning for existing API clients. `details_expanded` indicates that the user requested a table, steps or detailed treatment, or supplied a fact correction. Citations cover both rendered fields. Abstentions and unsupported answers can have an empty summary and must still show `answer`. When translation succeeds, `original_summary_en` and `original_answer_en` preserve the English text; if either output translation fails, both visible fields fall back to English. See [the summary review](docs/ANSWER_SUMMARY_REVIEW.md) for implementation and verification scope.
 
 An ask without a conversation ID starts a new chat and returns its ID. Send that ID on subsequent turns; clients must not supply their own history or fabricated citations. IDs are opaque bearer capabilities, not authenticated accounts. Expired/cleared IDs return HTTP 410; conflicting scope or concurrent same-chat requests return HTTP 409. Different chats do not share context. Memory is bounded to 128 chats, with eight recent turn records and at most 12,000 context characters per record. Original product context can remain after its turn leaves the visible history. Idle chats can be evicted under capacity pressure. Expired records are swept every minute. Process restart clears all chats; use a single worker for this local prototype (a multi-worker deployment needs a secured shared TTL store or sticky routing).
 

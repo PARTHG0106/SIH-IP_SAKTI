@@ -97,7 +97,9 @@ class SynthesisTests(unittest.TestCase):
         self.plan = plan_query(self.query)
         self.hits, self.confidence = self.retriever.search(self.query, jurisdiction="India", plan=self.plan)
         self.doc = self.retriever.corpus.by_id["patents_rules_2024_form27"]
-        self.value = {"sections": [{"issue": self.plan.issues[0].title,
+        self.value = {"summary": [{"text": "In India, Form 27 is filed for periods of three financial years; the grant date determines the reporting period.",
+                                  "source_ids": [self.doc["id"]], "fact_quotes": []}],
+            "sections": [{"issue": self.plan.issues[0].title,
             "established": [{"text": "In India, Rule 131 requires a Form 27 statement for periods of three financial years.",
                              "source_id": self.doc["id"], "quote": self.doc["text"]}],
             "application": [{"text": "Assess the three-year reporting period for the Ayurvedic process patent you describe.",

@@ -25,6 +25,16 @@ class Issue:
     search: str
 
 
+# Keep ownership language tied to an IP subject and an actual ownership
+# question. Bare "own" / "owned" also describe farms and applicant control.
+_IP_OWNERSHIP_QUESTION = (
+    r"\b(?:who\s+owns?|owner\s+of)\b[^.!?;\n]{0,60}"
+    r"\b(?:patents?|inventions?|intellectual property|ip)\b"
+    r"|\b(?:who|whom)\b[^.!?;\n]{0,60}"
+    r"\b(?:patents?|inventions?|intellectual property|ip)\b[^.!?;\n]{0,30}\bbelong\b"
+)
+
+
 ISSUES = (
     Issue("classification", "Classical or proprietary medicine", r"classical|proprietary|classif|categor(?:y|ies)|drugs? and cosmetics act",
           ("dc_3a", "dc_3h"), "classical proprietary medicine First Schedule ingredients parenteral"),
@@ -90,7 +100,8 @@ ISSUES = (
           ("eu_thmpd",), "EU traditional herbal medicine registration 30 years 15 years"),
     Issue("us", "United States market access", r"united states|(?-i:\bUS\b)|\busa\b|\bu\.s\.(?:a\.)?|\bus market\b|\bfda\b",
           (), "United States FDA Ayurvedic herbal product intended use claims classification market access"),
-    Issue("ownership", "Inventorship, ownership and assignments", r"inventorship|ownership|assignments?|employees?|university|commissioned",
+    Issue("ownership", "Inventorship, ownership and assignments",
+          r"inventorship|ownership|assignments?|employees?|university|commissioned|" + _IP_OWNERSHIP_QUESTION,
           ("patents_ownership", "patents_assignments"), "India patent inventorship ownership employee university assignment copyright ownership"),
     Issue("cosmetic", "Possible cosmetic category and licensing", r"cosmetic|hair conditioning|conditioning.only|(?:external|externally).{0,35}(?:hair|skin|beaut|appl)",
           ("dc_cosmetic", "dc_cosmetic_licensing"), "India cosmetic definition intended use cleansing beautifying appearance licensing"),

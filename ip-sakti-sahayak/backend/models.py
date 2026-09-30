@@ -74,6 +74,8 @@ class RegistryLink(BaseModel):
 
 class AskResponse(BaseModel):
     answer: str
+    summary: str = ""
+    details_expanded: bool = False
     abstained: bool
     confidence: float = Field(ge=0, le=1)
     confidence_label: str
@@ -89,6 +91,7 @@ class AskResponse(BaseModel):
     disclaimer: str = ""
     answer_source: str = "extractive"
     original_answer_en: str | None = None
+    original_summary_en: str | None = None
     translation_status: str = "not_requested"
     notices: list[str] = Field(default_factory=list)
     reason: str | None = None

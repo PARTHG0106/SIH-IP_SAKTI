@@ -254,7 +254,7 @@ def run(artifacts):
             "answer": "# Safe heading\n\n| Issue | Evidence |\n| --- | --- |\n"
                       "| <img src=x onerror=window.injected=true> | **Quoted** [unsafe](javascript:alert(1)) |\n\n"
                       "1. <script>window.injected=true</script>\n2. [patents_rules_2024_form27]",
-            "abstained": False, "notices": [], "memory_used": False,
+            "abstained": False, "notices": [], "memory_used": False, "details_expanded": True,
         }
         page.route("**/api/ask", lambda route: route.fulfill(status=200, content_type="application/json", body=json.dumps(malicious)))
         ask("Render the evidence safely")
