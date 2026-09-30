@@ -1,0 +1,11 @@
+{
+  "passed": 5,
+  "checks": [
+    "An English question keeps its text and requests Hindi; the Hindi fixture and English original render correctly",
+    "An output-translation failure retains the English answer with its recovery notice",
+    "An English question with Hindi selected gets retry or Answer language recovery instructions without an English rewrite demand",
+    "Choosing English preserves the question and succeeds through the real offline API",
+    "Language selection requests name the Answer language control and preserve the original question during recovery"
+  ],
+  "note": "Isolated offline server; advertised translation availability and translated/error responses are browser fixtures. English recovery uses the real offline API. No provider calls."
+}

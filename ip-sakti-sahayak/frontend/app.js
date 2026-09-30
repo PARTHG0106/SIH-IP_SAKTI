@@ -119,7 +119,8 @@ function answerModeLabel(source) {
 
 function answerOutcomeLabel(result) {
   if (result.reason === "out_of_scope") return "Outside Ayurveda scope";
-  if (result.reason === "translation_unavailable") return "Language unavailable";
+  if (result.reason === "translation_unavailable") return result.translation_status === "language_selection_required"
+    ? "Choose a language" : "Translation unavailable";
   return result.abstained ? "Further verification needed" : "Sourced answer";
 }
 
@@ -164,8 +165,10 @@ $("#jseg").addEventListener("click", event => {
   renderExamples();
 });
 $("#lang").addEventListener("change", event => {
+  const question = $("#q").value;
   state.lang = event.target.value;
   clearChat("Answer language changed. A new chat has started.");
+  $("#q").value = question;
   updateScope();
 });
 
@@ -178,7 +181,7 @@ async function loadHealth() {
       ? "Questions and recent chat context go to the configured model provider. Chat text stays in temporary memory, not the audit log."
       : "Local mode uses reviewed guidance from the available source library and may give limited answers to novel questions. Chat text stays in temporary memory, not the audit log.";
     $("#languageNote").textContent = health.translation_available
-      ? "Machine translation is available. Source notes stay in English."
+      ? "Ask in English or the selected language. Answers are machine-translated when needed; source notes stay in English."
       : "English is available offline. Other languages need a configured translation provider.";
     $("#lang").innerHTML = health.languages.map(language =>
       '<option value="' + esc(language.code) + '"' + (language.available ? "" : " disabled") + ">" +
@@ -426,6 +429,7 @@ function answerHtml(turn) {
   const dates = result.source_date_range;
   const outsideScope = result.reason === "out_of_scope";
   const languageUnavailable = result.reason === "translation_unavailable";
+  const languageSelectionRequired = languageUnavailable && result.translation_status === "language_selection_required";
   const summary = !result.abstained && String(result.summary || "").trim();
   let html = '<article class="chat-answer" data-turn="' + id + '"><p class="answered-question"><strong>Your question</strong> ' + esc(question) + '</p>' +
     '<div class="result-meta"><span class="jurisdiction-badge ' + esc(result.jurisdiction) + '">' +
@@ -439,9 +443,12 @@ function answerHtml(turn) {
     (dates ? "<span>Records: " + esc(dates.oldest) + (dates.oldest === dates.newest ? "" : " – " + esc(dates.newest)) + "</span>" : "") + "</div>";
   if (result.abstained) {
     const heading = outsideScope ? "For Ayurveda IP & regulatory questions." :
-      languageUnavailable ? "Ask in English to continue." : "A reliable answer needs another step.";
+      languageSelectionRequired ? "Choose your question's language." :
+      languageUnavailable ? "Translation is unavailable." : "A reliable answer needs another step.";
     const nextStep = languageUnavailable
-      ? '<p class="field-help">Rewrite your question in English in the question box and submit it again.</p>'
+      ? '<p class="field-help">' + (languageSelectionRequired
+        ? "Choose the language used in your question under Answer language, then submit it again."
+        : "Retry your question. If it is already in English, choose English under Answer language and submit it again.") + '</p>'
       : outsideScope ? "" : handoffHtml();
     html += '<div class="review-box"><h3>' + heading + '</h3><div class="answer-text">' +
       markdownHtml(result.answer, citations, prefix) + "</div>" + nextStep + "</div>";

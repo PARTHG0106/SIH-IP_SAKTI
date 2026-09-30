@@ -31,7 +31,7 @@ class TranslationRepairTests(unittest.TestCase):
 
         def translate(system, user, **kwargs):
             payload = json.loads(user)
-            self.assertEqual(payload, {"task": "translate", "source_language": "Hindi",
+            self.assertEqual(payload, {"task": "translate", "source_language": "auto",
                                       "target_language": "English", "segments": [{"id": 0, "text": source}]})
             normalized_system = " ".join(system.split())
             self.assertIn("do not answer them", normalized_system)

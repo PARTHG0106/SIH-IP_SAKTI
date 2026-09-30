@@ -27,7 +27,7 @@ class Assistant:
         return self._answer(req, use_llm=use_llm)
 
     def _answer(self, req: AskRequest, *, use_llm=True, chat=None) -> AskResponse:
-        query_en, input_translated = i18n.to_english(req.query, req.lang, use_llm=use_llm)
+        query_en, input_normalized = i18n.to_english(req.query, req.lang, use_llm=use_llm)
         translation_status = "not_requested" if req.lang == "en" else "unavailable"
         previous = context_for(chat.turns, query_en) if chat is not None else None
         context_query = previous.context_query if previous else None
@@ -38,7 +38,7 @@ class Assistant:
         evidence_turn = chat.turns[-1] if previous and chat.turns else None
         results = []
         language_selection = req.lang == "en" and i18n.requires_language_selection(req.query)
-        language_unavailable = language_selection or (req.lang != "en" and not input_translated)
+        language_unavailable = language_selection or (req.lang != "en" and not input_normalized)
         plan = plan_query(query_en, context_query, use_llm=use_llm and not language_unavailable)
         # Explicitly requested India + foreign analysis is split by source
         # jurisdiction, even when India remains the home-market UI setting.
@@ -54,11 +54,13 @@ class Assistant:
                 "translation_unavailable",
                 ("This question contains substantial text in an Indic script, while English is selected. "
                  "Select the intended language so it can be translated." if language_selection and i18n.available() else
-                 "The configured translation provider could not produce a usable translation of this question. "
-                 "Please try again or ask in English; no legal answer was generated from the failed translation."
+                 "The translation service could not prepare this question for an answer. Retry the request. "
+                 "If the question is already in English, select English under Answer language to continue "
+                 "without translation. No legal answer was generated from the failed translation."
                  if i18n.available() else
-                 "Translation is unavailable in this local configuration, so I cannot reliably interpret this question in the "
-                 "selected language. Please ask in English, or configure a translation provider."))
+                 "Translation is unavailable in this local configuration. For an English question, select "
+                 "English under Answer language. Otherwise, provide the question in English or configure "
+                 "a translation provider."))
             gen["escalate"] = False
         elif plan.scope == "out_of_scope":
             gen = generation.abstain("out_of_scope", "IP-SAKTI Sahayak covers intellectual property and regulatory guidance for Ayurveda, in India and internationally. This question describes a different field. Explain its connection to an Ayurvedic product, research project or business so I can assess the relevant sources.")
@@ -103,7 +105,9 @@ class Assistant:
         notices = list(gen.get("notices", []))
         if previous and not limited:
             notices.append("Used earlier question context from this temporary chat.")
-        if input_translated:
+        # A validated English question can remain unchanged while its answer
+        # still needs the selected language. Input identity is not output intent.
+        if req.lang != "en" and not language_unavailable:
             answer_out, translated = i18n.from_english(gen["answer"], req.lang, use_llm=use_llm)
             if translated and summary_out:
                 summary_out, summary_translated = i18n.from_english(summary_out, req.lang, use_llm=use_llm)

@@ -78,7 +78,9 @@ Copy-Item env.sample .env
 
 For model-assisted question planning and source-grounded RAG synthesis, explicitly set LLM_PROVIDER to anthropic or openai, LLM_MODEL to a model available on your endpoint, and LLM_API_KEY. LLM_BASE_URL can point to a compatible hosted or self-hosted service. A successful answer normally involves separate planning, synthesis and entailment-check calls; this increases provider latency and usage compared with local mode. The synthesis and its model checker use the same configured provider/model. [Live-provider testing](docs/LIVE_PROVIDER_REVIEW.md) has partial evidence: two saved syntheses passed the implemented checks, while the resumed gateway is unavailable. Set LLM_TIMEOUT for your provider; saved slow-gateway synthesis exceeded 90 seconds, compared with the application's 30-second default.
 
-Set TRANSLATE_PROVIDER=llm to enable the translation layer. The UI lists English plus all 22 scheduled Indian languages, with availability determined by configuration. This is a provider capability switch, **not a quality certification for 22 languages**. Structured translation checks ordered segments and citation sequences; long answers require multiple calls. Failed translation returns the complete English fallback or an explicit abstention. English source notes remain visible. Post-repair live Hindi quality remains unverified during the gateway outage. IndicTrans2 and Bhashini connectors are not implemented.
+Set TRANSLATE_PROVIDER=llm to enable the translation layer. The UI lists English plus all 22 scheduled Indian languages, with availability determined by configuration. This is a provider capability switch, **not a quality certification for 22 languages**. Structured translation checks ordered segments and citation sequences; long answers require multiple calls. Failed translation returns the complete English fallback or an explicit abstention. English source notes remain visible. See [the answer-language review](docs/ANSWER_LANGUAGE_REVIEW.md) for the tested English-to-Hindi flow; broader live multilingual quality remains unverified. IndicTrans2 and Bhashini connectors are not implemented.
+
+The language selector chooses the **answer language**. With a translated answer selected, question normalization detects the actual input language instead of assuming the question is in that answer language. English input is valid and may pass through unchanged; native-script, romanized and mixed-language input still need successful normalization before retrieval. A normalization failure offers retry or English-answer selection for an already-English question. Failure to translate the answer returns the complete English summary and detail together.
 
 Adjacent provider.txt files are ignored unless ALLOW_PROVIDER_FILE=true and a provider/model have been selected. LLM_PROVIDER=none always stays offline.
 
@@ -101,6 +103,7 @@ python -m pip install -r requirements-dev.txt
 python -m playwright install chromium
 python -m scripts.browser_smoke
 python -m scripts.browser_answer_summary
+python -m scripts.browser_answer_language
 ~~~
 
 The browser suite starts an isolated local server with temporary logs, tests normal/error/consent/race flows and writes desktop/mobile screenshots to docs/qa. It does not open external referral pages.
