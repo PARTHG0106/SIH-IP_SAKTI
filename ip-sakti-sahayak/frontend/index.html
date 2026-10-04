@@ -3,59 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173e35">
+  <meta name="theme-color" content="#142d4e">
   <title>IP-SAKTI Sahayak · Ayurveda IP & regulatory guidance</title>
   <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/page-hindi.js" defer></script>
+  <script src="/assets/page-hindi-dynamic.js" defer></script>
+  <script src="/assets/page-language.js" defer></script>
   <script src="/assets/app.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to the advisor</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span class="initiative"><span class="tricolour" aria-hidden="true"></span> Smart India Hackathon 2026 <span class="utility-divider">/</span> <span>Research prototype</span></span>
+      <div class="accessibility-tools" role="group" aria-label="Display preferences">
+        <a href="#main" class="utility-skip">Skip to main content</a>
+        <button type="button" id="pageLanguageToggle" lang="en" translate="no" aria-label="Translate page interface to Hindi" title="Translate page interface to Hindi" aria-pressed="false"><span lang="hi">हिन्दी</span></button>
+        <button type="button" data-text-size="small" aria-label="Use smaller text" aria-pressed="false">A−</button>
+        <button type="button" data-text-size="default" aria-label="Use default text size" aria-pressed="true">A</button>
+        <button type="button" data-text-size="large" aria-label="Use larger text" aria-pressed="false">A+</button>
+        <button type="button" id="contrastToggle" aria-label="Use high contrast" aria-pressed="false"><span aria-hidden="true">◐</span></button>
+      </div>
+    </div>
+  </div>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="IP-SAKTI Sahayak home">
-        <span class="brand-mark" aria-hidden="true">आ</span>
-        <span><strong>IP-SAKTI <em>Sahayak</em></strong><small>Knowledge into protection.</small></span>
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 56 64" fill="none"><path d="M8 8h40v29c0 11-20 21-20 21S8 48 8 37V8Z"/><path d="M28 44V22m0 11C16 34 15 23 15 23s13-1 13 10Zm0-6c0-11 13-13 13-13s1 12-13 13Z"/><path d="M16 42c6-3 10-1 12 1 2-2 6-4 12-1M18 48h20"/></svg></span>
+        <span><strong>IP-SAKTI <em>Sahayak</em></strong><small>Ayurveda Intellectual Property &amp; Regulatory Guidance</small></span>
       </a>
-      <nav aria-label="Main navigation">
-        <button class="nav-button active" id="advisorTab" aria-current="page">Advisor</button>
-        <button class="nav-button" id="sourcesTab">Source library <span id="navCount">36</span></button>
-      </nav>
-      <span class="project-tag">AYURVEDA · IP · REGULATION</span>
+      <div class="brand-motto"><span lang="hi">ज्ञान से संरक्षण तक</span><small>KNOWLEDGE INTO PROTECTION</small></div>
     </div>
   </header>
+  <div class="navigation-bar">
+    <div class="container navigation-inner">
+      <nav aria-label="Main navigation">
+        <button class="nav-button active" id="advisorTab" aria-current="page"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m3 9 7-6 7 6v8h-5v-5H8v5H3V9Z"/></svg>Advisor</button>
+        <button class="nav-button" id="sourcesTab"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 4h5l2 2 2-2h5v12h-5l-2 1-2-1H3V4Zm7 2v11"/></svg>Source library <span id="navCount">—</span></button>
+        <a class="nav-button" href="#methodGuide" id="howItWorks">How it works</a>
+      </nav>
+      <span class="nav-context"><span aria-hidden="true">◎</span> India &amp; international frameworks</span>
+    </div>
+  </div>
 
-  <main id="main" class="container">
-    <section class="intro" aria-labelledby="introTitle">
-      <div>
-        <p class="eyebrow">FOR PRACTITIONERS, RESEARCHERS & INNOVATORS</p>
-        <h1 id="introTitle">A clearer path from<br>formulation to protection.</h1>
-        <p class="intro-copy">Explore intellectual property and regulatory guidance for Ayurveda,<br class="desktop-break"> across India and international regimes, with sources you can inspect.</p>
+  <main id="main" tabindex="-1">
+    <section class="hero" id="intro" aria-labelledby="introTitle">
+      <div class="container intro">
+        <div class="intro-content">
+          <p class="eyebrow"><span></span> FOR PRACTITIONERS, RESEARCHERS &amp; INNOVATORS</p>
+          <h1 id="introTitle">Traditional knowledge.<br><em>Informed innovation.</em></h1>
+          <p class="intro-copy">Navigate Ayurveda intellectual property and regulation with clear explanations, practical next steps, and sources you can verify.</p>
+          <div class="hero-topics"><span>Patents &amp; trademarks</span><span>Traditional knowledge</span><span>Product regulation</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 390 245" fill="none">
+            <circle class="art-orbit" cx="205" cy="118" r="107"/><circle class="art-orbit" cx="205" cy="118" r="87"/>
+            <path class="art-rule" d="M46 202h300M63 209h266M205 9v12M205 215v12M96 118h12M301 118h12"/>
+            <path class="art-book" d="M205 180c-33-19-64-21-106-15V96c44-6 76 1 106 22 30-21 62-28 106-22v69c-42-6-73-4-106 15Z"/>
+            <path class="art-book" d="M99 106H87v71c45-4 83-2 118 13 35-15 73-17 118-13v-71h-12M205 119v61"/>
+            <path class="art-page" d="M114 116c25-2 50 4 71 16m-71-3c25-2 50 4 71 16m-71-3c25-2 50 4 71 16m41-26c21-12 46-18 71-16m-71 29c21-12 46-18 71-16m-71 29c21-12 46-18 71-16"/>
+            <path class="art-stem" d="M205 117V49m0 45c-25 1-39-12-39-31 22-1 39 9 39 31Zm0-17c0-25 14-42 38-42 2 23-12 42-38 42Z"/>
+            <path class="art-leaf" d="m176 73 29 21m28-48-28 31"/>
+            <circle class="art-seal" cx="301" cy="179" r="28"/><path class="art-check" d="m289 179 8 8 16-18"/>
+            <path class="art-spark" d="M91 56h12m-6-6v12m221-16h10m-5-5v10M67 144h8m-4-4v8"/>
+          </svg>
+          <p>ROOTED IN TRADITION. GUIDED BY EVIDENCE.</p>
+        </div>
       </div>
-      <aside class="intro-note">
-        <span class="note-line"></span>
-        <p>Start with the product.<br>Confirm the facts.<br><strong>Follow the evidence.</strong></p>
-        <small>Built for the Ayurveda community</small>
-      </aside>
     </section>
 
+    <div class="container main-content">
     <div class="trust-bar" role="note">
       <span class="trust-icon" aria-hidden="true">i</span>
-      <p><strong>Information, not legal advice.</strong> Answers use dated sources and identify evidence gaps. Verify current law and consult a qualified professional before acting.</p>
+      <p><strong>Research guidance, not legal advice.</strong> Verify current law and consult a qualified professional before acting.</p>
       <span class="mode-pill" id="modeflag">Connecting…</span>
     </div>
 
     <div id="advisorView">
+      <div class="workspace-heading"><div><p class="eyebrow">YOUR RESEARCH DESK</p><h2>From questions to clarity</h2></div><p><a href="#q" id="jumpToQuestion">Ask a question directly</a>, or start with your product details.</p></div>
       <div class="workspace">
         <section class="panel classifier-panel" aria-labelledby="classifierTitle">
           <div class="panel-heading">
             <span class="step-number">01</span>
-            <div><p class="eyebrow">START HERE</p><h2 id="classifierTitle">Know your formulation</h2></div>
+            <div><p class="eyebrow">PRODUCT CLASSIFICATION</p><h2 id="classifierTitle">Know your formulation</h2></div>
             <button class="text-button" id="resetCls" title="Clear product details and start again">Reset</button>
           </div>
-          <p class="section-intro">A few confirmed facts about your Ayurveda product help identify a preliminary <strong>India</strong> regulatory route.</p>
+          <p class="section-intro">Find a preliminary <strong>Indian regulatory route</strong> based on your product’s intended use and confirmed facts.</p>
 
           <details class="description-box">
-            <summary>Start with a product description <span>Optional</span></summary>
+            <summary>Describe your product <span>Optional</span></summary>
             <label for="desc">What are you making, and how will it be used?</label>
             <textarea id="desc" rows="3" maxlength="4000" placeholder="For example: an Ayurvedic herbal cream intended to treat eczema."></textarea>
             <p class="field-help">We’ll identify the intended use, then ask you to confirm the legal criteria. Keep confidential formula details out.</p>
@@ -65,14 +101,15 @@
           <div id="clsFlow" aria-live="polite" aria-busy="false"><p class="empty-note">Loading the classification questions…</p></div>
           <div id="clsError" class="error-note" role="alert" hidden></div>
           <div class="classifier-footer">
-            <span aria-hidden="true">◇</span> Classification supports research. It does not establish patentability or grant a licence.
+            <span aria-hidden="true">i</span><div>You can ask a question without this step. Classification supports research; it does not establish patentability or grant a licence.</div>
           </div>
         </section>
 
         <section class="panel answer-panel" aria-labelledby="askTitle">
           <div class="panel-heading">
             <span class="step-number">02</span>
-            <div><p class="eyebrow">EXPLORE YOUR OPTIONS</p><h2 id="askTitle">Ask. Check. Take the next step.</h2></div>
+            <div><p class="eyebrow">IP &amp; REGULATORY GUIDANCE</p><h2 id="askTitle">Ask the IP-SAKTI advisor</h2></div>
+            <button class="button secondary small new-chat" id="newChat" type="button"><span aria-hidden="true">+</span> New chat</button>
           </div>
 
           <div class="scope-controls">
@@ -90,62 +127,66 @@
             </div>
           </div>
           <p class="scope-note" id="askScope"><span class="scope-dot"></span><span id="scopeText">India · Ayurveda IP &amp; regulation</span></p>
-          <p class="field-help">Ask about Ayurveda patents, brands, traditional knowledge, biodiversity or product regulation. Name your target countries for a comparison; coverage gaps will stay explicit.</p>
-          <p class="field-help" id="languageNote">English source notes are always available.</p>
-
-          <div class="chat-controls">
-            <p class="field-help" id="memoryNote" role="status">Temporary chat: recent turns and product context; expires after 30 minutes of inactivity. Reloading starts a new chat.</p>
-            <button class="button secondary small" id="newChat" type="button">New chat</button>
-          </div>
 
           <label class="question-label" for="q">What would you like to understand?</label>
-          <textarea id="q" rows="3" maxlength="4000" placeholder="For example: How can I protect an improved Ayurvedic formulation in India, and what evidence would I need?"></textarea>
+          <p class="field-help question-help" id="questionHelp">Explore patents, brands, biodiversity, traditional knowledge or product regulation.</p>
+          <textarea id="q" rows="4" maxlength="4000" aria-describedby="questionHelp privacyNote" placeholder="For example: Can a classical Ayurvedic formula be patented?"></textarea>
           <div class="ask-actions">
             <p class="field-help" id="privacyNote">Question text is not saved in the audit log.</p>
             <button class="button primary" id="askBtn" aria-keyshortcuts="Control+Enter Meta+Enter">Get a sourced answer <span aria-hidden="true">↗</span></button>
           </div>
           <div class="examples" id="examples" aria-label="Example questions"></div>
+          <details class="chat-information">
+            <summary>About answer languages &amp; this chat</summary>
+            <p class="field-help" id="pageLanguageHelp">The page language button translates the interface. Use Answer language for responses; source notes stay in their original language.</p>
+            <p class="field-help" id="languageNote">English source notes are always available.</p>
+            <p class="field-help" id="memoryNote" role="status">Temporary chat: recent turns and product context; expires after 30 minutes of inactivity. Reloading starts a new chat.</p>
+          </details>
 
           <div class="chat-history" id="chatHistory" aria-label="Earlier questions and answers" hidden></div>
 
           <div class="result-container" id="answer" aria-live="polite" aria-busy="false">
             <div class="empty-state">
-              <span class="empty-symbol" aria-hidden="true">§</span>
-              <h3>Evidence before answers.</h3>
-              <p>Get a short explanation of your Ayurveda IP or regulatory question, then explore the details and sources.<br>Ask for a comparison or next steps when you need more depth.</p>
-              <div class="empty-tags"><span>Source-linked</span><span>Jurisdiction-specific</span><span>Honest about gaps</span></div>
+              <span class="empty-symbol" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M5 5h7l2 2 2-2h7v17h-7l-2 1-2-1H5V5Zm9 2v16M8 10h3m-3 4h3m6-4h3m-3 4h3"/></svg></span>
+              <h3>Your next step starts with a question</h3>
+              <p>A clear, short answer first. Detailed reasoning and<br class="desktop-break"> supporting sources whenever you need them.</p>
+              <div class="empty-tags"><span>Source-linked answers</span><span>Clear evidence gaps</span></div>
             </div>
           </div>
         </section>
       </div>
 
-      <div class="method-strip" aria-label="How the advisor works">
-        <div><span>01 / CLASSIFY</span><p>Rules follow confirmed product facts.</p></div>
-        <div><span>02 / ANSWER</span><p>Sources support answers, with gaps made explicit.</p></div>
-        <div><span>03 / VERIFY</span><p>Dates and review gaps stay visible.</p></div>
-      </div>
+      <section class="method-guide" id="methodGuide" aria-labelledby="methodTitle" tabindex="-1">
+        <div class="method-heading"><p class="eyebrow">A SIMPLE, SOURCE-LED PROCESS</p><h2 id="methodTitle">How the advisor works</h2></div>
+        <div class="method-strip">
+          <div><span class="method-number">01</span><div><h3>Build your context</h3><p>Optionally classify your product. Select a jurisdiction and your preferred answer language.</p></div></div>
+          <div><span class="method-number">02</span><div><h3>Understand your options</h3><p>Ask your question and get a short explanation. Follow up for a comparison or practical next steps.</p></div></div>
+          <div><span class="method-number">03</span><div><h3>Check the evidence</h3><p>Inspect source notes, dates and coverage gaps. Download your brief for professional review.</p></div></div>
+        </div>
+      </section>
     </div>
 
     <section id="sourcesView" hidden aria-labelledby="sourcesTitle">
       <div class="library-heading">
-        <div><p class="eyebrow">THE EVIDENCE BEHIND THE ADVISOR</p><h2 id="sourcesTitle">A transparent source library.</h2>
+        <div><p class="eyebrow">THE EVIDENCE BEHIND THE ADVISOR</p><h2 id="sourcesTitle">The source library</h2>
           <p>Curated sources for Ayurveda IP and regulatory research. Source dates are not live verification dates; this library is not an exhaustive legal database.</p></div>
         <span class="library-version" id="corpusVersion"></span>
       </div>
       <div class="library-filters">
         <div><label for="sourceSearch">Search sources</label><input type="search" id="sourceSearch" placeholder="Statute, section, topic…" maxlength="160"></div>
-        <div><label for="sourceScope">Jurisdiction</label><select id="sourceScope"><option value="">All jurisdictions</option><option>India</option><option>International</option></select></div>
+        <div><label for="sourceScope">Jurisdiction</label><select id="sourceScope"><option value="">All jurisdictions</option><option value="India">India</option><option value="International">International</option></select></div>
         <div><label for="sourceReview">Review status</label><select id="sourceReview"><option value="">All sources</option><option value="needs_review">Needs primary review</option><option value="time_sensitive">Time-sensitive</option></select></div>
       </div>
       <p class="library-count" id="sourceCount" aria-live="polite"></p>
       <div id="sourceList" class="source-grid"></div>
     </section>
 
-    <footer class="site-footer">
-      <span><strong>IP-SAKTI Sahayak</strong> <span class="footer-separator">/</span> SIH 2026 · Team Victor Bytes</span>
-      <p>TKDL is referenced for public information; its restricted database is not ingested.</p>
-    </footer>
+    </div>
   </main>
+  <footer class="site-footer"><div class="container">
+    <div class="footer-main"><div><strong>IP-SAKTI Sahayak</strong><p>Supporting informed decisions in Ayurveda innovation.</p></div><div class="footer-project"><span>SMART INDIA HACKATHON 2026</span><p>PS 26045 <span class="footer-separator">·</span> Team Vector Bytes</p></div></div>
+    <div class="footer-bottom"><p>Independent research prototype. Not an official government service.</p><p>TKDL’s restricted database is not ingested. <a href="#main">Back to top ↑</a></p></div>
+  </div></footer>
 
   <dialog id="consentDialog" aria-labelledby="consentTitle">
     <div class="dialog-heading"><p class="eyebrow">EXTERNAL RESOURCE</p><button class="icon-button" id="closeConsent" aria-label="Close consent dialog">×</button></div>

@@ -167,7 +167,7 @@ def run(artifacts):
         assert cleared.value.status < 300
         expect(page.locator("#q")).to_have_value("")
         expect(page.locator("#chatHistory")).to_be_hidden()
-        expect(page.locator("#answer")).to_contain_text("Evidence before answers")
+        expect(page.locator("#answer")).to_contain_text("Your next step starts with a question")
         fresh = ask("How often must I file Form 27?")
         assert fresh["conversation_id"] != first["conversation_id"] and not fresh["memory_used"]
         page.reload(wait_until="networkidle")
@@ -177,7 +177,7 @@ def run(artifacts):
         passed("New chat deletes server memory and reload starts a fresh ephemeral conversation")
 
         page.locator('[data-j="International"]').click()
-        expect(page.locator("#answer")).to_contain_text("Evidence before answers")
+        expect(page.locator("#answer")).to_contain_text("Your next step starts with a question")
         page.locator('[data-query*="several countries"]').click()
         expect(page.locator("#answer")).to_have_attribute("aria-busy", "false")
         expect(page.locator("#answer .answer-text")).to_contain_text("does not grant a global patent")
@@ -211,7 +211,7 @@ def run(artifacts):
         except Error:
             pass
         page.unroute("**/api/ask")
-        expect(page.locator("#answer")).to_contain_text("Evidence before answers")
+        expect(page.locator("#answer")).to_contain_text("Your next step starts with a question")
         expect(page.locator("#askBtn")).to_be_enabled()
         assert "OBSOLETE RESPONSE" not in page.locator("#answer").inner_text()
         passed("Obsolete responses cannot overwrite a changed jurisdiction")
@@ -241,6 +241,8 @@ def run(artifacts):
         assert len(attempted) == 1
         expect(page.locator("#answer")).to_contain_text("temporary memory is no longer available")
         expect(page.locator("#chatHistory .history-turn")).to_have_count(1)
+        page.locator(".chat-information > summary").click()
+        expect(page.locator("#memoryNote")).to_be_visible()
         expect(page.locator("#memoryNote")).to_contain_text("expired")
         page.unroute("**/api/ask")
         page.locator("#newChat").click()

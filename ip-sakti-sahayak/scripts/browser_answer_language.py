@@ -76,6 +76,8 @@ def run(artifacts: Path) -> dict:
             "original_summary_en": summary_en, "original_answer_en": answer_en,
             "notices": ["Machine-translated guidance. Consult the original English source notes for legal wording."],
         }
+        page.locator(".chat-information > summary").click()
+        expect(page.locator("#languageNote")).to_be_visible()
         expect(page.locator("#languageNote")).to_contain_text("Ask in English or the selected language")
         page.locator("#q").fill(QUESTION)
         page.locator("#lang").select_option("hi")

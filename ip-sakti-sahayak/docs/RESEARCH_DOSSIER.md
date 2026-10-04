@@ -1,7 +1,7 @@
 # IP-SAKTI Sahayak — Master Research & Knowledge Dossier
 
 **Smart India Hackathon 2026 · Problem Statement 26045 · Ministry of AYUSH / All India Institute of Ayurveda**
-Theme: MedTech / BioTech / HealthTech · Category: Software · Team: Victor Bytes (ID 22345)
+Theme: MedTech / BioTech / HealthTech · Category: Software · Team: Vector Bytes (ID 22345)
 
 *Compiled: 22 September 2026. This dossier consolidates every fact used to build IP-SAKTI Sahayak — the legal substance, the corrections that survived independent verification, the competitive/reliability evidence, and the primary-source text extracted from the gazette PDFs. It is the provenance record behind the version-tracked RAG corpus.*
 

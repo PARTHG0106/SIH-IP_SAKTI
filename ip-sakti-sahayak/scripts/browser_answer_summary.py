@@ -114,7 +114,15 @@ def run(artifacts: Path) -> dict:
         # the requested final column is fully inside its clipping viewport.
         headers.first.hover()
         page.mouse.wheel(mobile_table.evaluate("node => node.scrollWidth"), 0)
-        expect(headers.last).to_be_in_viewport(ratio=1)
+        # Fractional CSS pixels can report 0.99975 visibility for a fully
+        # scrolled table. Allow rounding, then check the actual clipping edges.
+        expect(headers.last).to_be_in_viewport(ratio=0.99)
+        assert mobile_table.evaluate("""node => {
+            const clip = node.getBoundingClientRect();
+            const cell = node.querySelector('thead th:last-child').getBoundingClientRect();
+            const left = clip.left + node.clientLeft;
+            return cell.left >= left - 1 && cell.right <= left + node.clientWidth + 1;
+        }""")
         assert mobile_table.evaluate("node => node.scrollLeft > 0")
         assert not page.evaluate("document.documentElement.scrollWidth > innerWidth")
         expect(page.locator("#toast")).to_be_hidden()

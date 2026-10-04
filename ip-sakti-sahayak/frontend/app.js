@@ -49,6 +49,7 @@ function toast(message) {
 
 function showView(view) {
   const library = view === "sources";
+  $("#intro").hidden = library;
   $("#advisorView").hidden = library;
   $("#sourcesView").hidden = !library;
   $("#advisorTab").classList.toggle("active", !library);
@@ -59,6 +60,49 @@ function showView(view) {
 }
 $("#advisorTab").addEventListener("click", () => showView("advisor"));
 $("#sourcesTab").addEventListener("click", () => showView("sources"));
+$("#howItWorks").addEventListener("click", event => {
+  event.preventDefault();
+  showView("advisor");
+  $("#methodGuide").focus({preventScroll: true});
+  $("#methodGuide").scrollIntoView({block: "start"});
+});
+$("#jumpToQuestion").addEventListener("click", event => {
+  event.preventDefault();
+  $("#q").focus({preventScroll: true});
+  $("#askTitle").scrollIntoView({block: "start"});
+});
+
+// Only display preferences are persisted; chat content stays page-scoped.
+function applyDisplayPreferences(textSize, highContrast) {
+  const size = ["small", "default", "large"].includes(textSize) ? textSize : "default";
+  document.documentElement.dataset.textSize = size;
+  document.documentElement.dataset.contrast = highContrast ? "high" : "default";
+  $$("[data-text-size]").filter(button => button instanceof HTMLButtonElement).forEach(button => {
+    button.setAttribute("aria-pressed", String(button.dataset.textSize === size));
+  });
+  $("#contrastToggle").setAttribute("aria-pressed", String(highContrast));
+  $("#contrastToggle").setAttribute("aria-label", highContrast ? "Use standard contrast" : "Use high contrast");
+}
+function saveDisplayPreferences() {
+  try {
+    localStorage.setItem("ip-sakti-display", JSON.stringify({
+      textSize: document.documentElement.dataset.textSize,
+      highContrast: document.documentElement.dataset.contrast === "high"
+    }));
+  } catch { /* Display controls still work if browser storage is unavailable. */ }
+}
+try {
+  const preferences = JSON.parse(localStorage.getItem("ip-sakti-display") || "{}");
+  applyDisplayPreferences(preferences?.textSize, preferences?.highContrast === true);
+} catch { applyDisplayPreferences("default", false); }
+$$("button[data-text-size]").forEach(button => button.addEventListener("click", () => {
+  applyDisplayPreferences(button.dataset.textSize, document.documentElement.dataset.contrast === "high");
+  saveDisplayPreferences();
+}));
+$("#contrastToggle").addEventListener("click", () => {
+  applyDisplayPreferences(document.documentElement.dataset.textSize, document.documentElement.dataset.contrast !== "high");
+  saveDisplayPreferences();
+});
 
 function invalidateAnswer() {
   state.askSequence++;
@@ -214,10 +258,10 @@ function sourceCard(source, number, prefix = "answer") {
     '<span class="jurisdiction-badge ' + esc(source.jurisdiction) + '">' + esc(source.jurisdiction) + '</span>' +
     '<span class="status-badge' + (needsReview || source.time_sensitive ? " review" : "") + '">' +
     (needsReview ? "Needs primary review" : source.time_sensitive ? "Time-sensitive" : source.review_status === "primary_checked" ? "Primary source checked" : esc(type)) + '</span></div>' +
-    '<h4>' + esc(source.statute) + '</h4><p class="source-section">' + esc(source.section) + '</p>' +
-    (source.review_note ? '<p class="review-note">' + esc(source.review_note) + '</p>' : "") +
+    '<h4 translate="no" lang="en">' + esc(source.statute) + '</h4><p class="source-section" translate="no" lang="en">' + esc(source.section) + '</p>' +
+    (source.review_note ? '<p class="review-note" translate="no" lang="en">' + esc(source.review_note) + '</p>' : "") +
     (source.snippet && !needsReview
-      ? '<details><summary>Read the complete research note</summary><p>' + esc(source.snippet) + '</p></details>' : "") +
+      ? '<details><summary>Read the complete research note</summary><p translate="no" lang="en">' + esc(source.snippet) + '</p></details>' : "") +
     '<div class="source-bottom">' + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">Open source ↗</a>' : "") +
     '<time datetime="' + esc(source.as_of) + '">Source record: ' + esc(source.as_of) + '</time></div>' +
     (source.reviewed_on ? '<p class="field-help">Primary text checked: ' + esc(source.reviewed_on) + '</p>' : '') + '</article>';
@@ -414,7 +458,7 @@ function resourcesHtml(resources = []) {
     resources.map(resource => {
       const gated = resource.access !== "free";
       const url = safeUrl(resource.url);
-      return '<article class="resource-card' + (gated ? " gated" : "") + '"><div><h4>' + esc(resource.name) + "</h4>" +
+      return '<article class="resource-card' + (gated ? " gated" : "") + '"><div><h4 translate="no">' + esc(resource.name) + "</h4>" +
         (resource.note ? "<p>" + esc(resource.note) + "</p>" : "") + "</div>" +
         (gated ? '<button class="button secondary small" data-resource="' + esc(resource.id) + '">Review access →</button>'
           : url ? '<a class="button secondary small" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">Visit ↗</a>' : "") +
@@ -431,7 +475,7 @@ function answerHtml(turn) {
   const languageUnavailable = result.reason === "translation_unavailable";
   const languageSelectionRequired = languageUnavailable && result.translation_status === "language_selection_required";
   const summary = !result.abstained && String(result.summary || "").trim();
-  let html = '<article class="chat-answer" data-turn="' + id + '"><p class="answered-question"><strong>Your question</strong> ' + esc(question) + '</p>' +
+  let html = '<article class="chat-answer" data-turn="' + id + '"><p class="answered-question"><strong>Your question</strong> <span translate="no" dir="auto">' + esc(question) + '</span></p>' +
     '<div class="result-meta"><span class="jurisdiction-badge ' + esc(result.jurisdiction) + '">' +
     esc(jurisdictionLabel(result.jurisdiction)) + '</span>' +
     (result.abstained ? '<span class="status-badge review">' + esc(answerOutcomeLabel(result)) + '</span>' :
@@ -479,7 +523,7 @@ function renderHistory(includeLatest = false) {
   const previous = includeLatest ? state.turns : state.turns.slice(0, -1);
   $("#chatHistory").hidden = !previous.length;
   $("#chatHistory").innerHTML = previous.length ? '<p class="history-label">Earlier in this chat</p>' + previous.map(turn =>
-    '<details class="history-turn"><summary><span>Question ' + turn.id + '</span> ' + esc(turn.question) + '</summary>' +
+    '<details class="history-turn"><summary><span>Question ' + turn.id + '</span> <span translate="no" dir="auto">' + esc(turn.question) + '</span></summary>' +
     '<div lang="' + esc(turn.result.lang) + '" dir="' + (["ur", "ks", "sd"].includes(turn.result.lang) ? "rtl" : "ltr") + '">' + answerHtml(turn) + "</div></details>"
   ).join("") : "";
 }

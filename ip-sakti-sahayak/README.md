@@ -2,7 +2,7 @@
 
 A source-grounded research assistant for Ayurveda intellectual property and preliminary regulatory routing in India and international frameworks. The default local mode uses reviewed guidance; an explicitly configured model enables question-specific RAG synthesis.
 
-Smart India Hackathon 2026 · PS 26045 · Team Victor Bytes
+Smart India Hackathon 2026 · PS 26045 · Team Vector Bytes
 
 **Information, not legal advice.** Answers distinguish sourced rules, application to supplied facts, and evidence gaps. A citation match is not a guarantee of legal correctness or confirmation that a rule remains current.
 
@@ -48,7 +48,8 @@ Free Render instances sleep when idle and cold-start on the next request; use a 
 - **Source governance:** dated records have source types, review states and a content-derived corpus version. The source library exposes the current count, provenance and records that need review. Complete summaries are distinguishable from actual statutory quotations.
 - **Appropriate abstention:** unsupported questions, unavailable translation, disputed records and unverified current status produce an explicit reason and a useful next step.
 - **Official next steps:** category-aware links distinguish ASU licensing from CDSCO. Restricted-resource referrals require a successful consent write before the UI receives the destination. Consent does not purchase access or submit an application.
-- **Practical UI:** editable classification history, expandable chat history, safe Markdown tables, jurisdiction-specific examples, accessible controls, mobile layout, source search, copy/download of sourced answers, HTTP error recovery and protection against obsolete responses.
+- **Government-inspired UI:** navy navigation, ivory backgrounds, tricolour accents, a bilingual masthead and an original Ayurveda illustration, with the independent research-prototype identity visible. Larger reading text, text-size and high-contrast controls, keyboard shortcuts and a direct question link support desktop and mobile use. Display preferences persist across reloads; questions and answers do not enter browser storage. Editable classification history, expandable answers and chat history, safe Markdown tables, source search, copy/download, HTTP error recovery and protection against obsolete responses remain available.
+- **Hindi page interface:** the हिन्दी / English button translates navigation, forms, help, status messages and the product-classification flow using bundled Hindi text, including in offline mode. It remembers the page language without clearing the current question, classification or chat. The Answer language selector remains independent; user text, answers and source evidence retain their original content.
 - **Minimal logs:** query text, product descriptions and generated answers are excluded from new audit entries. Only request metadata is logged. Consent records use a session identifier and canonical resource ID.
 
 ## Research corrections
@@ -104,6 +105,7 @@ python -m playwright install chromium
 python -m scripts.browser_smoke
 python -m scripts.browser_answer_summary
 python -m scripts.browser_answer_language
+python -m scripts.browser_page_language
 ~~~
 
 The browser suite starts an isolated local server with temporary logs, tests normal/error/consent/race flows and writes desktop/mobile screenshots to docs/qa. It does not open external referral pages.
